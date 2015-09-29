@@ -1,0 +1,73 @@
+/*
+Theme Name: cpac
+Theme URI: http://chrispaccione.com
+Author: Chris Paccione
+Author URI: http://chrispaccione.com
+Description: A WordPress Theme built for Christopher Paccione by Christopher Paccione
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+}
+
+/* WordPress admin styles to prevent WordPress admin nav from overlapping CAPE theme's fixed nav bar when logged in */
+
+.logged-in .navbar-default {
+  padding-top: 33px;
+}
+
+/* NAVIGATION */
+
+.navbar-default {
+  background-color: rgba(255,255,255,.7);
+}
+
+.header {
+  background: linear-gradient(#133140, transparent 90%),
+        linear-gradient(0deg, #ffffff, transparent),
+        url('../images/mydesk.jpg');
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 550px;
+    background-color: #133140;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header-copy {
+  display: none;
+  padding-top: 75px;
+}
+
+.header-copy h1 {
+  font-size: 3.75em;
+}
+
+.header-copy h2 {
+  font-size: 2.75em;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  background-color: #4BC3FF;
+  height: 250px;
+}
+
+@media (max-width: 415px) {
+
+  .header-copy h2 {
+    font-size: 1.5em;
+  }
+}
+
+
+
