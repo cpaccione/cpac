@@ -78,6 +78,11 @@ ul.img-list li {
   position: relative;
 }
 
+ul.img-list li img {
+  width: 380px;
+  height: 285px;
+}
+
 ul.img-list li:hover span.text-title {
   opacity: 0;
 }
@@ -97,7 +102,7 @@ span.text-title {
   background: transparent;
   cursor: pointer;
   display: table;
-  height: 240px;
+  height: 285px;
   left: 0;
   position: absolute;
   top: 0;
@@ -128,7 +133,7 @@ span.text-content {
   background: rgba(159, 244, 53, 0.7);
   cursor: pointer;
   display: table;
-  height: 240px;
+  height: 285px;
   left: 0;
   position: absolute;
   top: 0;

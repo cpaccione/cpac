@@ -24,72 +24,59 @@ Template Name: Home Page
     </div>
 </section>
 
-<div class="container">
+<section class="portfolion-section">
+    <div class="container">
 
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>My Recent Work</h2>
+            </div>
+        </div>
 
-                    <?php the_content(); ?>
+        <div class="row">
+            <ul class="img-list">
 
-            <?php endwhile; else: ?>
+                <li>
+                    <a href="#">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/steamist.png">
+                        <span class="text-title">
+                            <span>Copy Goes Here</span>
+                        </span>
+                        <span class="text-content">
+                            <span>More copy goes here</span>
+                        </span>
+                    </a>
+                </li>
 
-                <h1>Oh no!</h1>
-                <p>No content is appearing on this page!</p>
+                <li>
+                    <a href="#">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/steamist.png">
+                        <span class="text-title">
+                            <span>Copy Goes Here</span>
+                        </span>
+                        <span class="text-content">
+                            <span>More copy goes here</span>
+                        </span>
+                    </a>
+                </li>
 
-            <?php endif; ?>
+                <li>
+                    <a href="#">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/steamist.png">
+                        <span class="text-title">
+                            <span>Copy Goes Here</span>
+                        </span>
+                        <span class="text-content">
+                            <span>More copy goes here</span>
+                        </span>
+                    </a>
+                </li>
 
-        <h2>My Recent Work</h2>
+            </ul>
+        </div>
 
-        <?php
-
-            $args = array('post_type' => 'portfolio' );
-            $query = new WP_Query($args);
-
-        ?>
-        
-            <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
-
-                <?php if($counter % 4 === 0) : echo '<div class="row">'; endif; ?>
-
-                    <div class="col-sm-3 text-center">
-
-                        <div class="">
-                            <?php
-                            
-                            $image = get_field('portfolio_image');
-
-                            if( !empty($image) ): ?>
-
-                            <a href="<?php the_permalink(); ?>"><img class="center-block img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"></a>
-
-                        </div>
-
-                    <?php endif; ?>
-                        
-                    </div>
-
-                <?php $counter++; if($counter % 4 === 0) : echo '</div>'; endif; ?>
-
-            <?php endwhile; endif; wp_reset_postdata(); ?>
-
- 
-
-    <?php if( have_rows('pdf_file') ): ?>
-
-        <?php while( have_rows('pdf_file') ): the_row();
-
-    $file = get_sub_field('pdf');
-
-    ?>
-
-        
-    <a href="<?php echo $file['url']; ?>" target="_blank"><?php echo $file['title']; ?></a>
-
-
-        <?php endwhile; ?>
-
-    <?php endif; ?>
-
-</div>
+    </div>
+</section>
 
 
 
