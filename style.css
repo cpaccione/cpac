@@ -25,33 +25,35 @@ body {
 
 /* NAVIGATION */
 
-.navbar-default {
+.menu-main-container {
+  text-transform: uppercase;
+}
+
+/*.navbar-default {
   background-color: rgba(255,255,255,.7);
-}
+}*/
 
-.header {
-  background: linear-gradient(#133140, transparent 90%),
-        linear-gradient(0deg, #ffffff, transparent),
-        url('../images/mydesk.jpg');
+.home-hero {
+  background: linear-gradient(#133140, transparent 90%), linear-gradient(0deg, #ffffff, transparent), url('images/mydesk.jpg');
   background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    height: 550px;
-    background-color: #133140;
-    color: #ffffff;
-    text-align: center;
+  background-size: cover;
+  background-position: 50%;
+  height: 550px;
+  background-color: #133140;
+  color: #ffffff;
+  text-align: center;
 }
 
-.header-copy {
+.home-hero-copy {
   display: none;
   padding-top: 75px;
 }
 
-.header-copy h1 {
+.home-hero-copy h1 {
   font-size: 3.75em;
 }
 
-.header-copy h2 {
+.home-hero-copy h2 {
   font-size: 2.75em;
 }
 
@@ -59,6 +61,7 @@ body {
 
 footer {
   background-color: #4BC3FF;
+  background-color: #133140;
   height: 250px;
 }
 

@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-	$('.header-copy').fadeIn(2000);
+	$('.home-hero-copy').fadeIn(2000);
 
 	//Resize and load function to add padding to push content below bootstrap fixed navbar
 

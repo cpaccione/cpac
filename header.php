@@ -26,7 +26,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php bloginfo('url') ;?>">Chris Paccione</a>
+        <a class="navbar-brand" href="<?php bloginfo('url') ;?>">CHRIS PACCIONE</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
