@@ -65,79 +65,27 @@ HOME PAGE STYLES - page-home.php
 
 /* Portfolio Styles */
 
-ul.img-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
 
-ul.img-list li {
-  display: inline-block;
-  margin: 2px;
+.img-overlay {
   position: relative;
+  max-width: 660px;
 }
 
-ul.img-list li img {
-  width: 380px;
-  height: 285px;
+.portfolio-overlay:hover {
+  opacity: 1;
 }
 
-ul.img-list li:hover span.text-title {
-  opacity: 0;
-}
-
-span.text-title span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-span.text-title {
-  font-family: "TradeGothicW01-BoldCn20_675334";
-  font-size: 2.5em;
-  line-height: 1em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: transparent;
-  cursor: pointer;
-  display: table;
-  height: 285px;
-  left: 0;
+.portfolio-overlay {
   position: absolute;
   top: 0;
-  width: 380px;
-  opacity: 1;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
-
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-ul.img-list li:hover span.text-content {
-  opacity: 1;
-}
-
-span.text-content {
-  font-family: "TradeGothicW01-BoldCn20_675334";
-  font-size: 2.5em;
-  line-height: 1em;
+  left: 0;
+  width: 100%;
+  height: 100%;
   text-transform: uppercase;
   color: #2c3446;
   background: rgba(159, 244, 53, 0.7);
-  cursor: pointer;
-  display: table;
-  height: 285px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 380px;
+  background: rgba(255, 101, 117, 0.7);
+  /*padding: 10%;*/
   opacity: 0;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;

@@ -34,45 +34,43 @@ Template Name: Home Page
         </div>
 
         <div class="row">
-            <ul class="img-list">
 
-                <li>
-                    <a href="#">
+            <div class="col-sm-3">
+                <a href="#">
+                    <div class="img-overlay">
                         <img src="<?php bloginfo('template_directory'); ?>/images/steamist.png">
-                        <span class="text-title">
-                            <span>Copy Goes Here</span>
-                        </span>
-                        <span class="text-content">
-                            <span>More copy goes here</span>
-                        </span>
-                    </a>
-                </li>
+                        <div class="portfolio-overlay">Steamist</div>
+                    </div>
+                </a>
+            </div>
 
-                <li>
-                    <a href="#">
+            <div class="col-sm-3">
+                <a href="#">
+                    <div class="img-overlay">
                         <img src="<?php bloginfo('template_directory'); ?>/images/steamist.png">
-                        <span class="text-title">
-                            <span>Copy Goes Here</span>
-                        </span>
-                        <span class="text-content">
-                            <span>More copy goes here</span>
-                        </span>
-                    </a>
-                </li>
+                        <div class="portfolio-overlay">Steamist</div>
+                    </div>
+                </a>
+            </div>
 
-                <li>
-                    <a href="#">
+            <div class="col-sm-3">
+                <a href="#">
+                    <div class="img-overlay">
                         <img src="<?php bloginfo('template_directory'); ?>/images/steamist.png">
-                        <span class="text-title">
-                            <span>Copy Goes Here</span>
-                        </span>
-                        <span class="text-content">
-                            <span>More copy goes here</span>
-                        </span>
-                    </a>
-                </li>
+                        <div class="portfolio-overlay">Steamist</div>
+                    </div>
+                </a>
+            </div>
 
-            </ul>
+            <div class="col-sm-3">
+                <a href="#">
+                    <div class="img-overlay">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/steamist.png">
+                        <div class="portfolio-overlay">Steamist</div>
+                    </div>
+                </a>
+            </div>
+
         </div>
 
     </div>
