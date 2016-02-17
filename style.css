@@ -13,9 +13,51 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
+  font-size: 16px;
 }
+
+h5 {
+  font-size: 2em;
+}
+
+.mfizz-icon i {
+  font-size: 5em;
+  display: inline-block;
+  line-height: 0;
+  color: rgb(255, 101, 117);
+      -webkit-transition: ease-out 500ms;
+  -moz-transition: ease-out 500ms;
+  -o-transition: ease-out 500ms;
+  transition: ease-out 500ms;
+}
+
+.mfizz-icon i:hover {
+  color: #4bc3ff;
+    -webkit-transition: ease-out 500ms;
+  -moz-transition: ease-out 500ms;
+  -o-transition: ease-out 500ms;
+  transition: ease-out 500ms;
+}
+
+.fa {
+  color: rgb(255, 101, 117);
+      -webkit-transition: ease-out 500ms;
+  -moz-transition: ease-out 500ms;
+  -o-transition: ease-out 500ms;
+  transition: ease-out 500ms;
+
+}
+
+.fa:hover {
+  color: #4BC3FF;
+    -webkit-transition: ease-out 500ms;
+  -moz-transition: ease-out 500ms;
+  -o-transition: ease-out 500ms;
+  transition: ease-out 500ms;
+}
+
 
 /* WordPress admin styles to prevent WordPress admin nav from overlapping CAPE theme's fixed nav bar when logged in */
 
@@ -51,10 +93,14 @@ body {
 
 .home-hero-copy h1 {
   font-size: 3.75em;
+  font-weight: 300;
 }
 
-.home-hero-copy h2 {
+h2 {
   font-size: 2.75em;
+  font-weight: 300;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /*------------------------------------------------------
@@ -65,6 +111,9 @@ HOME PAGE STYLES - page-home.php
 
 /* Portfolio Styles */
 
+.port-row {
+  padding-bottom: 15px;
+}
 
 .img-overlay {
   position: relative;
@@ -86,11 +135,16 @@ HOME PAGE STYLES - page-home.php
   background: rgba(159, 244, 53, 0.7);
   background: rgba(255, 101, 117, 0.7);
   /*padding: 10%;*/
+  text-align: center;
   opacity: 0;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
+}
+
+.overlay-copy {
+  color: #ffffff;
 }
 
 /* FOOTER STYLES */

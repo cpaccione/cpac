@@ -9,7 +9,9 @@
 
 function theme_styles() {
 	wp_enqueue_style( 'jqueryui_smoothness', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css' );
+	wp_enqueue_style( 'font-mfizz', get_template_directory_uri() . '/css/font-mfizz.css' );
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
+	wp_enqueue_style( 'google_font', 'https://fonts.googleapis.com/css?family=Lato:400,300' );
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 }
 
