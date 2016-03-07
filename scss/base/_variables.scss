@@ -1,0 +1,17 @@
+// Descriptive color variables
+
+$white : #ffffff;
+$black : #000000;
+
+// Theme color variables
+
+$light-blue : #4BC3FF;
+$light-blue-trans : rgba(75,195,255,0.7);
+$dark-blue  : #133140;
+$salmon-red : #FF6575;
+
+// Media query breakpoints
+
+$brk-wide : '(max-width: 1024px)';
+$brk-narrow : '(max-width: 768px)';
+$brk-small : '(max-width: 500px)';

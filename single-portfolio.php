@@ -1,17 +1,6 @@
 <?php get_header(); ?>
 
-<section class="home-hero">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="home-hero-copy">
-                    <h1>Chris Paccione</h1>
-                    <h2>Web Dev &amp; Design</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <div class="container">
     <div class="row">
@@ -30,12 +19,16 @@
             <?php 
 
             $image = get_field('portfolio_image');
+            $description = get_field('portfolio_description');
 
             if( !empty($image) ): ?>
 
                 <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                <p><?php echo $description; ?></p>
 
             <?php endif;
+
+
 
             ?>
 

@@ -1,0 +1,66 @@
+// ===================================================================
+// Global Imports
+// ===================================================================
+
+@import 'base/index';
+@import 'components/index';
+@import 'layout/index';
+
+
+/* WordPress admin styles to prevent WordPress admin nav from overlapping CAPE theme's fixed nav bar when logged in */
+
+.logged-in .navbar-default {
+  padding-top: 33px;
+}
+
+/* NAVIGATION */
+
+.menu-main-container {
+  text-transform: uppercase;
+}
+
+.home-hero {
+  background: linear-gradient(#133140, transparent 90%), linear-gradient(0deg, #ffffff, transparent), url('../images/mydesk.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 550px;
+  background-color: #133140;
+  color: #ffffff;
+  text-align: center;
+}
+
+.home-hero-copy {
+  display: none;
+  padding-top: 75px;
+}
+
+.home-hero-copy h1 {
+  font-size: 3.75em;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2.75em;
+  font-weight: 300;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  background-color: #4BC3FF;
+  background-color: #133140;
+  height: 250px;
+}
+
+@media (max-width: 415px) {
+
+  .header-copy h2 {
+    font-size: 1.5em;
+  }
+}
+
+
+
