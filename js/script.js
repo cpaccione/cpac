@@ -6,6 +6,11 @@ jQuery(document).ready(function($) {
 
     $('img').addClass('img-responsive');
 
+
+      $(".card").flip({
+        trigger: 'hover'
+      }); 
+
 	//Resize and load function to add padding to push content below bootstrap fixed navbar
 
 	// $(window).resize(function () { 

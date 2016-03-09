@@ -27,7 +27,7 @@ Template Name: Home Page
 <section class="portfolion-section">
     <div class="container">
 
-<!--         <div class="row">
+        <div class="row">
             <div class="col-sm-12 text-center">
                 <h2>MY SERVICES</h2>
             </div>
@@ -46,7 +46,7 @@ Template Name: Home Page
             <div class="col-sm-3 text-center">
             <a href="https://wordpress.org/" target="_blank"><i class="fa fa-wordpress fa-5x"></i></a>
             </div>
-        </div> -->
+        </div>
 
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -54,7 +54,7 @@ Template Name: Home Page
             </div>
         </div>
 
-
+    
     <?php
 
             $args = array(
@@ -70,31 +70,25 @@ Template Name: Home Page
 
                 <?php if($counter % 3 === 0) : echo '<div class="row port-row">'; endif; ?>
 
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <a href="<?php the_permalink(); ?>">
+                            <div class="img-overlay">
+                                <?php
+                                    $image = get_field('portfolio_image');
 
-                        <div class="img-overlay">
-                            <?php
-                            
-                            $image = get_field('portfolio_image');
+                                    if( !empty($image) ): ?>
 
-                            if( !empty($image) ): ?>
+                                    <img class="center-block" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 
-                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-
-                        <?php endif; ?>
+                                <?php endif; ?>
  
-                            <div class="portfolio-overlay">
-                                <div class="overlay-copy">
-                                    <h5><?php the_title(); ?></h5>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-copy">
+                                        <h5><?php the_title(); ?></h5>
+                                    </div>
                                 </div>
                             </div>
-
-                        </div>
                         </a>
-
-                    
-                        
                     </div>
 
                 <?php $counter++; if($counter % 3 === 0) : echo '</div>'; endif; ?>
@@ -124,6 +118,8 @@ Template Name: Home Page
         </div>
     </div>
 </section>
+
+
 
 
 

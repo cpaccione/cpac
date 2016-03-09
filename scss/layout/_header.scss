@@ -1,3 +1,31 @@
+/* NAVIGATION */
+
 .navbar {
 	font-size: 1em;
+}
+
+.logged-in .navbar-default {
+  padding-top: 33px;
+}
+
+.menu-main-container {
+  text-transform: uppercase;
+}
+
+/* Homepage Hero */
+
+.home-hero {
+  background: linear-gradient(#133140, transparent 90%), linear-gradient(0deg, #ffffff, transparent), url('../images/mydesk.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 550px;
+  background-color: $dark-blue;
+
+}
+
+.home-hero-copy {
+  padding-top: 75px;
+  color: $white;
+  text-align: center;
 }
