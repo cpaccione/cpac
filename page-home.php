@@ -70,7 +70,7 @@ Template Name: Home Page
 
                 <?php if($counter % 3 === 0) : echo '<div class="row port-row">'; endif; ?>
 
-                    <div class="col-md-4">
+                    <div class="col-sm-6 col-md-4">
                         <a href="<?php the_permalink(); ?>">
                             <div class="img-overlay">
                                 <?php

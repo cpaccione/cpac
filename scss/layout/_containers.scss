@@ -12,12 +12,13 @@ HOME PAGE STYLES - page-home.php
 
 .img-overlay {
   position: relative;
-  max-width: 660px;
+  max-width: 400px;
+  margin: 0 auto;
 
-  @media #{$brk-narrow} {
-    max-width: 90%;
-    margin: 0 auto;
-  }
+  // @media #{$brk-small} {
+  //   max-width: 90%;
+  //   margin: 0 auto;
+  // }
   
 }
 
