@@ -1,14 +1,10 @@
 jQuery(document).ready(function($) {
-	$('.home-hero-copy').fadeIn(2000);
+
+	$('.home-hero-copy').addClass('visible animated fadeInUpBig');
 
 
 	// Add bootstrap's 'img-responsive' class to all images
 
     $('img').addClass('img-responsive');
-
-
-      $(".card").flip({
-        trigger: 'hover'
-      }); 
 
 });

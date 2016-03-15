@@ -2,34 +2,62 @@
   font-size: 5em;
   display: inline-block;
   line-height: 0;
-  color: rgb(255, 101, 117);
-  -webkit-transition: ease-out 500ms;
-  -moz-transition: ease-out 500ms;
-  -o-transition: ease-out 500ms;
-  transition: ease-out 500ms;
+  color: $dark-blue;
+  -webkit-transition: ease-out 300ms;
+  -moz-transition: ease-out 300ms;
+  -o-transition: ease-out 300ms;
+  transition: ease-out 300ms;
 }
 
 .mfizz-icon i:hover {
-  color: #4bc3ff;
-  -webkit-transition: ease-out 500ms;
-  -moz-transition: ease-out 500ms;
-  -o-transition: ease-out 500ms;
-  transition: ease-out 500ms;
+  color: $light-blue;
+  -webkit-transition: ease-out 300ms;
+  -moz-transition: ease-out 300ms;
+  -o-transition: ease-out 300ms;
+  transition: ease-out 300ms;
 }
 
 .fa {
-  color: rgb(255, 101, 117);
-  -webkit-transition: ease-out 500ms;
-  -moz-transition: ease-out 500ms;
-  -o-transition: ease-out 500ms;
-  transition: ease-out 500ms;
+  color: $dark-blue;
+  -webkit-transition: ease-out 300ms;
+  -moz-transition: ease-out 300ms;
+  -o-transition: ease-out 300ms;
+  transition: ease-out 300ms;
 
 }
 
 .fa:hover {
-  color: #4BC3FF;
-  -webkit-transition: ease-out 500ms;
-  -moz-transition: ease-out 500ms;
-  -o-transition: ease-out 500ms;
-  transition: ease-out 500ms;
+  color: $light-blue;
+  -webkit-transition: ease-out 300ms;
+  -moz-transition: ease-out 300ms;
+  -o-transition: ease-out 300ms;
+  transition: ease-out 300ms;
+}
+
+.fa-github,
+.fa-linkedin {
+  color: $dark-blue;
+  -webkit-transition: ease-out 300ms;
+  -moz-transition: ease-out 300ms;
+  -o-transition: ease-out 300ms;
+  transition: ease-out 300ms;
+
+}
+
+.fa-github:hover,
+.fa-linkedin:hover {
+  color: $white;
+  -webkit-transition: ease-out 300ms;
+  -moz-transition: ease-out 300ms;
+  -o-transition: ease-out 300ms;
+  transition: ease-out 300ms;
+}
+
+.fa-minus {
+  color: $light-blue;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  color: $white;
 }

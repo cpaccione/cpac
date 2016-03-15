@@ -1,0 +1,10 @@
+.btn-primary.active {
+	background-color: $white;
+	color: $dark-blue;
+	border-radius: 0;
+
+	&:hover {
+		background-color: $light-blue;
+	}
+}
+

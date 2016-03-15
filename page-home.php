@@ -70,7 +70,7 @@ Template Name: Home Page
 
                 <?php if($counter % 3 === 0) : echo '<div class="row port-row">'; endif; ?>
 
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-sm-4">
                         <a href="<?php the_permalink(); ?>">
                             <div class="img-overlay">
                                 <?php
@@ -84,7 +84,9 @@ Template Name: Home Page
  
                                 <div class="portfolio-overlay">
                                     <div class="overlay-copy">
-                                        <h5><?php the_title(); ?></h5>
+                                        <span class="underline">
+                                            <h5><?php the_title(); ?></h5>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -100,11 +102,13 @@ Template Name: Home Page
 
 <section class="about-me">
     <div class="container">
+
         <div class="row">
             <div class="col-sm-12 text-center">
                 <h2>ABOUT ME</h2>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-12">
                 <div class="about-me-copy">
@@ -116,11 +120,17 @@ Template Name: Home Page
                 </div>
             </div>
         </div>
+
+        <div class="row text-center">
+            <div class="col-xs-12">
+                <div class="button-wrap">
+                    <a href="<?php the_field('button_link'); ?>"><button type="button" class="btn btn-primary btn-lg btn-block active"><?php the_field('button_copy'); ?></button></a>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </section>
-
-
-
 
 
 <?php get_footer(); ?>
