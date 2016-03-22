@@ -55,7 +55,7 @@
                     <div class="row text-center">
                         <div class="col-xs-12">
                             <div class="button-wrap">
-                                <a href="<?php the_field('button_link'); ?>" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-block active"><?php the_field('button_copy'); ?></button></a>
+                                <a href="<?php the_field('portfolio_button'); ?>" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-block active">VISIT SITE</button></a>
                             </div>
                         </div>
                     </div>

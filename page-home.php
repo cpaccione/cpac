@@ -16,7 +16,7 @@ Template Name: Home Page
         <div class="row">
             <div class="col-md-12">
                 <div class="home-hero-copy">
-                    <h2>FRONT-END DEVELOPMENT AND DESIGN</h2>
+                    <h1>FRONT-END DEVELOPMENT AND DESIGN</h1>
                     <small>HTML <i class="fa fa-minus"></i> CSS <i class="fa fa-minus"></i> jQuery <i class="fa fa-minus"></i> WordPress</small>
                 </div>
             </div>
@@ -24,7 +24,9 @@ Template Name: Home Page
     </div>
 </section>
 
-<section class="portfolion-section">
+
+
+<section class="services">
     <div class="container">
 
         <div class="row">
@@ -33,20 +35,23 @@ Template Name: Home Page
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-sm-3 text-center">
-            <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><i class="fa fa-html5 fa-5x"></i></a>
+        <div class="row service-icons">
+            <div class="col-xs-4 text-center animation-element bounce-up">
+            <a href="#"><i class="subject fa fa-code fa-5x"></i></a>
             </div>
-            <div class="col-sm-3 text-center">
-            <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank"><i class="fa fa-css3 fa-5x"></i></a>
+            <div class="col-xs-4 text-center animation-element bounce-up">
+            <a href="#"><i class="subject fa fa-wordpress fa-5x"></i></a>
             </div>
-            <div class="col-sm-3 mfizz-icon text-center">
-            <a href="https://en.wikipedia.org/wiki/JQuery" target="_blank"><i class="icon-javascript"></i></a>  
-            </div>
-            <div class="col-sm-3 text-center">
-            <a href="https://wordpress.org/" target="_blank"><i class="fa fa-wordpress fa-5x"></i></a>
+            <div class="col-xs-4 text-center animation-element bounce-up">
+            <a href="#"><i class="subject fa fa-mobile fa-5x"></i></a>
             </div>
         </div>
+
+    </div>
+</section>
+
+<section class="portfolio-section">
+    <div class="container">
 
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -70,23 +75,25 @@ Template Name: Home Page
 
                 <?php if($counter % 3 === 0) : echo '<div class="row port-row">'; endif; ?>
 
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 animation-element bounce-up">
                         <a href="<?php the_permalink(); ?>">
-                            <div class="img-overlay">
+                            <div class="subject img-overlay">
                                 <?php
                                     $image = get_field('portfolio_image');
 
                                     if( !empty($image) ): ?>
 
-                                    <img class="center-block" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                                    <img class="center-block " src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 
                                 <?php endif; ?>
  
                                 <div class="portfolio-overlay">
                                     <div class="overlay-copy">
-                                        <span class="underline">
-                                            <h5><?php the_title(); ?></h5>
-                                        </span>
+                                        <div class="center">
+                                            <span class="underline">
+                                                <h5><?php the_title(); ?></h5>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

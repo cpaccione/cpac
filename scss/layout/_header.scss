@@ -21,12 +21,47 @@
   background-position: 50%;
   height: 550px;
   background-color: $dark-blue;
-
 }
 
 .home-hero-copy {
+  width: 75%;
+  margin: 0 auto;
   padding-top: 75px;
   color: $white;
   text-align: center;
   display: none;
+
+  @media #{$brk-wide} {
+    width: 90%;
+  }
+
+  @media #{$brk-narrow} {
+    h1 {
+      font-size: 3em;
+    }
+
+  }
+
+  @media #{$brk-small} {
+    h1 {
+      font-size: 2.5em;
+    }
+
+  }
+
+  @media #{$brk-smaller} {
+    width: 100%;
+
+    h1 {
+      font-size: 2em;
+    }
+
+  }
+
+}
+
+// The visible class is used to display the hero copy
+
+.visible {
+  display: block;
 }
