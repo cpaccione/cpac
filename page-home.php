@@ -16,7 +16,7 @@ Template Name: Home Page
         <div class="row">
             <div class="col-md-12">
                 <div class="home-hero-copy">
-                    <h1>FRONT-END DEVELOPMENT AND DESIGN</h1>
+                    <h1>FRONT-END DEVELOPMENT<br>AND DESIGN</h1>
                     <small>HTML <i class="fa fa-minus"></i> CSS <i class="fa fa-minus"></i> jQuery <i class="fa fa-minus"></i> WordPress</small>
                 </div>
             </div>
@@ -119,11 +119,7 @@ Template Name: Home Page
         <div class="row">
             <div class="col-md-12">
                 <div class="about-me-copy">
-                    I’m Chris Paccione, a Front-End Web Developer educated at General Assembly, and motivated by a passion for coding.
-
-                    I offer Front-end web development, WordPress theme building, responsive design, and HTML e-mail.
-
-                    Please view my work and email me if you need help on your next project. 
+                    <p>I’m Chris Paccione, a Front-End Web Developer educated at General Assembly, and motivated by a passion for coding. I offer Front-end web development, WordPress theme building, responsive design, and HTML e-mail. Please view my work and email me if you need help on your next project.</p>
                 </div>
             </div>
         </div>
