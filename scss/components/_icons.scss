@@ -1,56 +1,39 @@
-.mfizz-icon i {
-  font-size: 5em;
-  display: inline-block;
-  line-height: 0;
+.fa-code,
+.fa-wordpress,
+.fa-mobile {
   color: $dark-blue;
-  -webkit-transition: ease-out 300ms;
-  -moz-transition: ease-out 300ms;
-  -o-transition: ease-out 300ms;
-  transition: ease-out 300ms;
+  -webkit-transition: ease-out 200ms;
+  -moz-transition: ease-out 200ms;
+  -o-transition: ease-out 200ms;
+  transition: ease-out 200ms;
 }
 
-.mfizz-icon i:hover {
+.fa-code:hover,
+.fa-wordpress:hover,
+.fa-mobile:hover {
   color: $light-blue;
-  -webkit-transition: ease-out 300ms;
-  -moz-transition: ease-out 300ms;
-  -o-transition: ease-out 300ms;
-  transition: ease-out 300ms;
-}
-
-.fa {
-  color: $dark-blue;
-  -webkit-transition: ease-out 300ms;
-  -moz-transition: ease-out 300ms;
-  -o-transition: ease-out 300ms;
-  transition: ease-out 300ms;
-
-}
-
-.fa:hover {
-  color: $light-blue;
-  -webkit-transition: ease-out 300ms;
-  -moz-transition: ease-out 300ms;
-  -o-transition: ease-out 300ms;
-  transition: ease-out 300ms;
+  -webkit-transition: ease-out 200ms;
+  -moz-transition: ease-out 200ms;
+  -o-transition: ease-out 200ms;
+  transition: ease-out 200ms;
 }
 
 .fa-github,
 .fa-linkedin {
-  color: $dark-blue;
-  -webkit-transition: ease-out 300ms;
-  -moz-transition: ease-out 300ms;
-  -o-transition: ease-out 300ms;
-  transition: ease-out 300ms;
-
+  color: $white;
+  -webkit-transition: ease-out 200ms;
+  -moz-transition: ease-out 200ms;
+  -o-transition: ease-out 200ms;
+  transition: ease-out 200ms;
 }
 
 .fa-github:hover,
 .fa-linkedin:hover {
-  color: $white;
-  -webkit-transition: ease-out 300ms;
-  -moz-transition: ease-out 300ms;
-  -o-transition: ease-out 300ms;
-  transition: ease-out 300ms;
+  color: $light-blue;
+  -webkit-transition: ease-out 200ms;
+  -moz-transition: ease-out 200ms;
+  -o-transition: ease-out 200ms;
+  transition: ease-out 200ms;
 }
 
 .fa-minus {
@@ -60,4 +43,10 @@
 .fa-angle-left,
 .fa-angle-right {
   color: $white;
+}
+
+.bxslider .fa-quote-left,
+.bxslider .fa-quote-right {
+  font-size: 1.5em;
+  color: $light-blue;
 }

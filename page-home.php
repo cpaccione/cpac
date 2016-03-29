@@ -24,31 +24,34 @@ Template Name: Home Page
     </div>
 </section>
 
-
-
-<section class="services">
+<section class="about-me">
     <div class="container">
 
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h2>MY SERVICES</h2>
+                <h2>ABOUT ME</h2>
             </div>
         </div>
 
-        <div class="row service-icons">
-            <div class="col-xs-4 text-center animation-element bounce-up">
-            <a href="#"><i class="subject fa fa-code fa-5x"></i></a>
-            </div>
-            <div class="col-xs-4 text-center animation-element bounce-up">
-            <a href="#"><i class="subject fa fa-wordpress fa-5x"></i></a>
-            </div>
-            <div class="col-xs-4 text-center animation-element bounce-up">
-            <a href="#"><i class="subject fa fa-mobile fa-5x"></i></a>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="about-me-copy">
+                    <p>I’m Chris Paccione, a Front-End Web Developer educated at General Assembly, and motivated by a passion for coding. I offer Front-end web development, WordPress theme building, responsive design, and HTML e-mail. Please view my work and email me if you need help on your next project.</p>
+                </div>
             </div>
         </div>
 
+        <div class="row text-center">
+            <div class="col-xs-12">
+                <div class="button-wrap">
+                    <a href="mailto:cpaccione77@gmail.com"><button type="button" class="btn btn-primary btn-lg btn-block active">HIRE ME</button></a>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </section>
+
 
 <section class="portfolio-section">
     <div class="container">
@@ -64,8 +67,10 @@ Template Name: Home Page
 
             $args = array(
                 'post_type' => 'portfolio',
+                'category_name' => 'featured',
+                'showposts' => 6,
                 'orderby' => 'menu_order',
-                'order' => 'ASC',
+                'order' => 'ASC'
                 );
             $query = new WP_Query($args);
 
@@ -107,31 +112,87 @@ Template Name: Home Page
     </div>
 </section>
 
-<section class="about-me">
+<section class="services">
     <div class="container">
 
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h2>ABOUT ME</h2>
+                <h2>MY SERVICES</h2>
             </div>
         </div>
 
+        <div class="row service-icons">
+            <div class="col-xs-4 text-center animation-element bounce-up">
+                <div class="icon-wrap subject">
+                    <a href="/code"><i class="fa fa-code fa-5x"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-4 text-center animation-element bounce-up">
+                <div class="icon-wrap subject">
+                    <a href="/code"><i class="fa fa-wordpress fa-5x"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-4 text-center animation-element bounce-up">
+                <div class="icon-wrap subject">
+                    <a href="/code"><i class="fa fa-mobile fa-5x"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="testimonials">
+    <div class="container">
+        <div clas="row">
+            <div class="col-md-12">
+                <h2>TESTIMONIALS</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="about-me-copy">
-                    <p>I’m Chris Paccione, a Front-End Web Developer educated at General Assembly, and motivated by a passion for coding. I offer Front-end web development, WordPress theme building, responsive design, and HTML e-mail. Please view my work and email me if you need help on your next project.</p>
-                </div>
+                <ul class="bxslider">
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3><i class="fa fa-quote-left"></i> WOW! Chris has this incredible patience that goes beyond infinity. He was with us step-by-step, even after the project was finalized he made himself available for WordPress and SEO support. His attention to detail and customer care by far exceeded our expectations."</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                              <h3>- SECG Tax</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3><i class="fa fa-quote-left"></i> Originally, we hired Chris to do some small website edits. We loved the work that he did so much that we decided to redesign our website. Chris is easy to work with, very thorough, and was able to take our ideas and concepts and implement them, all at a very reasonable rate for such high end work. We could not be happier with the work that Chris has done for us."</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3>- Kelly and Company</h3>
+                            </div>
+                      </div>
+                    </li>
+                  <li>
+                    <div class="row">
+                            <div class="col-md-12">
+                                <h3><i class="fa fa-quote-left"></i> Christopher designed my latest website for me and I couldn't be more pleased. He was able to implement every single idea that I wanted, and provided many of his own suggestions. Any time I requested changes, he had them completed the same day, and often within an hour. The final result was much better than what I had hoped for, mostly due to Chris's creative thinking."</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3>- Dr. Steven Warner</h3>
+                            </div>
+                      </div>
+                  </li>
+                </ul>
             </div>
         </div>
-
-        <div class="row text-center">
-            <div class="col-xs-12">
-                <div class="button-wrap">
-                    <a href="<?php the_field('button_link'); ?>"><button type="button" class="btn btn-primary btn-lg btn-block active"><?php the_field('button_copy'); ?></button></a>
-                </div>
-            </div>
-        </div>
-        
     </div>
 </section>
 

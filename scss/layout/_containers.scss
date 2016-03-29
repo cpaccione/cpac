@@ -16,10 +16,19 @@ HOME PAGE STYLES - page-home.php
   
 }
 
+.services {
+  padding-bottom: 100px;
+}
+
 /* Portfolio Styles */
 
 .portfolio-section {
-  padding: 75px 0 100px 0;
+  background-color: $grey;
+  padding: 0 0 100px 0;
+
+  h2 {
+    color: $dark-blue;
+  }
 }
 
 .port-row {
@@ -114,8 +123,9 @@ HOME PAGE STYLES - page-home.php
 /* About Me */
 
 .about-me {
-  background-color: $dark-blue;
-  color: $white;
+  background-color: $white;
+  color: $dark-blue;
+  padding: 100px 0 100px 0;
 
   h2 {
     padding: 25px 0 15px 0;
@@ -131,7 +141,8 @@ HOME PAGE STYLES - page-home.php
 .button-wrap {
   margin: 0 auto;
   width: 30%;
-  margin-bottom:  50px;
+  margin-bottom: 50px;
+  box-shadow: none;
 }
 
 // Portfolio Single
@@ -149,5 +160,9 @@ HOME PAGE STYLES - page-home.php
     text-align: center;
     padding: 0 0 50px 0;
   }
+}
+
+.testimonials {
+  text-align: center;
 }
 

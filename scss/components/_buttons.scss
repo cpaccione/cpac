@@ -2,9 +2,17 @@
 	background-color: $white;
 	color: $dark-blue;
 	border-radius: 0;
+	box-shadow: none;
+	-webkit-transition: ease-out 200ms;
+	-moz-transition: ease-out 200ms;
+	-o-transition: ease-out 200ms;
+	transition: ease-out 200ms;
 
 	&:hover {
 		background-color: $light-blue;
+		-webkit-transition: ease-out 200ms;
+		-moz-transition: ease-out 200ms;
+		-o-transition: ease-out 200ms;
+		transition: ease-out 200ms;
 	}
 }
-
