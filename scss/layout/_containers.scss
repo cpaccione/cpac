@@ -143,6 +143,15 @@ HOME PAGE STYLES - page-home.php
   width: 30%;
   margin-bottom: 50px;
   box-shadow: none;
+
+  &-portfolio {
+    margin: 0 auto;
+    width: 30%;
+    margin-bottom: 50px;
+    box-shadow: none;
+    padding-top: 50px;
+  }
+
 }
 
 // Portfolio Single
@@ -164,5 +173,11 @@ HOME PAGE STYLES - page-home.php
 
 .testimonials {
   text-align: center;
+
+  @media #{$brk-small} {
+    h3 {
+      line-height: 1.5em;
+    }
+  }
 }
 

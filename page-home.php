@@ -69,7 +69,7 @@ Template Name: Home Page
                 'post_type' => 'portfolio',
                 'category_name' => 'featured',
                 'showposts' => 6,
-                'orderby' => 'menu_order',
+                'orderby' => 'date',
                 'order' => 'ASC'
                 );
             $query = new WP_Query($args);
@@ -108,6 +108,14 @@ Template Name: Home Page
                 <?php $counter++; if($counter % 3 === 0) : echo '</div>'; endif; ?>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
+
+        <div class="row text-center">
+            <div class="col-xs-12">
+                <div class="button-wrap-portfolio">
+                    <a href="/portfolio"><button type="button" class="btn btn-primary btn-lg btn-block active">VIEW ALL</button></a>
+                </div>
+            </div>
+        </div>
 
     </div>
 </section>
