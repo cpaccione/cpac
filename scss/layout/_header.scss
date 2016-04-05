@@ -63,34 +63,31 @@
 /* Homepage Hero */
 
 .home-hero {
-  background: linear-gradient(#133140, transparent 90%), linear-gradient(0deg, #ffffff, transparent), url('../images/mydesk.jpg');
+  background: linear-gradient(#133140, transparent 100%),
+  linear-gradient(0deg, #133140, transparent 100%),
+  url('../images/mydesk.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
-  height: 550px;
+  height: 600px;
   background-color: $dark-blue;
 }
 
 .home-hero-copy {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 110px;
   color: $white;
+  padding-top: 75px;
   text-align: center;
   display: none;
 
-  h1 {
-    font-weight: 700;
-  }
+  @media #{$brk-wide} {
 
-  @media #{$brk-narrow} {
     h1 {
-      font-size: 3em;
+      font-size: 3.5em;
     }
 
   }
 
-  @media #{$brk-small} {
+  @media #{$brk-narrow} {
     h1 {
       font-size: 2.5em;
     }

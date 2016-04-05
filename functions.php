@@ -6,6 +6,20 @@
 // }
 // add_action('wp_enqueue_scripts', 'my_add_frontend_scripts');
 
+function valeriak_add_custom_types_to_tax( $query ) {
+    // Prevent unintended effects in the admin and non-main queries
+    if ( is_admin() || ! $query->is_main_query() ) {
+        return;
+    }
+
+    if ( is_category() || is_tag() ) {
+        $post_types = array( 'post', 'portfolio' );
+        $query->set( 'post_type', $post_types );
+        return $query;
+    }
+}
+add_filter( 'pre_get_posts', 'valeriak_add_custom_types_to_tax' );
+
 
 function theme_styles() {
 	wp_enqueue_style( 'jqueryui_smoothness', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css' );
@@ -31,6 +45,7 @@ function theme_js() {
 	
 	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
 	wp_enqueue_script( 'bx_slider', get_template_directory_uri() . '/js/jquery.bxslider.min.js', array('jquery'), '', true );
+	wp_enqueue_script( 'ajax', get_template_directory_uri() . '/js/ajax.js', array('jquery'), '', true );
 	wp_enqueue_script( 'script_js', get_template_directory_uri() . '/js/script.js', array('jquery', 'bootstrap_js'), '', true );
 
 }
@@ -85,5 +100,6 @@ create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the 
 
 create_widget( 'Page Sidebar', 'page', 'Displays on the side of the pages with a sidebar' );
 create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
+
 
 ?>

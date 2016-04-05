@@ -80,14 +80,18 @@ HOME PAGE STYLES - page-home.php
   display: block;
   position: relative;
 
+    h5 {
+      font-weight: 300;
+    }
+
     :after {
     content: "";
     position: absolute;
-    bottom: -12px;
-    left: 4px;
+    bottom: -8px;
+    left: 3px;
     background-color: $light-blue;
     width: 85px;
-    height: 5px
+    height: 3px
   }
 
 }
@@ -125,7 +129,7 @@ HOME PAGE STYLES - page-home.php
 .about-me {
   background-color: $white;
   color: $dark-blue;
-  padding: 100px 0 100px 0;
+  padding: 25px 0 25px 0;
 
   h2 {
     padding: 25px 0 15px 0;
@@ -136,6 +140,7 @@ HOME PAGE STYLES - page-home.php
     text-align: center;
     padding: 0 0 50px 0;
   }
+
 }
 
 .button-wrap {
@@ -169,15 +174,24 @@ HOME PAGE STYLES - page-home.php
     text-align: center;
     padding: 0 0 50px 0;
   }
+
 }
 
 .testimonials {
+  background-color: $light-blue;
   text-align: center;
 
+  h2 {
+    padding-bottom: 0px;
+  }
+
   @media #{$brk-small} {
+
     h3 {
       line-height: 1.5em;
     }
+
   }
+
 }
 

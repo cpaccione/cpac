@@ -165,7 +165,7 @@ Template Name: Home Page
                     <li>
                         <div class="row">
                             <div class="col-sm-12">
-                                <h3><i class="fa fa-quote-left"></i> WOW! Chris has this incredible patience that goes beyond infinity. He was with us step-by-step, even after the project was finalized he made himself available for WordPress and SEO support. His attention to detail and customer care by far exceeded our expectations."</h3>
+                                <h3>WOW! Chris has this incredible patience that goes beyond infinity. He was with us step-by-step, even after the project was finalized he made himself available for WordPress and SEO support. His attention to detail and customer care by far exceeded our expectations."</h3>
                             </div>
                         </div>
                         <div class="row">
@@ -177,7 +177,7 @@ Template Name: Home Page
                     <li>
                         <div class="row">
                             <div class="col-md-12">
-                                <h3><i class="fa fa-quote-left"></i> Originally, we hired Chris to do some small website edits. We loved the work that he did so much that we decided to redesign our website. Chris is easy to work with, very thorough, and was able to take our ideas and concepts and implement them, all at a very reasonable rate for such high end work. We could not be happier with the work that Chris has done for us."</h3>
+                                <h3>Originally, we hired Chris to do some small website edits. We loved the work that he did so much that we decided to redesign our website. Chris is easy to work with, very thorough, and was able to take our ideas and concepts and implement them, all at a very reasonable rate for such high end work. We could not be happier with the work that Chris has done for us."</h3>
                             </div>
                         </div>
                         <div class="row">
@@ -189,7 +189,7 @@ Template Name: Home Page
                   <li>
                     <div class="row">
                             <div class="col-md-12">
-                                <h3><i class="fa fa-quote-left"></i> Christopher designed my latest website for me and I couldn't be more pleased. He was able to implement every single idea that I wanted, and provided many of his own suggestions. Any time I requested changes, he had them completed the same day, and often within an hour. The final result was much better than what I had hoped for, mostly due to Chris's creative thinking."</h3>
+                                <h3>Christopher designed my latest website for me and I couldn't be more pleased. He was able to implement every single idea that I wanted, and provided many of his own suggestions. Any time I requested changes, he had them completed the same day, and often within an hour. The final result was much better than what I had hoped for, mostly due to Chris's creative thinking."</h3>
                             </div>
                         </div>
                         <div class="row">

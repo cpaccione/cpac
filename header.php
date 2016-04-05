@@ -11,6 +11,9 @@
     </title>
 
     <?php wp_head(); ?>
+    <script>
+      
+    </script>
   </head>
 
   <body  <?php body_class(); ?> >

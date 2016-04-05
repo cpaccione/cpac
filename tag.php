@@ -1,40 +1,36 @@
-<?php
-
-/*
-
-Template Name: Home Page
-
-*/
-
-?>
-
-
 <?php get_header(); ?>
+
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-12">
+This is tag.php
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+            <h3><?php the_title(); ?></h3>
+                <?php the_content(); ?>
+
+        <?php endwhile; else: ?>
+
+            <h1>Oh no!</h1>
+            <p>No content is appearing on this page!</p>
+
+        <?php endif; ?>
+
+        </div>  
+    </div>
+</div>
 
 <section class="portfolio-section">
     <div class="container">
 
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2>PORTFOLIO</h2>
-            </div>
-        </div>
 
-    <?php
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            $args = array(
-                'post_type' => 'portfolio',
-                'orderby' => 'menu_order',
-                'order' => 'ASC'
-                );
-            $query = new WP_Query($args);
 
-        ?>
-        
-            <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
-
-                <?php if($counter % 3 === 0) : echo '<div class="row port-row">'; endif; ?>
-
+                  <?php if($counter % 3 === 0) : echo '<div class="row port-row">'; endif; ?>  
                     <div class="col-sm-4 animation-element bounce-up">
                         <a href="<?php the_permalink(); ?>">
                             <div class="subject img-overlay">
@@ -59,14 +55,17 @@ Template Name: Home Page
                             </div>
                         </a>
                     </div>
+                    <?php $counter++; if($counter % 3 === 0) : echo '</div>'; endif; ?>
 
-                <?php $counter++; if($counter % 3 === 0) : echo '</div>'; endif; ?>
+            <?php endwhile; else: ?>
 
-            <?php endwhile; endif; wp_reset_postdata(); ?>
+                <h1>Oh no!</h1>
+                <p>No content is appearing on this page!</p>
+
+            <?php endif; ?>
+
 
     </div>
 </section>
-
-
 
 <?php get_footer(); ?>
