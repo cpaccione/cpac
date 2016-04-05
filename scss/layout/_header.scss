@@ -110,3 +110,28 @@
 .visible {
   display: block;
 }
+
+.header {
+  background: linear-gradient(#133140, transparent 100%),
+  linear-gradient(0deg, #133140, transparent 100%),
+  url('../images/keyboard-header.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+
+  h1 {
+    color: $white;
+  }
+
+  @media #{$brk-narrow} {
+    h1 {
+      font-size: 2em;
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,5 +1,15 @@
 <?php get_header(); ?>
 
+<section class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1>BLOG</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="container">
     <div class="row">
         <div class="col-md-9">

@@ -11,14 +11,18 @@ Template Name: Home Page
 
 <?php get_header(); ?>
 
-<section class="portfolio-section">
+<section class="header">
     <div class="container">
-
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h2>PORTFOLIO</h2>
+                <h1>PORTFOLIO</h1>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="page-portfolio">
+    <div class="container">
 
     <?php
 
@@ -63,6 +67,7 @@ Template Name: Home Page
                 <?php $counter++; if($counter % 3 === 0) : echo '</div>'; endif; ?>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
+
 
     </div>
 </section>

@@ -24,11 +24,16 @@ HOME PAGE STYLES - page-home.php
 
 .portfolio-section {
   background-color: $grey;
-  padding: 0 0 100px 0;
+  padding: 0 0 50px 0;
 
   h2 {
     color: $dark-blue;
   }
+}
+
+.page-portfolio {
+  background-color: $grey;
+  padding: 100px 0 100px 0;
 }
 
 .port-row {
@@ -65,10 +70,25 @@ HOME PAGE STYLES - page-home.php
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms;
+
+  @media #{$brk-small} {
+    opacity: 1;
+    background: rgba(19,49,64,0.7);
+  }
+
 }
 
 .overlay-copy {
   color: $dark-blue;
+
+  @media #{$brk-small} {
+
+    h5 {
+      color: $white;
+    }
+    
+  }
+
 }
 
 .center {
