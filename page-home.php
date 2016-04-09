@@ -112,7 +112,7 @@ Template Name: Home Page
         <div class="row text-center">
             <div class="col-xs-12">
                 <div class="button-wrap-portfolio">
-                    <a href="/portfolio"><button type="button" class="btn btn-primary btn-lg btn-block active">VIEW ALL</button></a>
+                    <a href="chrispaccione.com/portfolio"><button type="button" class="btn btn-primary btn-lg btn-block active">VIEW ALL</button></a>
                 </div>
             </div>
         </div>

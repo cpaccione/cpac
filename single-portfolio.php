@@ -23,7 +23,7 @@
             if( !empty($image) ): ?>
 
                 <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                <p><?php echo $description; ?></p>
+                <p><?php the_field('portfolio_description'); ?></p>
 
             <?php endif;
 

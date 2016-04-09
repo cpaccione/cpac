@@ -1,25 +1,4 @@
-<?php 
-
-// function my_add_frontend_scripts() {
-//         wp_enqueue_script('jquery');
-//         wp_enqueue_script('jquery-ui-core');
-// }
-// add_action('wp_enqueue_scripts', 'my_add_frontend_scripts');
-
-function valeriak_add_custom_types_to_tax( $query ) {
-    // Prevent unintended effects in the admin and non-main queries
-    if ( is_admin() || ! $query->is_main_query() ) {
-        return;
-    }
-
-    if ( is_category() || is_tag() ) {
-        $post_types = array( 'post', 'portfolio' );
-        $query->set( 'post_type', $post_types );
-        return $query;
-    }
-}
-add_filter( 'pre_get_posts', 'valeriak_add_custom_types_to_tax' );
-
+<?php
 
 function theme_styles() {
 	wp_enqueue_style( 'jqueryui_smoothness', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css' );
