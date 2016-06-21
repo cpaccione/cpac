@@ -2,7 +2,7 @@
 
 /*
 
-Template Name: Home Page
+Template Name: Portfolio
 
 */
 
@@ -29,6 +29,7 @@ Template Name: Home Page
             $args = array(
                 'post_type' => 'portfolio',
                 'orderby' => 'menu_order',
+                'posts_per_page' => -1,
                 'order' => 'ASC'
                 );
             $query = new WP_Query($args);
