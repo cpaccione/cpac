@@ -10,7 +10,7 @@ HOME PAGE STYLES - page-home.php
 .service-icons .fa {
   font-size: 7em;
 
-    @media #{$brk-small} {
+  @include respond-to(max-width, 500px) {
     font-size: 5em;
   }
   
