@@ -8,6 +8,12 @@ Template Name: Portfolio
 
 ?>
 
+<?php
+
+$counter = 0;
+
+?>
+
 
 <?php get_header(); ?>
 

@@ -13,7 +13,7 @@ HOME PAGE STYLES - page-home.php
   @include respond-to(max-width, 500px) {
     font-size: 5em;
   }
-  
+
 }
 
 .services {
@@ -48,7 +48,7 @@ HOME PAGE STYLES - page-home.php
   @media #{$brk-narrow} {
     margin-bottom: 25px;
   }
-  
+
 }
 
 .portfolio-overlay:hover {
@@ -64,7 +64,7 @@ HOME PAGE STYLES - page-home.php
   text-transform: uppercase;
   color: #2c3446;
   background: rgba(255, 255, 255, 0.9);
-  padding: 0 0 0 10px;  
+  padding: 0 0 0 10px;
   opacity: 0;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
@@ -86,7 +86,7 @@ HOME PAGE STYLES - page-home.php
     h5 {
       color: $white;
     }
-    
+
   }
 
 }
@@ -147,6 +147,9 @@ HOME PAGE STYLES - page-home.php
 /* About Me */
 
 .about-me {
+  display: flex;
+  align-items: center;
+  height: 300px;
   background-color: $white;
   color: $dark-blue;
   padding: 25px 0 25px 0;
@@ -156,9 +159,15 @@ HOME PAGE STYLES - page-home.php
   }
 
   &-copy {
-    font-size: 1.5em;
+    // font-size: 1.5em;
+    max-width: 1000px;
+    margin: 0 auto;
     text-align: center;
-    padding: 0 0 50px 0;
+    // padding: 0 0 50px 0;
+
+    p {
+      font-size: 1.5em;
+    }
   }
 
 }
@@ -214,4 +223,3 @@ HOME PAGE STYLES - page-home.php
   }
 
 }
-

@@ -28,27 +28,22 @@ Template Name: Home Page
     <div class="container">
 
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2>ABOUT ME</h2>
-            </div>
-        </div>
-
-        <div class="row">
             <div class="col-md-12">
                 <div class="about-me-copy">
-                    <p>I’m Chris Paccione, a Front-End Web Developer educated at General Assembly, and motivated by a passion for coding. I offer Front-end web development, WordPress theme building, responsive design, and HTML e-mail. Please view my work and email me if you need help on your next project.</p>
+                    <h2>ABOUT ME</h2>
+                    <p>I’m a web developer educated at General Assembly, and motivated by a passion for coding. I offer Front-end web development, WordPress theme building, and HTML e-mail. Please view my work and email me for your next project.</p>
                 </div>
             </div>
         </div>
 
         <div class="row text-center">
-            <div class="col-xs-12">
+            <div class="col-md-12">
                 <div class="button-wrap">
                     <a href="mailto:cpaccione77@gmail.com"><button type="button" class="btn btn-primary btn-lg btn-block active">HIRE ME</button></a>
                 </div>
             </div>
         </div>
-        
+
     </div>
 </section>
 
@@ -62,7 +57,7 @@ Template Name: Home Page
             </div>
         </div>
 
-    
+
     <?php
 
             $args = array(
@@ -75,7 +70,7 @@ Template Name: Home Page
             $query = new WP_Query($args);
 
         ?>
-        
+
             <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
                 <?php if($counter % 3 === 0) : echo '<div class="row port-row">'; endif; ?>
@@ -91,7 +86,7 @@ Template Name: Home Page
                                     <img class="center-block " src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 
                                 <?php endif; ?>
- 
+
                                 <div class="portfolio-overlay">
                                     <div class="overlay-copy">
                                         <div class="center">
