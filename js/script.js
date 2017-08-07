@@ -1,5 +1,24 @@
 jQuery(document).ready(function($) {
 
+  //$('.cpac-menu').hide();
+  $('.cpac-mobile-menu').click(function() {
+
+      $(this).toggleClass('open');
+      // Mobile menu list fade in
+      $('.cpac-menu').toggle('fade');
+
+      if ($('.cpac-mobile-menu').hasClass("open")) {
+
+    $('.menu li').each(function(index, element) {
+        $(element).children('a').delay(index*100).hide().fadeIn(500);
+      });
+    };
+
+  });
+
+
+
+
 	$('.home-hero-copy').addClass('visible animated fadeInDown');
 
 	// Add bootstrap's 'img-responsive' class to all images
@@ -25,7 +44,7 @@ jQuery(document).ready(function($) {
       if ((element_bottom_position >= window_top_position) &&
         (element_top_position <= window_bottom_position)) {
         $element.addClass('in-view');
-      } 
+      }
       // else {
       //   $element.removeClass('in-view');
       // }

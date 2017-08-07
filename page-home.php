@@ -6,6 +6,8 @@ Template Name: Home Page
 
 */
 
+$counter = 0;
+
 ?>
 
 
@@ -39,7 +41,7 @@ Template Name: Home Page
         <div class="row text-center">
             <div class="col-md-12">
                 <div class="button-wrap">
-                    <a href="mailto:cpaccione77@gmail.com"><button type="button" class="btn btn-primary btn-lg btn-block active">HIRE ME</button></a>
+                    <a href="/contact/"><button type="button" class="btn btn-primary btn-lg btn-block active">CONTACT ME</button></a>
                 </div>
             </div>
         </div>

@@ -154,6 +154,10 @@ HOME PAGE STYLES - page-home.php
   color: $dark-blue;
   padding: 25px 0 25px 0;
 
+  @include respond-to(max-width, 600px) {
+    height: 100%;
+  }
+
   h2 {
     padding: 25px 0 15px 0;
   }
@@ -184,6 +188,14 @@ HOME PAGE STYLES - page-home.php
     margin-bottom: 50px;
     box-shadow: none;
     padding-top: 50px;
+
+    @include respond-to(max-width, 600px) {
+      width: 100%;
+    }
+  }
+
+  @include respond-to(max-width, 600px) {
+    width: 100%;
   }
 
 }
