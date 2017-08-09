@@ -4,14 +4,16 @@
 	height: 100%;
 	width: 100%;
 	position: fixed;
-	top: 51px;
+	top: 60px;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	z-index: 2000;
-	// background: $light-blue-trans-two;
+	//background: $light-blue-trans-two;
 	// background-color: $light-blue;
 	background-color: $dark-blue;
+	background-color: $dark-blue-rgba;
+	//background-color: $grey;
 	text-align: center;
 
 	ul {
@@ -42,6 +44,7 @@
 
 	.menu-item {
 		background-color: $dark-blue;
+		background-color: #777777;
 		display: block;
 		height: 5px;
 		margin: 0 0 7px;
@@ -82,11 +85,12 @@
 
 .navbar-brand {
 	font-size: 24px;
-	padding: 15px 15px 15px 0px;
 }
 
 .navbar {
 	font-size: 1em;
+	height: 60px;
+	padding-top: 6px;
 }
 
 .navbar-toggle {
