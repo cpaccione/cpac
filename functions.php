@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support( 'title-tag' );
+
 //require get_template_directory() . '/inc/function-admin.php';
 
 function theme_styles() {
