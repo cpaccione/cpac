@@ -1,6 +1,8 @@
 <?php
 
+require get_template_directory() . '/inc/cpac-cpt-support.php';
 add_theme_support( 'title-tag' );
+
 
 //require get_template_directory() . '/inc/function-admin.php';
 
