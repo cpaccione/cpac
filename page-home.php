@@ -28,24 +28,23 @@ $counter = 0;
 
 <section class="about-me">
     <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center">ABOUT ME</h2>
+          </div>
+        </div>
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
+              <img class="img-fluid" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/chris_paccione.jpg" alt="">
+            </div>
+            <div class="col-md-6">
                 <div class="about-me-copy">
-                    <h2>ABOUT ME</h2>
                     <p>I’m a web developer educated at General Assembly, and motivated by a passion for coding. I offer Front-end web development, WordPress theme building, and HTML e-mail. Please view my work and email me for your next project.</p>
+                    <a class="btn btn-secondary btn-lg" href="/contact/">CONTACT ME</a>
                 </div>
             </div>
         </div>
-
-        <div class="row text-center">
-            <div class="col-md-12">
-                <div class="button-wrap">
-                    <a href="/contact/"><button type="button" class="btn btn-primary btn-lg btn-block active">CONTACT ME</button></a>
-                </div>
-            </div>
-        </div>
-
     </div>
 </section>
 
