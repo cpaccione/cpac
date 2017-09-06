@@ -5,6 +5,17 @@ body {
 	margin-top: 50px;
 }
 
+// logged in
+.logged-in {
+	.navbar {
+		margin-top: 32px;
+
+		@include respond-to(max-width, 782px) {
+			margin-top: 36px;
+		}
+	}
+}
+
 a {
 	text-decoration: none;
 

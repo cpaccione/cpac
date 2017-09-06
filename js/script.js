@@ -1,5 +1,14 @@
 jQuery(document).ready(function($) {
 
+
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 100,
+    showCursor: false,
+    cursorChar: "|"
+  });
+
+
   //$('.cpac-menu').hide();
   $('.cpac-mobile-menu').click(function() {
 
@@ -19,7 +28,7 @@ jQuery(document).ready(function($) {
 
 
 
-	$('.home-hero-copy').addClass('visible animated fadeInDown');
+	//$('.home-hero-copy').addClass('visible animated fadeInDown');
 
 	// Add bootstrap's 'img-responsive' class to all images
 

@@ -18,8 +18,13 @@ $counter = 0;
       <div class="row">
         <div class="col-md-12">
           <div class="home-hero-copy">
-              <h1>FRONT-END DEVELOPMENT<br>AND DESIGN</h1>
-              <small>HTML <i class="fa fa-minus"></i> CSS <i class="fa fa-minus"></i> jQuery <i class="fa fa-minus"></i> WordPress</small>
+            <div id="typed-strings">
+                <h1>FRONT-END DEVELOPMENT<br>AND DESIGN</h1>
+            </div>
+                <h1><span id="typed"></span></h1>
+                <small>HTML <i class="fa fa-minus"></i> CSS <i class="fa fa-minus"></i> jQuery <i class="fa fa-minus"></i> WordPress</small>
+
+
           </div>
         </div>
       </div>
@@ -106,7 +111,7 @@ $counter = 0;
             <?php endwhile; endif; wp_reset_postdata(); ?>
 
         <div class="row text-center">
-            <div class="col-xs-12">
+            <div class="col-12">
                 <div class="button-wrap-portfolio">
                     <a href="chrispaccione.com/portfolio"><button type="button" class="btn btn-primary btn-lg btn-block active">VIEW ALL</button></a>
                 </div>
@@ -126,17 +131,17 @@ $counter = 0;
         </div>
 
         <div class="row service-icons">
-            <div class="col-xs-4 text-center animation-element bounce-up">
+            <div class="col-4 text-center animation-element bounce-up">
                 <div class="icon-wrap subject">
                     <a href="/code"><i class="fa fa-code fa-5x"></i></a>
                 </div>
             </div>
-            <div class="col-xs-4 text-center animation-element bounce-up">
+            <div class="col-4 text-center animation-element bounce-up">
                 <div class="icon-wrap subject">
                     <a href="/code"><i class="fa fa-wordpress fa-5x"></i></a>
                 </div>
             </div>
-            <div class="col-xs-4 text-center animation-element bounce-up">
+            <div class="col-4 text-center animation-element bounce-up">
                 <div class="icon-wrap subject">
                     <a href="/code"><i class="fa fa-mobile fa-5x"></i></a>
                 </div>
