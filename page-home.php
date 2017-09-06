@@ -13,18 +13,18 @@ $counter = 0;
 
 <?php get_header(); ?>
 
-<section class="home-hero">
+  <section class="home-hero">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="home-hero-copy">
-                    <h1>FRONT-END DEVELOPMENT<br>AND DESIGN</h1>
-                    <small>HTML <i class="fa fa-minus"></i> CSS <i class="fa fa-minus"></i> jQuery <i class="fa fa-minus"></i> WordPress</small>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="home-hero-copy">
+              <h1>FRONT-END DEVELOPMENT<br>AND DESIGN</h1>
+              <small>HTML <i class="fa fa-minus"></i> CSS <i class="fa fa-minus"></i> jQuery <i class="fa fa-minus"></i> WordPress</small>
+          </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
 <section class="about-me">
     <div class="container">
@@ -40,7 +40,7 @@ $counter = 0;
             </div>
             <div class="col-md-6">
                 <div class="about-me-copy">
-                    <p>I’m a web developer educated at General Assembly, and motivated by a passion for coding. I offer Front-end web development, WordPress theme building, and HTML e-mail. Please view my work and email me for your next project.</p>
+                    <p>I’m a front-end web developer educated at General Assembly, and motivated by a passion for coding and WordPress. I offer Front-end web development, WordPress theme building, and HTML e-mail. Please view my work and email me for your next project.</p>
                     <a class="btn btn-secondary btn-lg" href="/contact/">CONTACT ME</a>
                 </div>
             </div>

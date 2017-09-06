@@ -66,16 +66,16 @@ $('.bxslider').bxSlider({
 
 // Defining a function to set size for #hero
  function fullscreen(){
-   jQuery('.home-hero').css({
-           width: jQuery(window).width(),
-           height: jQuery(window).height()
+   $('.home-hero').css({
+           width: $(window).width(),
+           height: $(window).height()
        });
  }
-
+ // call function
  fullscreen();
 
  // Run the function in case of window resize
- jQuery(window).resize(function() {
+ $(window).resize(function() {
       fullscreen();
    });
 
