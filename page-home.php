@@ -13,6 +13,15 @@ $counter = 0;
 
 <?php get_header(); ?>
 
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 100,
+    showCursor: false,
+    cursorChar: "|"
+  });
+</script>
+
   <section class="home-hero">
     <div class="container">
       <div class="row">
@@ -23,8 +32,6 @@ $counter = 0;
             </div>
                 <h1><span id="typed"></span></h1>
                 <small>HTML <i class="fa fa-minus"></i> CSS <i class="fa fa-minus"></i> jQuery <i class="fa fa-minus"></i> WordPress</small>
-
-
           </div>
         </div>
       </div>

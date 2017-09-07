@@ -1,14 +1,5 @@
 jQuery(document).ready(function($) {
 
-
-  var typed = new Typed('#typed', {
-    stringsElement: '#typed-strings',
-    typeSpeed: 100,
-    showCursor: false,
-    cursorChar: "|"
-  });
-
-
   //$('.cpac-menu').hide();
   $('.cpac-mobile-menu').click(function() {
 
