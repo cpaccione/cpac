@@ -14,12 +14,14 @@ $counter = 0;
 <?php get_header(); ?>
 
 <script>
+jQuery(document).ready(function($) {
   var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
     typeSpeed: 100,
     showCursor: false,
     cursorChar: "|"
   });
+});
 </script>
 
   <section class="home-hero">
@@ -74,8 +76,8 @@ $counter = 0;
     <?php
 
             $args = array(
-                'post_type' => 'portfolio',
-                'category_name' => 'featured',
+                'post_type' => 'cpac_portfolio',
+                'portfolio_categories' => 'featured',
                 'showposts' => 6,
                 'orderby' => 'date',
                 'order' => 'ASC'
@@ -88,17 +90,16 @@ $counter = 0;
 
                 <?php if($counter % 3 === 0) : echo '<div class="row port-row">'; endif; ?>
 
-                    <div class="col-sm-4 animation-element bounce-up">
+                    <div class="col-md-4">
                         <a href="<?php the_permalink(); ?>">
                             <div class="subject img-overlay">
                                 <?php
-                                    $image = get_field('portfolio_image');
 
-                                    if( !empty($image) ): ?>
+                                  if ( has_post_thumbnail() ) {
+                                    the_post_thumbnail('large');
+                                  }
 
-                                    <img class="center-block " src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-
-                                <?php endif; ?>
+                                ?>
 
                                 <div class="portfolio-overlay">
                                     <div class="overlay-copy">

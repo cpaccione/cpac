@@ -10,14 +10,14 @@ Template Name: Portfolio
 
 <?php
 
-$counter = 0;
+//$counter = 0;
 
 ?>
 
 
 <?php get_header(); ?>
 
-<section class="header">
+<section class="header d-flex align-items-center">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -27,13 +27,15 @@ $counter = 0;
     </div>
 </section>
 
+
+
 <section class="page-portfolio">
     <div class="container">
 
     <?php
 
             $args = array(
-                'post_type' => 'portfolio',
+                'post_type' => 'cpac_portfolio',
                 'orderby' => 'menu_order',
                 'posts_per_page' => -1,
                 'order' => 'ASC'
@@ -41,23 +43,23 @@ $counter = 0;
             $query = new WP_Query($args);
 
         ?>
-        
+
             <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
                 <?php if($counter % 3 === 0) : echo '<div class="row port-row">'; endif; ?>
 
-                    <div class="col-sm-4 animation-element bounce-up">
+                    <div class="col-md-4 animation-element bounce-up">
                         <a href="<?php the_permalink(); ?>">
                             <div class="subject img-overlay">
+
                                 <?php
-                                    $image = get_field('portfolio_image');
 
-                                    if( !empty($image) ): ?>
+                                  if ( has_post_thumbnail() ) {
+                                    the_post_thumbnail('large');
+                                  }
 
-                                    <img class="center-block " src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                                ?>
 
-                                <?php endif; ?>
- 
                                 <div class="portfolio-overlay">
                                     <div class="overlay-copy">
                                         <div class="center">
@@ -78,6 +80,7 @@ $counter = 0;
 
     </div>
 </section>
+
 
 
 
