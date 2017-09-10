@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-sm-6">
 
-                <?php 
+                <?php
 
                     $cpac_portfolio_image = get_field('portfolio_image');
 
@@ -31,30 +31,39 @@
             </div>
 
             <div class="col-sm-6">
-                
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-                    <?php the_content(); ?>
+              <h2><?php the_field('built_on'); ?></h2>
 
-                <?php endwhile; endif; ?>
+              <ul>
+                <?php if( have_rows('portfolio_description') ): ?>
+                  <?php while( have_rows('portfolio_description') ) : the_row();
+                    $list_item = get_sub_field('what_i_did');
+                  ?>
+
+                  <li><?php echo $list_item; ?></li>
+
+                  <?php endwhile; ?>
+                <?php endif; ?>
+              </ul>
+
 
                 <div class="button-wrap">
                     <a href="<?php the_field('portfolio_button'); ?>" target="_blank"><button type="button" class="btn btn-primary btn-lg active">VISIT SITE</button></a>
                 </div>
 
                 <ul class="portfolio-single-navigation">
-                    <?php 
-                            if( get_adjacent_post(false, '', true) ) { 
+                    <?php
+                            if( get_adjacent_post(false, '', true) ) {
                                 previous_post_link('<li>%link</li>', 'Previous');
-                            } else { 
+                            } else {
                                 $first = new WP_Query('posts_per_page=1&order=DESC&post_type=portfolio'); $first->the_post();
                                     echo '<li><a href="' . get_permalink() . '">Previous</a></li>';
                                 wp_reset_query();
                             };
 
-                            if( get_adjacent_post(false, '', false) ) { 
+                            if( get_adjacent_post(false, '', false) ) {
                                 next_post_link('<li>%link</li>', 'Next');
-                            } else { 
+                            } else {
                                 $last = new WP_Query('posts_per_page=1&order=ASC&post_type=portfolio'); $last->the_post();
                                     echo '<li><a href="' . get_permalink() . '">Next</a></li>';
                                 wp_reset_query();
@@ -66,7 +75,7 @@
                 </ul>
 
             </div>
-        </div> 
+        </div>
 
     </div>
 </section>

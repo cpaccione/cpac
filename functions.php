@@ -100,19 +100,7 @@ create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blo
 
 	// Custom Post Portfolio Type: Portfolio
 	function cpaccione_custom_portfolio() {
-
-	$supports = array(
-	'title', // post title
-	'editor', // post content
-	//'author', // post author
-	'thumbnail', // featured images
-	//'excerpt', // post excerpt
-	//'custom-fields', // custom fields
-	//'comments', // post comments
-	'revisions', // post revisions
-	'post-formats', // post formats
-	);
-
+		
 	$labels = array(
 	'name' => _x('Portfolio', 'plural'),
 	'singular_name' => _x('Portfolio', 'singular'),
@@ -129,7 +117,7 @@ create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blo
 	);
 
 	$args = array(
-		'supports' => $supports,
+		'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'post-formats'),
 		'labels' => $labels,
 		'menu_icon' => 'dashicons-format-aside',
 		'menu_position' => 5,

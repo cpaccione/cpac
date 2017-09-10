@@ -42,6 +42,7 @@ jQuery(document).ready(function($) {
 
 <section class="about-me">
     <div class="container">
+
         <div class="row">
           <div class="col-12">
             <h2 class="text-center">ABOUT ME</h2>
@@ -49,17 +50,20 @@ jQuery(document).ready(function($) {
         </div>
 
         <div class="row">
+
             <div class="col-md-6">
-              <img class="img-fluid" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/chris_paccione.jpg" alt="">
+              <img class="img-fluid" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/chris_paccione.jpg" alt="Chris Paccione front-end web developer">
             </div>
+
             <div class="col-md-6">
                 <div class="about-me-copy">
-                    <p>Hi, I'm Chris Paccione a front-end web developer motivated by a passion for coding and WordPress. I offer front-end development, WordPress theme building, and HTML e-mail marketing services. Please view my work below and contact me if your ready to get started or want to discuss your next project.</p>
+                    <p>Hi, I'm Chris Paccione, a front-end web developer motivated by a passion for coding and WordPress. I offer front-end development, WordPress theme building, and HTML e-mail marketing services. Please view my work below and contact me if your ready to get started or want to discuss your next project.</p>
                     <div class="button-wrap">
-                        <a href="#"><button type="button" class="btn btn-primary btn-lg active">Contact Me</button></a>
+                        <a href="/contact/"><button type="button" class="btn btn-primary btn-lg active">Contact Me</button></a>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -79,10 +83,11 @@ jQuery(document).ready(function($) {
 
             $args = array(
                 'post_type' => 'portfolio',
-                'portfolio_categories' => 'featured',
+                'post_status' => 'publish',
+                'portfolio_category' => 'featured',
                 'showposts' => 6,
                 'orderby' => 'date',
-                'order' => 'ASC'
+                'order' => 'DESC'
                 );
             $query = new WP_Query($args);
 

@@ -36,9 +36,10 @@ $counter = 0;
 
             $args = array(
                 'post_type' => 'portfolio',
-                'orderby' => 'menu_order',
+                'post_status' => 'publish',
                 'posts_per_page' => -1,
-                'order' => 'ASC'
+                'orderby' => 'date',
+                'order' => 'DESC'
                 );
             $query = new WP_Query($args);
 
