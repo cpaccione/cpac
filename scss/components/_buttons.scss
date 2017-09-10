@@ -1,8 +1,9 @@
 .btn-primary.active {
-	background-color: $white;
+	background-color: transparent;
 	color: $dark-blue;
 	border-radius: 0;
 	box-shadow: none;
+	border: 2px solid $dark-blue;
 	-webkit-transition: ease-out 200ms;
 	-moz-transition: ease-out 200ms;
 	-o-transition: ease-out 200ms;
@@ -14,5 +15,52 @@
 		-moz-transition: ease-out 200ms;
 		-o-transition: ease-out 200ms;
 		transition: ease-out 200ms;
+	}
+}
+
+.button-wrap {
+	width: 30%;
+	margin: inherit;
+	margin-bottom: 50px;
+
+	button {
+		box-shadow: none;
+		border: 2px solid $dark-blue;
+		cursor: pointer;
+
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
+
+.portfolio-single-navigation {
+	text-align: center;
+	list-style: none;
+	padding-left: 0;
+
+	li {
+		display: inline;
+		padding-right: 50px;
+
+		a {
+			font-size: 1.5em;
+			font-weight: bold;
+			text-decoration: underline;
+			color: $dark-blue;
+			-webkit-transition: ease-out 200ms;
+			-moz-transition: ease-out 200ms;
+			-o-transition: ease-out 200ms;
+			transition: ease-out 200ms;
+
+			&:hover {
+				color: $light-blue;
+				-webkit-transition: ease-out 200ms;
+				-moz-transition: ease-out 200ms;
+				-o-transition: ease-out 200ms;
+				transition: ease-out 200ms;
+			}
+		}
 	}
 }

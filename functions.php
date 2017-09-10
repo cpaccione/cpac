@@ -99,9 +99,7 @@ create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blo
 
 
 	// Custom Post Portfolio Type: Portfolio
-	add_action('init', 'cp_portfolio');
-
-	function cp_portfolio() {
+	function cpaccione_custom_portfolio() {
 
 	$supports = array(
 	'title', // post title
@@ -131,20 +129,23 @@ create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blo
 	);
 
 	$args = array(
-	'supports' => $supports,
-	'labels' => $labels,
-	'menu_icon' => 'dashicons-format-aside',
-	'menu_position' => 5,
-	'public' => true,
-	'query_var' => true,
-	'rewrite' => true,
-	'capability_type' => 'post',
-	'has_archive' => true,
-	'hierarchical' => false,
-	'show_in_rest' => true
+		'supports' => $supports,
+		'labels' => $labels,
+		'menu_icon' => 'dashicons-format-aside',
+		'menu_position' => 5,
+		'public' => true,
+		'query_var' => true,
+		//'rewrite' => true,
+		'rewrite' => array('slug' => 'portfolio-piece'),
+		'capability_type' => 'post',
+		'has_archive' => true,
+		'hierarchical' => false,
+		'exclude_from_search' => false,
+		'show_in_rest' => true
 	);
-	register_post_type('cpac_portfolio', $args);
-	}
+	register_post_type('portfolio', $args);
+}
+add_action('init', 'cpaccione_custom_portfolio');
 
 
 
@@ -174,7 +175,7 @@ function cp_portfolio_taxonomies() {
 		'rewrite'           => array( 'slug' => 'portfolio-category' ),
 	);
 
-	register_taxonomy( 'portfolio_category', array( 'cpac_portfolio' ), $args );
+	register_taxonomy( 'portfolio_category', array( 'portfolio' ), $args );
 
 	// Add new taxonomy, NOT hierarchical (like tags)
 $labels = array(
@@ -206,7 +207,7 @@ $args = array(
 	'rewrite'               => array( 'slug' => 'portfolio-tag' ),
 );
 
-register_taxonomy( 'portfolio_tag', array('cpac_portfolio'), $args );
+register_taxonomy( 'portfolio_tag', array('portfolio'), $args );
 
 }
 

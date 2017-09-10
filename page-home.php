@@ -54,8 +54,10 @@ jQuery(document).ready(function($) {
             </div>
             <div class="col-md-6">
                 <div class="about-me-copy">
-                    <p>I’m a front-end web developer educated at General Assembly, and motivated by a passion for coding and WordPress. I offer Front-end web development, WordPress theme building, and HTML e-mail. Please view my work and email me for your next project.</p>
-                    <a class="btn btn-secondary btn-lg" href="/contact/">CONTACT ME</a>
+                    <p>Hi, I'm Chris Paccione a front-end web developer motivated by a passion for coding and WordPress. I offer front-end development, WordPress theme building, and HTML e-mail marketing services. Please view my work below and contact me if your ready to get started or want to discuss your next project.</p>
+                    <div class="button-wrap">
+                        <a href="#"><button type="button" class="btn btn-primary btn-lg active">Contact Me</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,7 +78,7 @@ jQuery(document).ready(function($) {
     <?php
 
             $args = array(
-                'post_type' => 'cpac_portfolio',
+                'post_type' => 'portfolio',
                 'portfolio_categories' => 'featured',
                 'showposts' => 6,
                 'orderby' => 'date',

@@ -2,7 +2,7 @@
 
 /*
 
-Template Name: Portfolio
+Template Name: Portfolio Template
 
 */
 
@@ -10,7 +10,7 @@ Template Name: Portfolio
 
 <?php
 
-//$counter = 0;
+$counter = 0;
 
 ?>
 
@@ -21,7 +21,7 @@ Template Name: Portfolio
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h1>PORTFOLIO</h1>
+                <?php the_title('<h1>', '</h1>'); ?>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@ Template Name: Portfolio
     <?php
 
             $args = array(
-                'post_type' => 'cpac_portfolio',
+                'post_type' => 'portfolio',
                 'orderby' => 'menu_order',
                 'posts_per_page' => -1,
                 'order' => 'ASC'

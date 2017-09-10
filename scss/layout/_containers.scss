@@ -188,7 +188,7 @@ HOME PAGE STYLES - page-home.php
   //height: 300px;
   background-color: $white;
   color: $dark-blue;
-  padding: 25px 0 25px 0;
+  padding: 75px 0 75px 0;
 
   @include respond-to(max-width, 600px) {
     height: 100%;
@@ -212,31 +212,51 @@ HOME PAGE STYLES - page-home.php
 
 }
 
-.button-wrap {
-  margin: 0 auto;
-  width: 30%;
-  margin-bottom: 50px;
-  box-shadow: none;
+// .button-wrap {
+//   margin: 0 auto;
+//   width: 30%;
+//   margin-bottom: 50px;
+//   box-shadow: none;
+//
+//   &-portfolio {
+//     margin: 0 auto;
+//     width: 30%;
+//     margin-bottom: 50px;
+//     box-shadow: none;
+//     padding-top: 50px;
+//
+//     @include respond-to(max-width, 600px) {
+//       width: 100%;
+//     }
+//   }
+//
+//   @include respond-to(max-width, 600px) {
+//     width: 100%;
+//   }
+//
+// }
 
-  &-portfolio {
-    margin: 0 auto;
+// Single Portfolio
+
+.single-portfolio-wrap {
+    padding: 100px 0 100px 0;
+
+  .button-wrap {
     width: 30%;
+    margin: inherit;
     margin-bottom: 50px;
-    box-shadow: none;
-    padding-top: 50px;
 
-    @include respond-to(max-width, 600px) {
-      width: 100%;
+    button {
+      box-shadow: none;
+      border: 2px solid $dark-blue;
+      cursor: pointer;
+
+      &:hover {
+        color: $white;
+      }
     }
   }
-
-  @include respond-to(max-width, 600px) {
-    width: 100%;
-  }
-
 }
-
-// Portfolio Single
 
 .portfolio-single {
   background-color: $dark-blue;
