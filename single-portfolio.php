@@ -1,16 +1,5 @@
 <?php get_header(); ?>
 
-<section class="header d-flex align-items-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <?php the_title('<h1>', '</h1>'); ?>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <section class="single-portfolio-wrap">
     <div class="container">
 
@@ -31,8 +20,8 @@
             </div>
 
             <div class="col-sm-6">
-
-              <h2><?php the_field('built_on'); ?></h2>
+              <?php the_title('<h1>', '</h1>'); ?>
+              <h2><span>Built on:</span> <?php the_field('built_on'); ?></h2>
 
               <ul>
                 <?php if( have_rows('portfolio_description') ): ?>
