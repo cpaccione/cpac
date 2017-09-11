@@ -36,7 +36,7 @@
 
 
 .portfolio-single-navigation {
-	text-align: center;
+	// text-align: center;
 	list-style: none;
 	padding-left: 0;
 
@@ -63,4 +63,9 @@
 			}
 		}
 	}
+}
+
+.home-page-button {
+	margin: 0 auto;
+	padding: 50px 0 15px 0;
 }

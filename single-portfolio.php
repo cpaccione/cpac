@@ -4,7 +4,7 @@
     <div class="container">
 
         <div class="row">
-                    <div class="col-sm-6">
+          <div class="col-sm-6">
               <?php the_title('<h1>', '</h1>'); ?>
               <h2><span>Built on:</span> <?php the_field('built_on'); ?></h2>
 
@@ -68,7 +68,7 @@
 
                     if( !empty($cpac_portfolio_image) ): ?>
 
-                        <img src="<?php echo $cpac_portfolio_image['url']; ?>" alt="<?php echo $cpac_portfolio_image['alt']; ?>" />
+                        <a href="<?php the_field('portfolio_button'); ?>" target="_blank"><img src="<?php echo $cpac_portfolio_image['url']; ?>" alt="<?php echo $cpac_portfolio_image['alt']; ?>" /></a>
 
                 <?php endif; ?>
 

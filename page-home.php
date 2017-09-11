@@ -97,7 +97,7 @@ jQuery(document).ready(function($) {
 
                 <?php if($counter % 3 === 0) : echo '<div class="row port-row">'; endif; ?>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 animation-element bounce-up">
                         <a href="<?php the_permalink(); ?>">
                             <div class="subject img-overlay">
                                 <?php
@@ -125,12 +125,12 @@ jQuery(document).ready(function($) {
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
 
-        <div class="row text-center">
-            <div class="col-12">
-                <div class="button-wrap-portfolio">
-                    <a href="chrispaccione.com/portfolio"><button type="button" class="btn btn-primary btn-lg btn-block active">VIEW ALL</button></a>
-                </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="button-wrap home-page-button">
+              <a href="chrispaccione.com/portfolio"><button type="button" class="btn btn-primary btn-lg btn-block active">VIEW ALL</button></a>
             </div>
+          </div>
         </div>
 
     </div>
