@@ -243,6 +243,10 @@ HOME PAGE STYLES - page-home.php
 
     h1 {
       padding: 0;
+
+      @include respond-to(max-width, 500px) {
+        font-size: 3em;
+      }
     }
 
     h2 {
@@ -251,6 +255,20 @@ HOME PAGE STYLES - page-home.php
       span {
         font-weight: normal;
         font-style: italic;
+      }
+    }
+
+    ul {
+      font-size: 1.5em;
+      list-style: none;
+      padding-left: 0;
+      color: $light-blue;
+      font-weight: bold;
+    }
+
+    .content {
+      p {
+        font-size: 1.5em;
       }
     }
 
