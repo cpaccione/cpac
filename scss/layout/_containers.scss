@@ -46,7 +46,11 @@ HOME PAGE STYLES - page-home.php
 }
 
 .services {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+
+  .icon-wrap {
+    padding-bottom: 30px;
+  }
 }
 
 /* Portfolio Styles */
@@ -243,6 +247,10 @@ HOME PAGE STYLES - page-home.php
 
     h1 {
       padding: 0;
+
+      @include respond-to(max-width, 500px) {
+        font-size: 3em;
+      }
     }
 
     h2 {
@@ -251,6 +259,20 @@ HOME PAGE STYLES - page-home.php
       span {
         font-weight: normal;
         font-style: italic;
+      }
+    }
+
+    ul {
+      font-size: 1.5em;
+      list-style: none;
+      padding-left: 0;
+      color: $light-blue;
+      font-weight: bold;
+    }
+
+    .content {
+      p {
+        font-size: 1.5em;
       }
     }
 
@@ -289,10 +311,16 @@ HOME PAGE STYLES - page-home.php
 
 .testimonials {
   background-color: $light-blue;
+  background-color: $grey;
   text-align: center;
 
   h2 {
     padding-bottom: 0px;
+  }
+
+  h3 {
+    color: $light-blue;
+    font-weight: bold;
   }
 
   @media #{$brk-small} {

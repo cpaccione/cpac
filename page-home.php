@@ -146,20 +146,23 @@ jQuery(document).ready(function($) {
         </div>
 
         <div class="row service-icons">
-            <div class="col-4 text-center animation-element bounce-up">
+            <div class="col-sm-4 text-center animation-element bounce-up">
                 <div class="icon-wrap subject">
-                    <a href="/code"><i class="fa fa-code fa-5x"></i></a>
+                    <i class="fa fa-code fa-5x"></i>
                 </div>
+                <p>I focus on writing well-structured and maintainable HTML, CSS, and JavaScript. I take great care to make sure my code is standards compliant and follows best practices for fast loading.</p>
             </div>
-            <div class="col-4 text-center animation-element bounce-up">
+            <div class="col-sm-4 text-center animation-element bounce-up">
                 <div class="icon-wrap subject">
-                    <a href="/code"><i class="fa fa-wordpress fa-5x"></i></a>
+                    <i class="fa fa-wordpress fa-5x"></i>
                 </div>
+                <p>I develop WordPress themes from scratch and aim to create an easy and straighforward admin experience to enable the end user easily manage content without the need for a developer.</p>
             </div>
-            <div class="col-4 text-center animation-element bounce-up">
+            <div class="col-sm-4 text-center animation-element bounce-up">
                 <div class="icon-wrap subject">
-                    <a href="/code"><i class="fa fa-mobile fa-5x"></i></a>
+                    <i class="fa fa-mobile fa-5x"></i>
                 </div>
+                <p>I code mobile first, which means your site will look great on all devices which include smartphones, tablets, laptops and desktops.</p>
             </div>
         </div>
 
@@ -181,7 +184,7 @@ jQuery(document).ready(function($) {
                     <li>
                         <div class="row">
                             <div class="col-sm-12">
-                                <h3>WOW! Chris has this incredible patience that goes beyond infinity. He was with us step-by-step, even after the project was finalized he made himself available for WordPress and SEO support. His attention to detail and customer care by far exceeded our expectations."</h3>
+                                <p>WOW! Chris has this incredible patience that goes beyond infinity. He was with us step-by-step, even after the project was finalized he made himself available for WordPress and SEO support. His attention to detail and customer care by far exceeded our expectations."</p>
                             </div>
                         </div>
                         <div class="row">
@@ -193,7 +196,7 @@ jQuery(document).ready(function($) {
                     <li>
                         <div class="row">
                             <div class="col-md-12">
-                                <h3>Originally, we hired Chris to do some small website edits. We loved the work that he did so much that we decided to redesign our website. Chris is easy to work with, very thorough, and was able to take our ideas and concepts and implement them, all at a very reasonable rate for such high end work. We could not be happier with the work that Chris has done for us."</h3>
+                                <p>Originally, we hired Chris to do some small website edits. We loved the work that he did so much that we decided to redesign our website. Chris is easy to work with, very thorough, and was able to take our ideas and concepts and implement them, all at a very reasonable rate for such high end work. We could not be happier with the work that Chris has done for us."</p>
                             </div>
                         </div>
                         <div class="row">
@@ -205,7 +208,7 @@ jQuery(document).ready(function($) {
                   <li>
                     <div class="row">
                             <div class="col-md-12">
-                                <h3>Christopher designed my latest website for me and I couldn't be more pleased. He was able to implement every single idea that I wanted, and provided many of his own suggestions. Any time I requested changes, he had them completed the same day, and often within an hour. The final result was much better than what I had hoped for, mostly due to Chris's creative thinking."</h3>
+                                <p>Christopher designed my latest website for me and I couldn't be more pleased. He was able to implement every single idea that I wanted, and provided many of his own suggestions. Any time I requested changes, he had them completed the same day, and often within an hour. The final result was much better than what I had hoped for, mostly due to Chris's creative thinking."</p>
                             </div>
                         </div>
                         <div class="row">

@@ -34,11 +34,10 @@
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;*/
 	/*border:  5px solid #fff;*/
-	border: 5px solid #4bc3ff;
+	border: 5px solid #e8e8e8;
 	left: -5px;
-	/*background: #fff;*/
-	background-color: #4BC3FF;
-	
+	background-color: #e8e8e8;
+
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
 	-moz-transform: translatez(0);

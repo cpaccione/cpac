@@ -4,22 +4,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-sm-6">
-
-                <?php
-
-                    $cpac_portfolio_image = get_field('portfolio_image');
-
-                    if( !empty($cpac_portfolio_image) ): ?>
-
-                        <img src="<?php echo $cpac_portfolio_image['url']; ?>" alt="<?php echo $cpac_portfolio_image['alt']; ?>" />
-
-                <?php endif; ?>
-
-
-            </div>
-
-            <div class="col-sm-6">
+                    <div class="col-sm-6">
               <?php the_title('<h1>', '</h1>'); ?>
               <h2><span>Built on:</span> <?php the_field('built_on'); ?></h2>
 
@@ -34,6 +19,17 @@
                   <?php endwhile; ?>
                 <?php endif; ?>
               </ul>
+
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                    <span class="content"><?php the_content(); ?></span>
+
+                <?php endwhile; else: ?>
+
+                    <h1>Oh no!</h1>
+                    <p>No content is appearing on this page!</p>
+
+                <?php endif; ?>
 
 
                 <div class="button-wrap">
@@ -62,6 +58,20 @@
                         <?php previous_posts_link('label','max_pages'); ?>
                         <?php  next_posts_link('label','max_pages'); ?>
                 </ul>
+
+            </div>
+            <div class="col-sm-6">
+
+                <?php
+
+                    $cpac_portfolio_image = get_field('portfolio_image');
+
+                    if( !empty($cpac_portfolio_image) ): ?>
+
+                        <img src="<?php echo $cpac_portfolio_image['url']; ?>" alt="<?php echo $cpac_portfolio_image['alt']; ?>" />
+
+                <?php endif; ?>
+
 
             </div>
         </div>
