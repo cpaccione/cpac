@@ -29,8 +29,9 @@ $counter = 0;
 
 
 
-<section class="page-portfolio">
-    <div class="container">
+<!-- <section class="page-portfolio"> -->
+<section class="portfolio-section">
+    <div class="container-fluids">
 
     <?php
 
@@ -47,7 +48,7 @@ $counter = 0;
 
             <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
-                <?php if($counter % 3 === 0) : echo '<div class="row port-row">'; endif; ?>
+                <?php if($counter % 3 === 0) : echo '<div class="row">'; endif; ?>
 
                     <div class="col-md-4 animation-element bounce-up">
                         <a href="<?php the_permalink(); ?>">

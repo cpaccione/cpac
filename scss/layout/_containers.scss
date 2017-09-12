@@ -59,6 +59,16 @@ HOME PAGE STYLES - page-home.php
   background-color: $grey;
   padding: 0 0 50px 0;
 
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+
+    .col-md-4 {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
   h2 {
     color: $dark-blue;
   }
@@ -76,13 +86,9 @@ HOME PAGE STYLES - page-home.php
 
 .img-overlay {
   position: relative;
-  max-width: 400px;
+  // max-width: 400px;
+  width: 100%;
   margin: 0 auto;
-
-  @media #{$brk-narrow} {
-    margin-bottom: 25px;
-  }
-
 }
 
 .portfolio-overlay:hover {
@@ -114,21 +120,9 @@ HOME PAGE STYLES - page-home.php
 
 }
 
-// .overlay-copy {
-
-//   h5 {
-//     color: $white;
-//   }
-
-//   @media #{$brk-small} {
-
-//     h5 {
-//       color: $white;
-//     }
-
-//   }
-
-// }
+.overlay-copy {
+  padding: 25px;
+}
 
 .center {
   display: table-cell;
