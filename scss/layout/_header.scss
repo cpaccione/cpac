@@ -235,15 +235,21 @@ nav {
   height: 250px;
 
 	@include respond-to(max-width, 600px) {
-		height: 125px;
+		  background: linear-gradient(#ffffff, transparent 100%),
+		  linear-gradient(0deg, #ffffff, transparent 100%),
+		  url('../images/keyboard-header.jpg');
+		  background-size: cover;
+		  background-position: center;
+		height: 200px;
 	}
 
   h1 {
     color: $white;
 
 		@include respond-to(max-width, 600px) {
-			font-size: 2em;
+			font-size: 4em;
 			padding: 20px 0 20px 0;
+			color: $dark-blue;
 		}
   }
 
