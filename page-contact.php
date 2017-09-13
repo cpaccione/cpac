@@ -10,17 +10,13 @@ Template Name: Contact
 
 <?php get_header(); ?>
 
-<section class="header">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <?php the_title('<h1>', '</h1>'); ?>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+        <h1 class="blog-title"><?php the_title(); ?></h1>
+        <hr>
     </div>
   </div>
-</section>
-
-<div class="container">
   <div class="row">
     <div class="col-md-12">
       <div class="contact-wrap">

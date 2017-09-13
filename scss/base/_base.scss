@@ -17,10 +17,20 @@ body {
 }
 
 a {
+	color: $light-blue;
 	text-decoration: none;
+	-webkit-transition: ease-out 200ms;
+	-moz-transition: ease-out 200ms;
+	-o-transition: ease-out 200ms;
+	transition: ease-out 200ms;
 
 	&:hover {
-		text-decoration: none;
+		text-decoration: underline;
+		color: $dark-blue;
+		-webkit-transition: ease-out 200ms;
+		-moz-transition: ease-out 200ms;
+		-o-transition: ease-out 200ms;
+		transition: ease-out 200ms;
 	}
 }
 
@@ -91,4 +101,11 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 			-o-transition: ease-out 200ms;
 			transition: ease-out 200ms;
 		}
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(0,0,0,.1);
 }

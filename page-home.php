@@ -45,7 +45,7 @@ jQuery(document).ready(function($) {
 
         <div class="row">
           <div class="col-12">
-            <h2 class="text-center">ABOUT ME</h2>
+            <h2 class="section-title text-center">ABOUT ME</h2>
           </div>
         </div>
 
@@ -74,7 +74,7 @@ jQuery(document).ready(function($) {
 
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h2>PORTFOLIO</h2>
+                <h2 class="section-title">PORTFOLIO</h2>
             </div>
         </div>
 
@@ -141,7 +141,7 @@ jQuery(document).ready(function($) {
 
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h2>MY SERVICES</h2>
+                <h2 class="section-title">MY SERVICES</h2>
             </div>
         </div>
 
@@ -175,7 +175,7 @@ jQuery(document).ready(function($) {
     <div class="container">
         <div clas="row">
             <div class="col-md-12">
-                <h2>TESTIMONIALS</h2>
+                <h2 class="section-title">TESTIMONIALS</h2>
             </div>
         </div>
         <div class="row">
