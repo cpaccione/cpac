@@ -23,6 +23,10 @@
 	margin: inherit;
 	margin-bottom: 50px;
 
+	@include respond-to(max-width, 500px) {
+		width: 50%;
+	}
+
 	button {
 		box-shadow: none;
 		border: 2px solid $dark-blue;

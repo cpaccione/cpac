@@ -69,7 +69,7 @@ jQuery(document).ready(function($) {
 </section>
 
 
-<section class="portfolio-section">
+<section class="portfolio-section portfolio-home">
     <div class="container-fluid">
 
         <div class="row">

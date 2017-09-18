@@ -76,7 +76,6 @@ $counter = 0;
 
                 <?php endwhile; endif; wp_reset_postdata(); ?>
 
-
         </div>
     </section>
 

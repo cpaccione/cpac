@@ -68,7 +68,7 @@
 
                     if( !empty($cpac_portfolio_image) ): ?>
 
-                        <a href="<?php the_field('portfolio_button'); ?>" target="_blank"><img src="<?php echo $cpac_portfolio_image['url']; ?>" alt="<?php echo $cpac_portfolio_image['alt']; ?>" /></a>
+                        <a href="<?php the_field('portfolio_button'); ?>" target="_blank"><img class="portfolio-image" src="<?php echo $cpac_portfolio_image['url']; ?>" alt="<?php echo $cpac_portfolio_image['alt']; ?>" /></a>
 
                 <?php endif; ?>
 
