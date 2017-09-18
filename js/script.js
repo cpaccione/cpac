@@ -61,7 +61,8 @@ $('.bxslider').bxSlider({
   auto: true,
   speed: 800,
   pause: 7000,
-  autoHover: true
+  autoHover: true,
+  adaptiveHeight: true
 });
 
 // Defining a function to set size for #hero

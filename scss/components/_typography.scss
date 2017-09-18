@@ -2,14 +2,14 @@ h1 {
 	font-size: 4.125em;
 	font-weight: 300;
 	padding: 50px 0 50px 0;
+	letter-spacing: .1em;
 }
 
 h2 {
 	color: $dark-blue;
 	font-size: 2.75em;
 	font-weight: 300;
-	//padding-top: 50px;
-	//padding-bottom: 50px;
+	letter-spacing: .1em;
 }
 
 h3 {
@@ -38,7 +38,11 @@ h6 {
 p {
 	color: $dark-blue;
 	font-weight: 300;
-	font-size: 1.5em;
+	font-size: 1em;
+
+	@include respond-to(min-width, 769px) {
+		font-size: 1.5em;
+	}
 }
 
 .section-title {
@@ -48,4 +52,8 @@ p {
 	//padding-top: 50px;
 	padding-bottom: 30px;
 	margin: 0;
+
+	@include respond-to(max-width, 500px) {
+		font-size: 2em;
+	}
 }

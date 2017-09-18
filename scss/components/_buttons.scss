@@ -23,6 +23,10 @@
 	margin: inherit;
 	margin-bottom: 50px;
 
+	@include respond-to(max-width, 768px) {
+		margin-bottom: 0;
+	}
+
 	@include respond-to(max-width, 500px) {
 		width: 50%;
 	}
@@ -71,5 +75,5 @@
 
 .home-page-button {
 	margin: 0 auto;
-	padding: 75px 0 50px 0;
+	padding: 50px 0 0 0;
 }

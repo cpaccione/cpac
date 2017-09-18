@@ -205,41 +205,14 @@ HOME PAGE STYLES - page-home.php
     // padding: 0 0 50px 0;
 
     p {
-      font-size: 1.5em;
       padding-top: 25px;
 
       @include respond-to(min-width, 768px) {
         padding-top: 0;
       }
-
     }
   }
-
 }
-
-// .button-wrap {
-//   margin: 0 auto;
-//   width: 30%;
-//   margin-bottom: 50px;
-//   box-shadow: none;
-//
-//   &-portfolio {
-//     margin: 0 auto;
-//     width: 30%;
-//     margin-bottom: 50px;
-//     box-shadow: none;
-//     padding-top: 50px;
-//
-//     @include respond-to(max-width, 600px) {
-//       width: 100%;
-//     }
-//   }
-//
-//   @include respond-to(max-width, 600px) {
-//     width: 100%;
-//   }
-//
-// }
 
 // Single Portfolio
 
