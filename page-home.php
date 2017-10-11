@@ -46,19 +46,20 @@ $counter = 0;
                     <p>Hi, I'm Chris Paccione, a front-end web developer motivated by a passion for coding and WordPress. I offer front-end development, WordPress theme building, and HTML e-mail marketing services. Please view my work below and contact me if your ready to get started or want to discuss your next project.</p>
           </div>
           <div class="col-md-6">
+            <img class="img-fluid" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/chris_paccione.jpg" alt="Chris Paccione front-end web developer">
 
-          <img class="img-fluid" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/chris_paccione.jpg" alt="Chris Paccione front-end web developer">
-          <div class="button-wrap">
-              <a href="/contact/"><button type="button" class="btn btn-primary btn-lg active">Contact Me</button></a>
-          </div>
+            <div class="social-media">
+              <ul>
+                <li><a href="https://github.com/cpaccione" target="_blank"><i class="fa fa-github fa-4x"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/cpaccione" target="_blank"><i class="fa fa-linkedin fa-4x"></i></a></li>
+              </ul>
+            </div>
+
+            <div class="button-wrap">
+                <a href="/contact/"><button type="button" class="btn btn-primary btn-lg active">Contact Me</button></a>
+            </div>
           </div>
       </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="button-wrap">
-        <a href="/contact/"><button type="button" class="btn btn-primary btn-lg active">Contact Me</button></a>
     </div>
   </section>
 

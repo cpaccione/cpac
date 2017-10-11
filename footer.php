@@ -1,4 +1,4 @@
-
+<!-- 
 	<footer>
 	  <div class="container">
 
@@ -19,7 +19,7 @@
 	    </div>
 
 	    </div>
-	</footer>
+	</footer> -->
 
 	<?php wp_footer(); ?>
 
