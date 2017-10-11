@@ -7,7 +7,7 @@ add_theme_support( 'title-tag' );
 //require get_template_directory() . '/inc/function-admin.php';
 
 function theme_styles() {
-	wp_enqueue_script( 'typed_js', get_template_directory_uri() . '/js/typed.js', array('jquery'), '', true );
+	//wp_enqueue_script( 'typed_js', get_template_directory_uri() . '/js/typed.js', array('jquery'), '', true );
 	wp_enqueue_style( 'jqueryui_smoothness', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css' );
 	//wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
 	wp_enqueue_style( 'bootstrap4', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css');
@@ -100,7 +100,7 @@ create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blo
 
 	// Custom Post Portfolio Type: Portfolio
 	function cpaccione_custom_portfolio() {
-		
+
 	$labels = array(
 	'name' => _x('Portfolio', 'plural'),
 	'singular_name' => _x('Portfolio', 'singular'),

@@ -166,20 +166,19 @@ nav {
 /* Homepage Hero */
 
 .home-hero {
-  background:
-	linear-gradient($dark-blue, transparent 100%),
-	linear-gradient(0deg, $dark-blue, transparent 100%),
-  url('../images/mydesk.jpg');
+  // background: linear-gradient($dark-blue, transparent 100%), linear-gradient(0deg, $dark-blue, transparent 100%), url('../images/mydesk.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
   //height: 600px;
-  background-color: $dark-blue;
+  //background-color: $dark-blue;
+	background-color: $white;
 	position: relative;
 }
 
 .home-hero-copy {
-  color: $white;
+	color: $white;
+	color: $dark-blue;
 	padding-top: 75px;
 	text-align: center;
 
