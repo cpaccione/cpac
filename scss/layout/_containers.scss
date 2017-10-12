@@ -1,3 +1,9 @@
+// HOME PAGE
+.cpac-wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 /*------------------------------------------------------
 
 HOME PAGE STYLES - page-home.php
@@ -292,7 +298,7 @@ HOME PAGE STYLES - page-home.php
   background-color: $light-blue;
   background-color: $grey;
   text-align: center;
-  padding: 75px 0 75px 0; 
+  padding: 75px 0 75px 0;
 
   @include respond-to(max-width, 768px) {
     padding: 50px 0 50px 0;
@@ -328,5 +334,14 @@ HOME PAGE STYLES - page-home.php
   h1 {
     padding: 0 0 0 0;
     margin: 0 0 10px 0;
+  }
+}
+
+// Social Media
+.social-media {
+  text-align: center;
+
+  li {
+    display: inline;
   }
 }

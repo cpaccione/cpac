@@ -1,7 +1,10 @@
 .btn-primary.active {
 	background-color: transparent;
 	color: $dark-blue;
-	border-radius: 0;
+	border-radius: 25px;
+	line-height: 15px;
+	padding: 15px 38px 15px 38px;
+	display: inline-block;
 	box-shadow: none;
 	border: 2px solid $dark-blue;
 	-webkit-transition: ease-out 200ms;
@@ -18,29 +21,29 @@
 	}
 }
 
-.button-wrap {
-	width: 30%;
-	margin: inherit;
-	margin-bottom: 50px;
-
-	@include respond-to(max-width, 768px) {
-		margin-bottom: 0;
-	}
-
-	@include respond-to(max-width, 500px) {
-		width: 50%;
-	}
-
-	button {
-		box-shadow: none;
-		border: 2px solid $dark-blue;
-		cursor: pointer;
-
-		&:hover {
-			color: $white;
-		}
-	}
-}
+// .button-wrap {
+// 	width: 30%;
+// 	margin: inherit;
+// 	margin-bottom: 50px;
+//
+// 	@include respond-to(max-width, 768px) {
+// 		margin-bottom: 0;
+// 	}
+//
+// 	@include respond-to(max-width, 500px) {
+// 		width: 50%;
+// 	}
+//
+// 	button {
+// 		box-shadow: none;
+// 		border: 2px solid $dark-blue;
+// 		cursor: pointer;
+//
+// 		&:hover {
+// 			color: $white;
+// 		}
+// 	}
+// }
 
 
 .portfolio-single-navigation {

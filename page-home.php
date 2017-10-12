@@ -30,7 +30,7 @@ $counter = 0;
   </section> -->
 
   <section class="home-hero">
-    <div class="container">
+    <div class="cpac-wrap">
       <div class="row">
         <div class="col-md-12 text-center">
           <h1>FRONT-END DEVELOPMENT AND DESIGN</h1>
@@ -40,25 +40,24 @@ $counter = 0;
 
       <div class="row">
         <!--   <div class="col-md-5"></div> -->
-          <div class="col-md-6">
+          <div class="col-lg-6">
                         <h2 class="section-title">ABOUT ME</h2>
           <p>Hi, I'm Chris Paccione, a front-end web developer motivated by a passion for coding and WordPress. I offer front-end development, WordPress theme building, and HTML e-mail marketing services. Please view my work below and contact me if your ready to get started or want to discuss your next project.</p>
                     <p>Hi, I'm Chris Paccione, a front-end web developer motivated by a passion for coding and WordPress. I offer front-end development, WordPress theme building, and HTML e-mail marketing services. Please view my work below and contact me if your ready to get started or want to discuss your next project.</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
 
           <img class="img-fluid" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/chris_paccione.jpg" alt="Chris Paccione front-end web developer">
-          <div class="button-wrap">
+
+          <ul class="social-media">
+            <li><a href="https://github.com/cpaccione" target="_blank"><i class="fa fa-github fa-4x"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/cpaccione" target="_blank"><i class="fa fa-linkedin fa-4x"></i></a></li>
+          </ul>
+          <div class="button-wrap text-center">
               <a href="/contact/"><button type="button" class="btn btn-primary btn-lg active">Contact Me</button></a>
           </div>
           </div>
       </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="button-wrap">
-        <a href="/contact/"><button type="button" class="btn btn-primary btn-lg active">Contact Me</button></a>
     </div>
   </section>
 
