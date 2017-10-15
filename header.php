@@ -9,17 +9,19 @@
 
   <body  <?php body_class(); ?> >
 
-    <nav class="navbar fixed-top">
-    <div class="container-fluid">
+    <nav>
+    <div class="cpac-wrap">
       <div class="row">
-        <div class="col-xs-10">
+
+        <div class="col6-small">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
+          <div class="nav-brand">
             <!-- <a class="navbar-brand d-none d-sm-block" href="<?php bloginfo('url') ;?>"><span class="first">CHRIS</span> <span class="last">PACCIONE</span></a> -->
             <a class="navbar-brand mobile-brand" href="<?php bloginfo('url') ;?>"><span class="first">C</span> <span class="last">P</span></a>
           </div>
         </div>
-        <div class="col-xs-2">
+
+        <div class="col6-small">
           <!-- cpac mobile menu -->
           <div class="cpac-mobile-menu">
             <span class="menu-item"></span>
@@ -27,7 +29,7 @@
             <span class="menu-item"></span>
           </div>
         </div>
-      </div>
+
       </div>
     </div>
   </nav>

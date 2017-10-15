@@ -1,7 +1,46 @@
 // HOME PAGE
 .cpac-wrap {
   max-width: 1140px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: inherit;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+.row {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col12 {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col6-small {
+  box-sizing: border-box;
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col6 {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @include respond-to(min-width, 700px) {
+    width: 50%;
+  }
 }
 
 /*------------------------------------------------------
