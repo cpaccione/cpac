@@ -41,7 +41,6 @@ $counter = 0;
       </div>
     </div>
 
-<<<<<<< HEAD
 
     </div>
   </section>
@@ -99,9 +98,8 @@ $counter = 0;
   </section>
 
 
-=======
-      <div class="row">
-        <!--   <div class="col-md-5"></div> -->
+      <!-- <div class="row">
+          <div class="col-md-5"></div>
           <div class="col-md-6">
                         <h2 class="section-title">ABOUT ME</h2>
           <p>Hi, I'm Chris Paccione, a front-end web developer motivated by a passion for coding and WordPress. I offer front-end development, WordPress theme building, and HTML e-mail marketing services. Please view my work below and contact me if your ready to get started or want to discuss your next project.</p>
@@ -123,18 +121,9 @@ $counter = 0;
           </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> e04e4953986844f731e2dd2347eb3612777069e0
-=======
->>>>>>> e04e4953986844f731e2dd2347eb3612777069e0
-=======
->>>>>>> e04e4953986844f731e2dd2347eb3612777069e0
-=======
->>>>>>> e04e4953986844f731e2dd2347eb3612777069e0
+
 <!-- <section class="about-me">
     <div class="container">
 
