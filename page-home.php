@@ -60,7 +60,7 @@ $counter = 0;
 
                       <div class="col6">
                           <a href="<?php the_permalink(); ?>">
-                              <div class="subject img-overlay">
+                              <!-- <div class="subject img-overlay"> -->
 
                                   <?php
 
@@ -70,16 +70,16 @@ $counter = 0;
 
                                   ?>
 
-                                  <div class="portfolio-overlay">
-                                      <div class="overlay-copy">
-                                          <div class="center">
+                                  <!-- <div class="portfolio-overlay"> -->
+                                      <!-- <div class="overlay-copy"> -->
+                                          <!-- <div class="center"> -->
                                               <span class="underline">
                                                   <h5><?php the_title(); ?></h5>
                                               </span>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
+                                          <!-- </div> -->
+                                      <!-- </div> -->
+                                  <!-- </div> -->
+                              <!-- </div> -->
                           </a>
                       </div>
 
