@@ -63,7 +63,9 @@
 	// position: absolute;
 	// right: 20px;
 	// top: 18px;
-	padding-top: 25px;
+	// padding-top: 25px;
+	padding-top: .3125rem;
+	padding-bottom: .3125rem;
 	float: right;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
@@ -97,8 +99,8 @@
 
 nav {
 	background-color: $dark-blue;
-	height: 75px;
-	width: 100%;
+	// height: 75px;
+	// width: 100%;
 	// position: fixed;
 	// top: 0;
 	// left: 0;
@@ -108,13 +110,7 @@ nav {
 
 .nav-brand {
 	font-size: 2em;
-	margin-top: 22px;
-}
-
-.navbar {
-	font-size: 1em;
-	height: 60px;
-	padding-top: 6px;
+	// margin-top: 22px;
 }
 
 .navbar-toggle {
@@ -156,9 +152,9 @@ nav {
     background-color: #e7e7e7;
 }
 
-.logged-in .navbar-default {
-  padding-top: 33px;
-}
+// .logged-in .navbar-default {
+//   padding-top: 33px;
+// }
 
 .menu-main-container {
   text-transform: uppercase;
@@ -172,69 +168,4 @@ nav {
 .last {
 	color: $white;
   font-weight: 700;
-}
-
-/* Homepage Hero */
-
-.home-hero-copy {
-	color: $white;
-	color: $dark-blue;
-	padding-top: 75px;
-	text-align: center;
-
-	@include respond-to(min-width, 500px) {
-		padding-top: 150px;
-	}
-	// 
-	// h1 {
-	// 	font-size: 2rem;
-	//
-	// 	@include respond-to(min-width, 768px) {
-	// 		font-size: 2.5rem;
-	// 	}
-	//
-	// 	@include respond-to(min-width, 1024px) {
-	// 		font-size: 3.5rem;
-	// 	}
-	//
-	// 	@include respond-to(min-width, 1200px) {
-	// 		font-size: 5rem;
-	// 	}
-	// }
-}
-
-// The visible class is used to display the hero copy
-
-.visible {
-  display: block;
-}
-
-.header {
-  background: linear-gradient(#133140, transparent 100%),
-  linear-gradient(0deg, #133140, transparent 100%),
-  url('../images/keyboard-header.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-
-	@include respond-to(max-width, 600px) {
-		  background: linear-gradient(#ffffff, transparent 100%),
-		  linear-gradient(0deg, #ffffff, transparent 100%),
-		  url('../images/keyboard-header.jpg');
-		  background-size: cover;
-		  background-position: center;
-		height: 200px;
-	}
-
-  h1 {
-    color: $white;
-
-		@include respond-to(max-width, 600px) {
-			font-size: 4em;
-			padding: 20px 0 20px 0;
-			color: $dark-blue;
-		}
-  }
-
-
 }

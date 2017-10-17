@@ -18,13 +18,13 @@ $counter = 0;
 <?php get_header(); ?>
 
     <section class="header d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <?php the_title('<h1>', '</h1>'); ?>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+              <?php the_title('<h1>', '</h1>'); ?>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="portfolio-section">
