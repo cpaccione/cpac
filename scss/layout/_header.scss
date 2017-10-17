@@ -176,17 +176,6 @@ nav {
 
 /* Homepage Hero */
 
-.home-hero {
-  // background: linear-gradient($dark-blue, transparent 100%), linear-gradient(0deg, $dark-blue, transparent 100%), url('../images/mydesk.jpg');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: 50%;
-  //height: 600px;
-  //background-color: $dark-blue;
-	// background-color: $white;
-	// position: relative;
-}
-
 .home-hero-copy {
 	color: $white;
 	color: $dark-blue;
@@ -196,22 +185,22 @@ nav {
 	@include respond-to(min-width, 500px) {
 		padding-top: 150px;
 	}
-
-	h1 {
-		font-size: 2rem;
-
-		@include respond-to(min-width, 768px) {
-			font-size: 2.5rem;
-		}
-
-		@include respond-to(min-width, 1024px) {
-			font-size: 3.5rem;
-		}
-
-		@include respond-to(min-width, 1200px) {
-			font-size: 5rem;
-		}
-	}
+	// 
+	// h1 {
+	// 	font-size: 2rem;
+	//
+	// 	@include respond-to(min-width, 768px) {
+	// 		font-size: 2.5rem;
+	// 	}
+	//
+	// 	@include respond-to(min-width, 1024px) {
+	// 		font-size: 3.5rem;
+	// 	}
+	//
+	// 	@include respond-to(min-width, 1200px) {
+	// 		font-size: 5rem;
+	// 	}
+	// }
 }
 
 // The visible class is used to display the hero copy

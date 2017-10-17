@@ -18,8 +18,7 @@
   transition: ease-out 200ms;
 }
 
-.fa-github,
-.fa-linkedin {
+.fa {
   color: $white;
   color: $dark-blue;
   -webkit-transition: ease-out 200ms;
@@ -28,8 +27,7 @@
   transition: ease-out 200ms;
 }
 
-.fa-github:hover,
-.fa-linkedin:hover {
+.fa:hover {
   color: $light-blue;
   -webkit-transition: ease-out 200ms;
   -moz-transition: ease-out 200ms;
