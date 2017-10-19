@@ -1,34 +1,38 @@
-/* FOOTER STYLES */
+// Footer Styles
 
 footer {
 	margin-top: 50px; 
 	padding-bottom: 15px;
 
+	.social-media {
+		text-align: center;
+
+		li {
+			padding: 20px;
+		}
+	}
+
+	#footer {
+		text-align: center;
+		padding: 0;
+
+		li {
+			display: inline;
+
+			a {
+				color: $dark-blue;
+				padding: 10px;
+
+				&:hover {
+					color: $light-blue;
+				}
+			}
+		}
+	}
+
 	small {
 		display: block;
 		text-align: center;
 	}
-
-  .social-media {
-    text-align: center;
-
-    li {
-      padding: 25px;
-    }
-  }
-
-  #footer {
-  	text-align: center;
-  	padding: 0;
-
-  	li {
-  		display: inline;
-
-  		a {
-  			color: $dark-blue;
-  			padding: 10px;
-  		}
-  	}
-  }
 
 }

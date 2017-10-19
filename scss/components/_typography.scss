@@ -1,5 +1,9 @@
 h1 {
 	color: $dark-blue;
+
+	@include respond-to(max-width, 400px) {
+		font-size: 2rem;
+	}
 }
 
 h2 {

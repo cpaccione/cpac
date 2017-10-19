@@ -5,17 +5,15 @@ body {
 	font-size: 1em;
 }
 
-// fluid-images
-img {
-	max-width: 100%;
-	height: auto;
-}
-
 .circle {
 	border-radius: 50%;
 	max-width: 75%;
 	display: block;
 	margin: 0 auto;
+}
+
+.no-wrap {
+	white-space: nowrap;
 }
 
 // logged in
