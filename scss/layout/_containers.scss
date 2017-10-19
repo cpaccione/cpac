@@ -2,6 +2,12 @@
 .home-hero {
   height: 100%;
   padding: 25px 0 25px 0;
+  text-align: center;
+
+  small {
+    display: block;
+    margin-bottom: 50px;
+  }
 
   @include respond-to(min-width, 768px) {
     height: 600px;
@@ -354,6 +360,22 @@ HOME PAGE STYLES - page-home.php
   li {
     display: inline;
     padding-right: 10px;
+  }
+
+}
+
+
+.hire-me {
+  background-color: $dark-blue;
+
+  a, .fa {
+    color: $white;
+    font-weight: 700;
+
+  }
+
+  &:hover {
+    background-color: $light-blue;
   }
 
 }

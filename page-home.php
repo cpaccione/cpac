@@ -13,7 +13,20 @@ $counter = 0;
 
 <?php get_header(); ?>
 
-  <section class="home-hero">
+    <section class="home-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>WordPress &amp; Front-end Developer</h1>
+                    <p>I focus on clean code, quality responsive sites, and a great user experience</p>
+                    <small>HTML <i class="fa fa-minus"></i> CSS <i class="fa fa-minus"></i> jQuery <i class="fa fa-minus"></i> WordPress</small>
+                    <a href="#portfolio-link" class="smooth btn-primary active">View Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--   <section class="home-hero">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -31,17 +44,10 @@ $counter = 0;
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="portfolio-section">
-    <div class="container">
-      
-      <div class="row">
-        <div class="col-12">
-          <h2>Portfolio</h2>
-        </div>
-      </div>
-
+  <section id="portfolio-link" class="portfolio-section">
+    <div class="container-fluid">
 
       <?php
 
@@ -90,6 +96,18 @@ $counter = 0;
               <?php endwhile; endif; wp_reset_postdata(); ?>
     </div>
   </section>
+
+  <section class="testimonials">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <a href="#"><button type="button" class="btn btn-primary btn-lg btn-block"><h3>ABOUT ME &nbsp;&nbsp;  <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i></h3></button></a>
 
 
 <?php get_footer(); ?>
