@@ -77,17 +77,36 @@ $counter = 0;
     </div>
   </section>
 
+    <a href="#"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>HIRE ME <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+    <a href="#"><button type="button" class="d-none d-sm-block btn btn-primary btn-lg btn-block"><h3>HIRE ME TO WORK ON YOUR PROJECT <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+
   <section class="testimonials">
       <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Testimonials</h2>
+          </div>
+        </div>
           <div class="row">
               <div class="col-12">
-                  
+                <blockquote class="blockquote text-center">
+                  <p class="mb-0"><i class="fa fa-quote-left" aria-hidden="true"></i> WOW! Chris has this incredible patience that goes beyond infinity. He was with us step-by-step, even after the project was finalized he made himself available for WordPress and SEO support. His attention to detail and customer care by far exceeded our expectations."</p>
+                  <footer class="blockquote-footer"><cite title="Source Title">SECG Tax</cite></footer>
+                </blockquote>
+                 <blockquote class="blockquote text-center">
+                  <p class="mb-0"><i class="fa fa-quote-left" aria-hidden="true"></i> Originally, we hired Chris to do some small website edits. We loved the work that he did so much that we decided to redesign our website. Chris is easy to work with, very thorough, and was able to take our ideas and concepts and implement them, all at a very reasonable rate for such high end work. We could not be happier with the work that Chris has done for us."</p>
+                  <footer class="blockquote-footer"><cite title="Source Title">Kelly and Company</cite></footer>
+                </blockquote>
+                <blockquote class="blockquote text-center">
+                  <p class="mb-0"><i class="fa fa-quote-left" aria-hidden="true"></i> Christopher designed my latest website for me and I couldn't be more pleased. He was able to implement every single idea that I wanted, and provided many of his own suggestions. Any time I requested changes, he had them completed the same day, and often within an hour. The final result was much better than what I had hoped for, mostly due to Chris's creative thinking."</p>
+                  <footer class="blockquote-footer"><cite title="Source Title">Dr. Steven Warner</cite></footer>
+                </blockquote>
               </div>
           </div>
       </div>
   </section>
 
-  <a href="#"><button type="button" class="btn btn-primary btn-lg btn-block"><h3>ABOUT ME <i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i></h3></button></a>
+  <a href="#"><button type="button" class="btn btn-primary btn-lg btn-block"><h3>ABOUT ME <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
 
 
 <?php get_footer(); ?>

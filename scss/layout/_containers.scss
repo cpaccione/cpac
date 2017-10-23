@@ -20,6 +20,17 @@
   }
 
 }
+
+.blockquote-footer {
+
+  cite {
+    color: $light-blue;
+    font-weight: 700;
+  }
+  
+}
+
+
 /*------------------------------------------------------
 
 HOME PAGE STYLES - page-home.php
@@ -130,7 +141,7 @@ HOME PAGE STYLES - page-home.php
   text-transform: uppercase;
   color: #2c3446;
   background: rgba(255, 255, 255, 0.7);
-  background: rgba(19,49,64,0.7);
+  //background: rgba(19,49,64,0.7);
   //background: rgba(19,49,64,0.7);
   padding: 0 0 0 10px;
   opacity: 1;
@@ -160,8 +171,10 @@ HOME PAGE STYLES - page-home.php
   position: relative;
 
     h5 {
-      font-weight: 300;
+      font-size: 1.5rem;
       color: $white;
+      color: $dark-blue;
+      font-family: 'Lato', sans-serif;
     }
 
     :after {
@@ -311,8 +324,6 @@ HOME PAGE STYLES - page-home.php
 }
 
 .testimonials {
-  background-color: $light-blue;
-  background-color: $grey;
   text-align: center;
   padding: 75px 0 75px 0;
 

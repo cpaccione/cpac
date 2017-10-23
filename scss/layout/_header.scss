@@ -64,8 +64,9 @@
 	// right: 20px;
 	// top: 18px;
 	// padding-top: 25px;
-	padding-top: .3125rem;
-	padding-bottom: .3125rem;
+	// padding-top: .3125rem;
+	// padding-bottom: .3125rem;
+	padding-top: .8rem;
 	float: right;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
@@ -168,4 +169,9 @@ nav {
 .last {
 	color: $white;
 	font-weight: 700;
+}
+
+// Page Headers
+.header {
+	height: 200px;
 }
