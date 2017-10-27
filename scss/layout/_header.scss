@@ -26,7 +26,7 @@
 	height: 100%;
 	width: 100%;
 	position: fixed;
-	top: 75px;
+	top: 60px;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -46,12 +46,13 @@
 
 		li {
 			a {
-				color: #fff;
-				color: $salmon-red;
+				// color: #fff;
+				// color: $salmon-red;
+				color: $light-blue;
 				font-size: 2.5em;
 
 				&:hover {
-					color: $light-blue;
+					color: $dark-blue;
 				}
 			}
 		}

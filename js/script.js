@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
 
+  $('.hero-lead').fadeIn(2000);
+
   //$('.cpac-menu').hide();
   $('.cpac-mobile-menu').click(function() {
 
@@ -7,12 +9,12 @@ jQuery(document).ready(function($) {
       // Mobile menu list fade in
       $('.cpac-menu').toggle('fade');
 
-      if ($('.cpac-mobile-menu').hasClass("open")) {
+    //   if ($('.cpac-mobile-menu').hasClass("open")) {
 
-    $('.menu li').each(function(index, element) {
-        $(element).children('a').delay(index*100).hide().fadeIn(500);
-      });
-    };
+    // $('.menu li').each(function(index, element) {
+    //     $(element).children('a').delay(index*100).hide().fadeIn(500);
+    //   });
+    // };
 
   });
 
@@ -55,30 +57,20 @@ $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
 
-// BX Slider
-
-$('.bxslider').bxSlider({
-  auto: true,
-  speed: 800,
-  pause: 7000,
-  autoHover: true,
-  adaptiveHeight: true
-});
-
 // Defining a function to set size for #hero
- // function fullscreen(){
- //   $('.home-hero').css({
- //           width: $(window).width(),
- //           height: $(window).height()
- //       });
- // }
+ function fullscreen(){
+   $('.home-hero').css({
+           width: $(window).width(),
+           height: $(window).height()
+       });
+ }
  // call function
- //fullscreen();
+ fullscreen();
 
  // Run the function in case of window resize
- // $(window).resize(function() {
- //      fullscreen();
- //   });
+ $(window).resize(function() {
+      fullscreen();
+   });
 
 
 // Smooth Scroll

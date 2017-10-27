@@ -79,7 +79,7 @@ $counter = 0;
         </div>
     </section>
 
-    <a href="#"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>HIRE ME <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
-    <a href="#"><button type="button" class="d-none d-sm-block btn btn-primary btn-lg btn-block"><h3>HIRE ME TO WORK ON YOUR PROJECT <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+    <a href="/contact/"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>Hire Me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+    <a href="/contact/"><button type="button" class="d-none d-sm-block btn btn-primary btn-lg btn-block"><h3>Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
 
 <?php get_footer(); ?>

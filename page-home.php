@@ -17,10 +17,12 @@ $counter = 0;
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                  <div class="hero-lead">
                     <h1>WordPress &amp; <span class="no-wrap">Front-end Developer</span></h1>
                     <p>I focus on clean code, quality responsive sites, and a great user experience</p>
                     <small>HTML <i class="fa fa-minus"></i> CSS <i class="fa fa-minus"></i> jQuery <i class="fa fa-minus"></i> WordPress</small>
                     <a href="#portfolio-link" class="smooth btn-primary active">View Portfolio</a>
+                  </div>
                 </div>
             </div>
         </div>
@@ -34,7 +36,7 @@ $counter = 0;
               $args = array(
                   'post_type' => 'portfolio',
                   'post_status' => 'publish',
-                  'posts_per_page' => -1,
+                  'posts_per_page' => 6,
                   'orderby' => 'date',
                   'order' => 'DESC'
                   );
@@ -77,8 +79,8 @@ $counter = 0;
     </div>
   </section>
 
-    <a href="#"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>HIRE ME <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
-    <a href="#"><button type="button" class="d-none d-sm-block btn btn-primary btn-lg btn-block"><h3>HIRE ME TO WORK ON YOUR PROJECT <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+    <a href="/contact/"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>Hire me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+    <a href="/contact/"><button type="button" class="d-none d-sm-block btn btn-primary btn-lg btn-block"><h3>Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
 
   <section class="testimonials">
       <div class="container">
@@ -106,7 +108,7 @@ $counter = 0;
       </div>
   </section>
 
-  <a href="#"><button type="button" class="btn btn-primary btn-lg btn-block"><h3>ABOUT ME <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+  <a href="#"><button type="button" class="btn btn-primary btn-lg btn-block"><h3>About Me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
 
 
 <?php get_footer(); ?>
