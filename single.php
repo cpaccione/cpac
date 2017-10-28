@@ -1,7 +1,18 @@
 <?php get_header(); ?>
+
+  <section class="header d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <?php single_post_title('<h1>', '</h1>'); ?>
+            </div>
+        </div>
+    </div>
+  </section>
+
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-9">
         <article class="blog-content">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -21,9 +32,10 @@
           <?php endif; ?>
         </article>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <?php dynamic_sidebar('blog'); ?>
       </div>
     </div>
   </div>
+  
 <?php get_footer(); ?>
