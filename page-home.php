@@ -36,6 +36,7 @@ $counter = 0;
               $args = array(
                   'post_type' => 'portfolio',
                   'post_status' => 'publish',
+                  'portfolio_category' => 'featured',
                   'posts_per_page' => 6,
                   'orderby' => 'date',
                   'order' => 'DESC'
@@ -79,8 +80,8 @@ $counter = 0;
     </div>
   </section>
 
-    <a href="/contact/"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>Hire me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
-    <a href="/contact/"><button type="button" class="d-none d-sm-block btn btn-primary btn-lg btn-block"><h3>Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+    <a href="/hire-me/"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>Hire me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+    <a href="/hire-me/"><button type="button" class="d-none d-sm-block btn btn-primary btn-lg btn-block"><h3>Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
 
   <section class="testimonials">
       <div class="container">
@@ -110,7 +111,7 @@ $counter = 0;
       </div>
   </section>
 
-  <a href="#"><button type="button" class="btn btn-primary btn-lg btn-block"><h3>About Me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+  <a href="/about-me/"><button type="button" class="btn btn-primary btn-lg btn-block"><h3>About Me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
 
 
 <?php get_footer(); ?>

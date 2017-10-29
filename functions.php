@@ -22,11 +22,7 @@ function theme_styles() {
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
 function theme_js() {
-
-	global $wp_scripts;
-
 	wp_enqueue_script( 'script_js', get_template_directory_uri() . '/js/script.js', array('jquery'), '', true );
-
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_js' );
