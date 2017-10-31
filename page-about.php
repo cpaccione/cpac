@@ -26,41 +26,23 @@ Template Name: About Me
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h2>How I got here</h2>
-        <p>Hi, I'm Chris Paccione, a front-end web developer motivated by a passion for coding and WordPress. I offer front-end development, WordPress theme building, and HTML e-mail marketing services.</p>
+        I'm a full-time and freelance front-end web developer motivated by a passion for coding and WordPress. I offer front-end development, WordPress theme building, and HTML e-mail marketing services.
 
-        <p>Hi, I'm Chris Paccione a front-end developer currently located in Chicago, IL.</p>
+        I've been in business for myself since 2013, and mostly work with small to mid-size businesses. During the day I work as a web developer for AgencyMSI in downtown Chicago.
 
-        <p>I've been in business since 2013, and mostly work with small businesses to mids-size businesses. I specialize in WordPress theme development, but can take care of any of your development needs.</p>
+        My path to become a web developer started off in New York City. I was laid off in 2012 after 10 years of working for Merrill Lynch. I enrolled myself in a front-end web development course at General Assembly, at the urging of my then girlfriend who suggested it might be a good idea to learn a skill that I have interest in instead of going back to the world of finance.
 
-        <p>After being laid off in 2012 after 10 years of working at Merrill Lynch; I enrolled myself in the Front-end Web Development course offered at General Assembly. It was at a suggestion from my girlfriend who said it might be a good idea to learn something that you find interesting instead of going back to the world of finance, which I was very disillusioned with, and fell into because of a poor job market after collge. After all I went to school for radio and tv and suddenly found myself working for a large investemetn firm.</p>
+        I fell in love with with web development after completing the first weekend of classes. I was shocked that you could make a living doing something that seemed so interesting and fun. I was at once delighted and worried; delighted because I finally found something that wouldn't feel like work, but worried because I knew a long tough road lay ahead of me, and I had to make up for a lot of lost time.
 
-        <p>I quickly fell in love with Front-end development after the first weekend of class. I was shocked that you could make a living doing something that seemed so intersteing and fun. I was at once delighted and worried; delighted because I finally found that thing that would make work feel less liek work, but worried, because I knew a long tough road lay ahead of me.</p>
+        I completed the course at General Assembly in June of 2013, and soon after quit my job at an insurance company. I found myself in New York with no job, with rent that had to be paid, and nothing but a dream of becoming a web developer. Sitting in my one bedroom apartment, eating fast food by myself on a plastic folding table; the reality of the situation really hit home. I made this decision and now it was time to get to work. I kept myself afloat with my savings, and made web development my life often working until 4am and crashing from exhaustion
 
-        <p>I completed the course in 2013, and quit my job at an insurance company which was keeping me afloat to pursue this passion full time. I found myself in New York with no job, and rent that had to paid, with nothing but a dream of becoming a web developer. Sitting in my one bedroom apartment, eating fast food by mysefl on a plastic folding table; the reality of the situation really hit home. I kept myself afloat with my savings, and made web development my life working often until 4am learning as much as possibl to make up for lost time.</p>
+        I did work for free, and at the end of 2013 I landed my first paid freelance job, which came at the right time as my savings ran low. Unfortunately New York is very expensive, and after two months of no income, and failing to land a full-time as a developer, I came to the realization that I need to take whatever I could get, and put my passion on the back-burner as plan-b. 
 
-        <p>I did a few jobs for free, faking it while I made it, and then at then end of 2013 I landed my first paid freelance job, which came at the right time as my savings ran low. My luck and and hard work paid, off, but New York is expensive, and I didn't have the client base to keep me it going for long.  After two months of not having a pay-check, and failing to land a developer job for my lack of full-time experience, I came to realization that this passion may have to become a hobby and any job would have to due because the bills have to be paid.</p>
+        Through the help of a friend I was offered an interview at KPMG. I made it to the final interview, but they decided to go with someone else. At this point with no options left and little in the bank, I took a job selling diapers and baby products over the phone for Quidsi in Jersey City. It felt good to land a job, but it felt wrong after all the work I put into becoming a developer.
 
-        <p>Through the help of a friend I was offered an interview at KPMG. I made it to the final interview, but they decided to go with someone else. At this point with no options left, I took a job selling diapers and baby products over the phone for Quidsi in Jersey City. It felt good to know that I had a way of making money again, but it just felt wrong and had to swallow my pride and say I gave it my best shot. After over year of cramming as much knowledge as I can, and many late nights I had to accept that it just wasn't meant to be.</p>
+        A week before I was to start work, I had a phone interview with AgencyMSI in Chicago. The agency was interested in my work, and they offered a temporary 3 month role as their web developer. It was tough to leave friends and family in New York, but I packed as much as I could in my Hyundai, put the rest in storage and drove from New York to Chicago. 
 
-        <p>The week before I was to start work, I was told through and Creative Agency that I was working with, that an Agency in Chicago was interested in my work, and I had temportary position availbe for at least 3 month. After one phone call they decided to give me a shot. I packed as much as i could in my Hyundai, put the rest in storage and drove from New York to Chicago</p>
-
-        <p>After two months on the job at AgencyMSI in Chicago, I was hired full-time, and have worked and learned with a great group of people since April of 2014. I work full-time, but I'm available for freelance work.</p>
-
-        <h2>Skills</h2>
-        <p>I have expierence working as a Front-end Developer, and coding WordPress themes from scatch and tailored to the needs of the client.</p>
-
-        <h2>Front-end Developer</h2>
-
-        <h2>WordPress Developer</h2>
-
-        <h2>Design</h2>
-
-
-
-
-
-
+        After two months on the job I was hired full-time, and have worked and learned with a great group of designers and creative at AgencyMSI since April of 2014. I work full-time, but I freelance and am currently available.
       </div>
       <div class="col-md-5">
         <img class="circle" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/chris_paccione_500.jpg" alt="Chris Paccione front-end web developer">
