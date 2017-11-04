@@ -1,12 +1,19 @@
+html {
+	font-size: 1.25em;
+}
+
+
 body {
-	font-family: 'Lato', sans-serif;
+	//font-family: 'Lato', sans-serif;
+	//font-family: 'Oxygen', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: $white;
 	font-weight: 400;
-	font-size: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Abril Fatface', cursive;
+	//font-family: 'Abril Fatface', cursive;
+	font-family: 'Josefin Slab', serif;
 }
 
 .circle {

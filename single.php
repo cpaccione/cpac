@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <section class="header d-flex align-items-center">
+  <!-- <section class="header d-flex align-items-center">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -8,7 +8,7 @@
             </div>
         </div>
     </div>
-  </section>
+  </section> -->
 
   <div class="container">
     <div class="row">
@@ -37,5 +37,5 @@
       </div>
     </div>
   </div>
-  
+
 <?php get_footer(); ?>

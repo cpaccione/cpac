@@ -4,7 +4,7 @@
 	//border: 2px solid $salmon-red;
 	letter-spacing: -2px;
 	line-height: 1;
-	padding: 7px;
+	padding: 7px 7px 3px 7px;
 	-webkit-transition: ease-out 200ms;
 	-moz-transition: ease-out 200ms;
 	-o-transition: ease-out 200ms;
@@ -154,6 +154,10 @@ nav {
 
 .menu-main-container {
   text-transform: uppercase;
+}
+
+.navbar-brand {
+	font-family: 'Josefin Slab', serif;
 }
 
 .first {

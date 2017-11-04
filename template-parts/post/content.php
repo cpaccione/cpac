@@ -11,7 +11,7 @@
 ?>
 
 
-<h6><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 <ul class="blog-info">
 <li><i class="fa fa-user"></i> <?php the_author_posts_link(); ?></li>
