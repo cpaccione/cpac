@@ -19,4 +19,5 @@
 </ul>
 
 <p><?php echo strip_tags( get_the_excerpt() ); ?></p>
-<p><a class="post-link" href="<?php the_permalink(); ?>"><button type="button" class="btn btn-primary btn-lg active">READ MORE</button></a></p>
+<?php the_content(); ?> 
+<!-- <p><a class="post-link" href="<?php //the_permalink(); ?>"><button type="button" class="btn btn-primary btn-lg active">READ MORE</button></a></p> -->

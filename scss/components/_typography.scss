@@ -56,6 +56,7 @@ p {
 #wp-calendar {
     color: #666;
     font-size: 12px;
+    width: 100%;
     // -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
     // -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
     // box-shadow: 0 1px 5px rgba(0,0,0,0.3);
@@ -95,7 +96,7 @@ p {
 
 #wp-calendar tbody td {
     color: #666;
-    color: $light-blue;
+    //color: $light-blue;
     // text-shadow: 0 1px 0 rgba(255,255,255,0.5);
     padding: 8px;
     text-align: center;
@@ -166,6 +167,8 @@ p {
 
 // Widget List Style
 .widget {
+    margin-bottom: 3em;
+
     ul {
         padding-left: 0;
         list-style: none;
@@ -174,6 +177,10 @@ p {
             border-top: 1px solid $grey;
             border-bottom: 1px solid $grey;
             padding: 0.5em 0;
+
+            +li {
+                margin-top: -1px;
+            }
         }
     }    
 }

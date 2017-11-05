@@ -46,10 +46,15 @@ function prefix_enqueue_awesome() {
 	wp_enqueue_style( 'prefix-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), '4.4.0' );
 }
 
-function cpac_excerpt_length( $length ) {
-	return 30;
+// function cpac_excerpt_length( $length ) {
+// 	return 30;
+// }
+// add_filter( 'excerpt_length', 'cpac_excerpt_length', 999 );
+
+function modify_read_more_link() {
+    return '<a class="more-link" href="' . get_permalink() . '">Your Read More Link Text</a>';
 }
-add_filter( 'excerpt_length', 'cpac_excerpt_length', 999 );
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
 
 
 function create_widget($name, $id, $description) {

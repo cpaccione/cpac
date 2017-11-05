@@ -28,7 +28,7 @@ Template Name: About Me
       <div class="col-md-7">
         <h2>My journey</h2>
 
-        <p>My path to web development started off in New York City, where after 10 years of working for <a href="https://en.wikipedia.org/wiki/Merrill_Lynch" target="_blank">Merrill Lynch</a>, I was laid off.  Instead of going back to the world of finance, I decided to see this as an opportunity to learn a skill that I’ve had much interest in and change the path of my life.  I enrolled myself in a front-end web development course at <a href="https://generalassemb.ly/" target="_blank">General Assembly</a>.</p>
+        <p>My path to web development started off in New York City, where after 10 years of working for <a href="https://en.wikipedia.org/wiki/Merrill_Lynch" target="_blank">Merrill Lynch</a>, I was laid off.  Instead of going back to the world of finance, I decided to see this as an opportunity to learn a skill that I’ve had much interest in and change the trajectory of my career.  I enrolled myself in a front-end web development course at <a href="https://generalassemb.ly/" target="_blank">General Assembly</a>.</p>
 
         <p>I fell in love with web development after completing the first weekend of classes. I remember being surprised that I could make a living doing something that seemed so interesting and fun. I was at once delighted and worried; delighted because I finally found something that wouldn't feel like work, but worried because I knew a long tough road lay ahead of me, and I had to make up for a lot of lost time.</p>
 
