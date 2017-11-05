@@ -27,25 +27,8 @@ Template Name: About Me
     <div class="row">
       <div class="col-md-7">
         <h2>My journey</h2>
-<!--         <p>My path to become a web developer started off in New York City, after 10 years of working for Merrill Lynch. The 2008 crash finally caught up to me in 2012.
 
-        <p>I enrolled myself in a front-end web development course at <a href="https://generalassemb.ly/" target="_blank">General Assembly</a>, at the urging of my then girlfriend who suggested it might be a good idea to learn a skill that I have interest in instead of going back to the world of finance.</p>
-
-        <p>I fell in love with with web development after completing the first weekend of classes. I was shocked that you could make a living doing something that seemed so interesting and fun. I was at once delighted and worried; delighted because I finally found something that wouldn't feel like work, but worried because I knew a long tough road lay ahead of me, and I had to make up for a lot of lost time.</p>
-
-        <p>I completed the course June of 2013, and soon after quit my job at an insurance company. Sitting in my one bedroom apartment, eating fast food by myself on a plastic folding table; the reality of the situation really hit home. The had to be paid, and a dream of transforming myself into a web developer wasn't going to pay it.  I made the decision and now it was time to get to work.</p>
-
-        <p>I did work for free, absorbed information until I often crashed at 4am, and at the end of 2013 I landed my first paid freelance job, which came at the perfect time as my savings ran low</p>
-
-        <p>New York is very expensive, and despite the effort after two months of no income, and failing to land a full-time job as a developer, I came to the realization that my passion that I would reluctantly put my passion on the back-burner.</p>
-
-        <p>Through the help of a friend I was offered an interview at KPMG. I made it to the final interview, but they decided to go with someone else. At this point with no options left and little in the bank, I took a job selling diapers and baby products over the phone for Quidsi in Jersey City. It felt good to land a job, but it felt wrong after all the work I put into becoming a developer.</p>
-
-        <p>A week before I was to start work, I had a phone interview with AgencyMSI in Chicago. The agency was interested in my work, and they offered a temporary 3 month role as their web developer. It was tough to leave friends and family in New York, but I packed as much as I could in my Hyundai, put the rest in storage and drove from New York to Chicago.</p>
-
-        <p>After two months on the job I was hired full-time, and have worked and learned with a great group of designers and creative at AgencyMSI since April of 2014. I work full-time, but I freelance and am currently available.</p> -->
-
-        <p>My path to becoming a web developer started off in New York City, where after 10 years of working for <a href="https://en.wikipedia.org/wiki/Merrill_Lynch" target="_blank">Merrill Lynch</a>, I was laid off.  Instead of going back to the world of finance, I decided to see this as an opportunity to learn a skill that I’ve had much interest in and change the path of my life.  I enrolled myself in a front-end web development course at <a href="https://generalassemb.ly/" target="_blank">General Assembly</a>.</p>
+        <p>My path to web development started off in New York City, where after 10 years of working for <a href="https://en.wikipedia.org/wiki/Merrill_Lynch" target="_blank">Merrill Lynch</a>, I was laid off.  Instead of going back to the world of finance, I decided to see this as an opportunity to learn a skill that I’ve had much interest in and change the path of my life.  I enrolled myself in a front-end web development course at <a href="https://generalassemb.ly/" target="_blank">General Assembly</a>.</p>
 
         <p>I fell in love with web development after completing the first weekend of classes. I remember being surprised that I could make a living doing something that seemed so interesting and fun. I was at once delighted and worried; delighted because I finally found something that wouldn't feel like work, but worried because I knew a long tough road lay ahead of me, and I had to make up for a lot of lost time.</p>
 
