@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <!-- <section class="header d-flex align-items-center">
+  <section class="header d-flex align-items-center">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -8,31 +8,28 @@
             </div>
         </div>
     </div>
-  </section> -->
+  </section>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-9">
-        <article class="blog-content">
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <div class="col-md-7">
+          <?php
 
-            <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-              <ul class="blog-info">
-                <li><i class="fa fa-user"></i> <?php the_author_posts_link(); ?></li>
-                <li><i class="fa fa-clock-o"></i> <?php the_date(); ?></li>
-              </ul>
+              if ( have_posts() ) :
 
-          <?php the_content(); ?>
+                  /* Start the Loop */
+                  while ( have_posts() ) : the_post();
 
-          <?php endwhile; else: ?>
 
-            <h1>Oh no!</h1>
-            <p>No content is appearing on this page!</p>
+                  get_template_part( 'template-parts/post/content', get_post_format() );
 
-          <?php endif; ?>
-        </article>
+                  endwhile;
+
+              endif;
+
+          ?>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-5">
         <?php dynamic_sidebar('blog'); ?>
       </div>
     </div>

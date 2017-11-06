@@ -10,14 +10,15 @@
 
 ?>
 
+<article class="blog">
+	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+	<ul class="blog-info">
+		<li><i class="fa fa-user"></i> <?php the_author_posts_link(); ?></li>
+		<li><i class="fa fa-clock-o"></i> <?php the_date(); ?></li>
+	</ul>
 
-<ul class="blog-info">
-<li><i class="fa fa-user"></i> <?php the_author_posts_link(); ?></li>
-<li><i class="fa fa-clock-o"></i> <?php the_date(); ?></li>
-</ul>
+	<?php the_content(); ?> 	
+</article>
 
-<p><?php //echo strip_tags( get_the_excerpt() ); ?></p>
-<?php the_content(); ?> 
-<!-- <p><a class="post-link" href="<?php //the_permalink(); ?>"><button type="button" class="btn btn-primary btn-lg active">READ MORE</button></a></p> -->
+
