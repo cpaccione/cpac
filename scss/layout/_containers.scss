@@ -46,7 +46,7 @@
     color: $light-blue;
     font-weight: 700;
   }
-  
+
 }
 
 
@@ -189,7 +189,7 @@ HOME PAGE STYLES - page-home.php
     h5 {
       font-size: 1.5rem;
       color: $white;
-      font-family: 'Lato', sans-serif;
+      font-family: 'Josefin Slab', serif;
 
       @include respond-to(min-width, 500px) {
         color: $dark-blue;
@@ -244,7 +244,7 @@ HOME PAGE STYLES - page-home.php
   //height: 300px;
   background-color: $white;
   color: $dark-blue;
-  padding: 75px 0 75px 0;
+  padding: 0 0 4em 0;
 
   @include respond-to(max-width, 768px) {
     height: 100%;
