@@ -119,6 +119,24 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 		}
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+color: $grey-two !important;
+opacity: 1;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: $grey-two !important;
+opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: $grey-two !important;
+opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: $grey-two !important;
+opacity: 1;
+}
+
 hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
