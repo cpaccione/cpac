@@ -189,7 +189,8 @@ HOME PAGE STYLES - page-home.php
     h5 {
       font-size: 1.5rem;
       color: $white;
-      font-family: 'Josefin Slab', serif;
+      //font-family: 'Josefin Slab', serif;
+      font-family: 'Dosis', sans-serif;
 
       @include respond-to(min-width, 500px) {
         color: $dark-blue;
