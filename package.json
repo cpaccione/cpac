@@ -1,0 +1,30 @@
+{
+  "name": "cpac",
+  "version": "1.0.0",
+  "description": "A minimalist portfolio theme",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpaccione/cpac.git"
+  },
+  "keywords": [
+    "sass",
+    "grunt",
+    "autoprefixed",
+    "underscores",
+    "wordpress"
+  ],
+  "author": "Chris Paccione",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cpaccione/cpac/issues"
+  },
+  "homepage": "https://github.com/cpaccione/cpac#readme",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "dependencies": {}
+}
