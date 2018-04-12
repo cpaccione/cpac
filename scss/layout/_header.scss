@@ -1,7 +1,6 @@
 // Mobile menu
 .mobile-brand {
 	border: 2px solid $white;
-	//border: 2px solid $salmon-red;
 	letter-spacing: -2px;
 	line-height: 1;
 	padding: 7px 7px 3px 7px;
@@ -32,10 +31,6 @@
 	right: 0;
 	z-index: 2000;
 	background: $light-blue-trans-two;
-	// background-color: $light-blue;
-	//background-color: $dark-blue;
-	//background-color: $dark-blue-rgba;
-	//background-color: $grey;
 	background-color: $white;
 	text-align: center;
 
@@ -46,8 +41,6 @@
 
 		li {
 			a {
-				// color: #fff;
-				// color: $salmon-red;
 				color: $light-blue;
 				font-size: 2.5em;
 
@@ -147,10 +140,6 @@ nav {
     color: #555;
     background-color: #e7e7e7;
 }
-
-// .logged-in .navbar-default {
-//   padding-top: 33px;
-// }
 
 .menu-main-container {
   text-transform: uppercase;
