@@ -14,7 +14,8 @@ function theme_styles() {
 	wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300');
 	//wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Dosis|Open+Sans');
 	//wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'theme_css', get_template_directory_uri() . '/css/cpac.css' );
+	//wp_enqueue_style( 'theme_css', get_template_directory_uri() . '/css/cpac.css' );
+	wp_enqueue_style( 'cpac', get_stylesheet_uri() );
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
