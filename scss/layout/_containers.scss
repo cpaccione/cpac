@@ -237,11 +237,9 @@ HOME PAGE STYLES - page-home.php
 
 
 /* About Me */
-
 .about-me {
   display: flex;
   align-items: center;
-  //height: 300px;
   background-color: $white;
   color: $dark-blue;
   padding: 0 0 4em 0;
@@ -370,7 +368,6 @@ HOME PAGE STYLES - page-home.php
 }
 
 // blog
-
 .blog {
   padding-bottom: 4em;
 }
