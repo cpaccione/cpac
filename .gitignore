@@ -1,6 +1,7 @@
 node_modules
 .npm-debug.log
 tmp
-.sass-cache
+/.sass-cache
 *.css.map
 images
+bower_components

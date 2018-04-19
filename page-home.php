@@ -21,7 +21,7 @@ $counter = 0;
                     <h1>WordPress &amp; <span class="no-wrap">Front-end Developer</span></h1>
                     <p>I focus on clean code, quality responsive sites, and a great user experience</p>
                     <small>HTML <i class="fa fa-minus"></i> CSS <i class="fa fa-minus"></i> jQuery <i class="fa fa-minus"></i> WordPress</small>
-                    <a href="#portfolio-link" class="smooth btn-primary active">View Portfolio</a>
+                    <a href="#portfolio-link" class="smooth btn-primary">View Portfolio</a>
                   </div>
                 </div>
             </div>

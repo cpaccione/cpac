@@ -16,6 +16,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 // Global Imports
 // ===================================================================
 
+//@import '_bootstrap.scss';
+@import '../bower_components/bootstrap/scss/bootstrap.scss';
 @import 'base/index';
 @import 'components/index';
 @import 'layout/index';

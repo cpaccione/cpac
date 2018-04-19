@@ -27,6 +27,34 @@
 	}
 }
 
+.btn-primary {
+	background-color: transparent;
+	font-size: 0.9375em;
+	text-transform: uppercase;
+	color: $dark-blue;
+	border-radius: 25px;
+	line-height: 15px;
+	padding: 15px 38px 15px 38px;
+	display: inline-block;
+	box-shadow: none;
+	border: 2px solid $dark-blue;
+	-webkit-transition: ease-out 200ms;
+	-moz-transition: ease-out 200ms;
+	-o-transition: ease-out 200ms;
+	transition: ease-out 200ms;
+
+	&:hover {
+		background-color: $light-blue;
+		background-color: $dark-blue;
+		border: 2px solid $light-blue;
+		color: $white;
+		-webkit-transition: ease-out 200ms;
+		-moz-transition: ease-out 200ms;
+		-o-transition: ease-out 200ms;
+		transition: ease-out 200ms;
+	}
+}
+
 .btn-primary.btn-block {
 	background-color: $dark-blue;
 	color: $white;

@@ -1,0 +1,24 @@
+{
+  "name": "cpac",
+  "description": "A minimalist portfolio theme",
+  "main": "index.php",
+  "authors": [
+    "Chris Paccione"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "sass",
+    "grunt",
+    "autoprefixed",
+    "underscores",
+    "wordpress"
+  ],
+  "homepage": "https://github.com/cpaccione/cpac",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

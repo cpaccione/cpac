@@ -23,8 +23,7 @@ module.exports = function(grunt) {
           sourcemap: 'none',
         },
         files: {
-          'style.css':
-          'scss/cpac.scss'
+          'style.css' : 'scss/cpac.scss'
         }
       }
     },
