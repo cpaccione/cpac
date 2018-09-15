@@ -7,7 +7,7 @@ add_theme_support( 'title-tag' );
 //require get_template_directory() . '/inc/function-admin.php';
 
 function theme_styles() {
-	//wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
+	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
 	//wp_enqueue_style( 'bootstrap4', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css');
 
 	//wp_enqueue_style( 'google_font', 'https://fonts.googleapis.com/css?family=Abril+Fatface|Droid+Serif|Lato:300,400,700' );
