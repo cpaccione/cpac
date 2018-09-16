@@ -1004,10 +1004,22 @@ HOME PAGE STYLES - page-home.php
   background-image: url(images/wedding-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Slabo 27px', serif;
 }
 .wedding-header h1 {
-  font-size: 10em;
-  color: #133140;
+  font-family: 'Slabo 27px', serif;
+  font-size: 7em;
+  color: #00883a;
+  text-transform: uppercase;
+}
+.wedding-header h1 span {
+  text-transform: lowercase;
+}
+.wedding-header h2 {
+  font-family: 'Slabo 27px', serif;
+}
+.wedding-header p {
+  font-family: 'Slabo 27px', serif;
 }
 
 #overlay {

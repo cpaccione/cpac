@@ -8,14 +8,17 @@ Template Name: Wedding Template
 
 ?>
 
-<?php get_header(); ?>
+<?php get_header('wedding'); ?>
 
     <section class="wedding-header">
       <div id="overlay">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-center">
-              <h1>Gwen &amp; Chris</h1>
+              <h1>Save <span>the</span> Date</h1>
+              <h2>Gwen &amp; Chris</h2>
+              <p>March 30th 2019</p>
+              <p>Aldie Mansion, Doylestown, PA</p>
             </div>
           </div>
         </div>

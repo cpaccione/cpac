@@ -8,6 +8,7 @@
   </head>
 
   <body <?php body_class(); ?>>
+  
     <nav class="navbar">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -15,20 +16,5 @@
           <a class="navbar-brand mobile-brand d-sm-none" href="<?php bloginfo('url') ;?>"><span class="first">C</span> <span class="last">P</span></a>
           <a class="navbar-brand d-none d-sm-block" href="<?php bloginfo('url') ;?>"><span class="first">Gwen</span> &amp; <span class="last">Chris</span></a>
         </div>
-        <!-- cpac mobile menu -->
-        <div class="cpac-mobile-menu">
-          <span class="menu-item"></span>
-          <span class="menu-item"></span>
-          <span class="menu-item"></span>
-        </div>
       </div>
     </nav>
-    <div class="cpac-menu">
-      <?php
-          wp_nav_menu( array(
-              'menu'              => 'primary',
-              'theme_location'    => 'primary'
-              )
-          );
-      ?>
-    </div>

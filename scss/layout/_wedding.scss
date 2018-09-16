@@ -2,10 +2,25 @@
     background-image: url(images/wedding-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Slabo 27px', serif;
 
     h1 {
-        font-size: 10em;
-        color: $dark-blue;
+        font-family: 'Slabo 27px', serif;
+        font-size: 7em;
+        color: $green;
+        text-transform: uppercase;
+
+        span {
+            text-transform: lowercase;
+        }
+    }
+
+    h2 {
+        font-family: 'Slabo 27px', serif;
+    }
+
+    p {
+        font-family: 'Slabo 27px', serif;
     }
 }
 
