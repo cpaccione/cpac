@@ -11,15 +11,15 @@ Template Name: Wedding Template
 <?php get_header(); ?>
 
     <section class="wedding-header">
-      <!-- <div id="overlay"> -->
+      <div id="overlay">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-center">
-              <h1>Gwen<br>&amp;<br>Chris</h1>
+              <h1>Gwen &amp; Chris</h1>
             </div>
           </div>
         </div>
-      <!-- </div> -->
+      </div>
     </section>
 
     <section class="main-section">
