@@ -37,7 +37,7 @@ Template Name: Wedding Template
           </div>
           <div class="col-sm-6">
             <div class="wedding-contact">
-              <?php echo do_shortcode('[wpforms id="259" title="false" description="false"]'); ?>
+              <?php echo do_shortcode('[wpforms id="53" title="false" description="false"]'); ?>
             </div>
           </div>
         </div>
