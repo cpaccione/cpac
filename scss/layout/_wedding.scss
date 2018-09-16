@@ -1,3 +1,41 @@
+.wedding-nav {
+    background-color: $silver;
+
+    .navbar-brand {
+
+      .first {
+        color: $white;
+        font-weight: 700;
+
+        &:hover {
+          color: $green;
+        }
+      }
+
+      .last {
+        color: $white;
+
+        &:hover {
+          color: $green;
+        }
+      }
+
+      .amp {
+        color: $green;
+      }
+    }
+
+    li {
+      a {
+        color: $white;
+
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+}
+
 .wedding-header {
     background-image: url(images/wedding-hero.jpg);
     background-size: cover;
@@ -25,14 +63,38 @@
 }
 
 #overlay {
+    padding: 5rem 0 5rem 0;
     // position: fixed; /* Sit on top of the page content */
     // display: none; /* Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
-    // top: 0; 
+    // top: 0;
     // left: 0;
     // right: 0;
     // bottom: 0;
     background-color: rgba(255,255,255,0.7); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.wedding-main {
+  background-image: url('images/fern-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $white;
+  padding: 5rem;
+
+  .wrap {
+    padding: 0px 25px 0 25px;
+
+    p {
+      font-family: 'Slabo 27px', serif;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.wedding-contact {
+  .wpforms-field-container {
+    font-family: 'Slabo 27px', serif;
+  }
 }

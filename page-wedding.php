@@ -25,17 +25,20 @@ Template Name: Wedding Template
       </div>
     </section>
 
-    <section class="main-section">
+    <section class="wedding-main">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            Thanks for visitiing our RSVP page. If you think you can make it we would really appreciate if you can fill out the form to the right, or feel free to give us a call.
+            <div class="wrap">
+              <p>Thanks for visitiing our RSVP page. If you think you can make it we would really appreciate if you can fill out the form to the right, or feel free to give us a call.</p>
 
-            The wedding will take place on March 30th, 2019 at Aldie Mansion in Doylestown, PA.
-            
+              <p>The wedding will take place on March 30th, 2019 at Aldie Mansion in Doylestown, PA.</p>
+            </div>
           </div>
           <div class="col-sm-6">
-
+            <div class="wedding-contact">
+              <?php echo do_shortcode('[wpforms id="259" title="false" description="false"]'); ?>
+            </div>
           </div>
         </div>
 

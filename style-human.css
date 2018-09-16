@@ -1000,6 +1000,32 @@ HOME PAGE STYLES - page-home.php
   background-color: #4BC3FF;
 }
 
+.wedding-nav {
+  background-color: #c5bbbc;
+}
+.wedding-nav .navbar-brand .first {
+  color: #ffffff;
+  font-weight: 700;
+}
+.wedding-nav .navbar-brand .first:hover {
+  color: #00883a;
+}
+.wedding-nav .navbar-brand .last {
+  color: #ffffff;
+}
+.wedding-nav .navbar-brand .last:hover {
+  color: #00883a;
+}
+.wedding-nav .navbar-brand .amp {
+  color: #00883a;
+}
+.wedding-nav li a {
+  color: #ffffff;
+}
+.wedding-nav li a:hover {
+  color: #00883a;
+}
+
 .wedding-header {
   background-image: url(images/wedding-hero.jpg);
   background-size: cover;
@@ -1023,6 +1049,7 @@ HOME PAGE STYLES - page-home.php
 }
 
 #overlay {
+  padding: 5rem 0 5rem 0;
   width: 100%;
   /* Full width (cover the whole page) */
   height: 100%;
@@ -1031,6 +1058,25 @@ HOME PAGE STYLES - page-home.php
   /* Black background with opacity */
   z-index: 2;
   /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.wedding-main {
+  background-image: url("images/fern-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  padding: 5rem;
+}
+.wedding-main .wrap {
+  padding: 0px 25px 0 25px;
+}
+.wedding-main .wrap p {
+  font-family: 'Slabo 27px', serif;
+  font-size: 1.5rem;
+}
+
+.wedding-contact .wpforms-field-container {
+  font-family: 'Slabo 27px', serif;
 }
 
 .main-footer {

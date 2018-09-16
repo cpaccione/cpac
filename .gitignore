@@ -3,5 +3,4 @@ node_modules
 tmp
 /.sass-cache
 *.css.map
-images
 bower_components
