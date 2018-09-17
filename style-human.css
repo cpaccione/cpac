@@ -1027,25 +1027,36 @@ HOME PAGE STYLES - page-home.php
 }
 
 .wedding-header {
-  background-image: url(images/wedding-hero.jpg);
+  background-image: url("images/wedding-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Slabo 27px', serif;
+  font-family: 'Playfair Display', serif;
 }
 .wedding-header h1 {
   font-family: 'Slabo 27px', serif;
-  font-size: 7em;
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
   color: #00883a;
   text-transform: uppercase;
+}
+@media (min-width: 500px) {
+  .wedding-header h1 {
+    font-size: 7em;
+  }
 }
 .wedding-header h1 span {
   text-transform: lowercase;
 }
 .wedding-header h2 {
   font-family: 'Slabo 27px', serif;
+  font-family: 'Playfair Display', serif;
+  color: #000000;
 }
 .wedding-header p {
   font-family: 'Slabo 27px', serif;
+  font-family: 'Playfair Display', serif;
+  color: #000000;
 }
 
 #overlay {
@@ -1061,22 +1072,59 @@ HOME PAGE STYLES - page-home.php
 }
 
 .wedding-main {
-  background-image: url("images/fern-bg.jpg");
+  background-image: url("images/palm-bg-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #ffffff;
-  padding: 5rem;
+  padding: 4rem 0 7rem 0;
 }
 .wedding-main .wrap {
   padding: 0px 25px 0 25px;
 }
+.wedding-main .wrap h2 {
+  font-family: 'Slabo 27px', serif;
+  font-family: 'Playfair Display', serif;
+  color: #000000;
+}
 .wedding-main .wrap p {
   font-family: 'Slabo 27px', serif;
-  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #000000;
+  font-size: 1.25rem;
+}
+.wedding-main .wrap a {
+  color: #00883a;
+  text-decoration: underline;
+}
+.wedding-main .wrap a:hover {
+  color: #c5bbbc;
+}
+.wedding-main .wedding-container {
+  background-color: #ffffff;
+  padding: 3rem;
 }
 
 .wedding-contact .wpforms-field-container {
   font-family: 'Slabo 27px', serif;
+  font-family: 'Playfair Display', serif;
+}
+.wedding-contact .wpforms-field-container .wpforms-form .wpforms-field-label {
+  font-size: 20px;
+}
+
+.wedding-footer {
+  background-color: #c5bbbc;
+  color: #00883a;
+  text-align: center;
+  padding: 2rem;
+}
+.wedding-footer small {
+  font-weight: bold;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-label {
+  font-size: 20px !important;
+  color: #000000;
 }
 
 .main-footer {
