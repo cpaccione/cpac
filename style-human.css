@@ -1027,18 +1027,16 @@ HOME PAGE STYLES - page-home.php
 }
 
 .wedding-header {
+  font-family: 'Playfair Display', serif;
   background-image: url("images/wedding-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Slabo 27px', serif;
-  font-family: 'Playfair Display', serif;
+  background-position: center center;
 }
 .wedding-header h1 {
-  font-family: 'Slabo 27px', serif;
   font-family: 'Playfair Display', serif;
   font-size: 3em;
   color: #00883a;
-  text-transform: uppercase;
 }
 @media (min-width: 500px) {
   .wedding-header h1 {
@@ -1049,12 +1047,10 @@ HOME PAGE STYLES - page-home.php
   text-transform: lowercase;
 }
 .wedding-header h2 {
-  font-family: 'Slabo 27px', serif;
   font-family: 'Playfair Display', serif;
   color: #000000;
 }
 .wedding-header p {
-  font-family: 'Slabo 27px', serif;
   font-family: 'Playfair Display', serif;
   color: #000000;
 }
@@ -1082,12 +1078,10 @@ HOME PAGE STYLES - page-home.php
   padding: 0px 25px 0 25px;
 }
 .wedding-main .wrap h2 {
-  font-family: 'Slabo 27px', serif;
   font-family: 'Playfair Display', serif;
   color: #000000;
 }
 .wedding-main .wrap p {
-  font-family: 'Slabo 27px', serif;
   font-family: 'Playfair Display', serif;
   color: #000000;
   font-size: 1.25rem;
@@ -1105,7 +1099,6 @@ HOME PAGE STYLES - page-home.php
 }
 
 .wedding-contact .wpforms-field-container {
-  font-family: 'Slabo 27px', serif;
   font-family: 'Playfair Display', serif;
 }
 .wedding-contact .wpforms-field-container .wpforms-form .wpforms-field-label {
@@ -1120,11 +1113,13 @@ HOME PAGE STYLES - page-home.php
 }
 .wedding-footer small {
   font-weight: bold;
+  font-family: 'Playfair Display', serif;
 }
 
 div.wpforms-container-full .wpforms-form .wpforms-field-label {
   font-size: 20px !important;
   color: #000000;
+  font-family: 'Playfair Display', serif;
 }
 
 .main-footer {

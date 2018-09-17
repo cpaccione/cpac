@@ -42,7 +42,17 @@ Template Name: Wedding Template
           </div>
           <div class="col-sm-6">
             <div class="wedding-contact">
-              <?php echo do_shortcode('[wpforms id="259" title="false" description="false"]'); ?>
+              
+              <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                  <?php the_content(); ?>
+
+                <?php endwhile; else: ?>
+
+              	<p>There are no posts or pages here</p>
+
+                <?php endif; ?>
+
             </div>
           </div>
         </div>
