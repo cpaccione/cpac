@@ -31,9 +31,11 @@ Template Name: Wedding Template
           <div class="col-sm-6">
             <div class="wrap">
               <h2>Hello!</h2>
-              <p>Thanks for coming to our Save the Date page! By complete the form to the right, you're not obligated to come to the wedding, but it will help gives us an idea of how many of you want to share the day with us. You can fill out the form to the right, or feel free to give us a call or send an e-mail</p>
+              <p>Thanks for coming to our Save the Date page! By completing the form to the right, you will help give us an idea of how many of you want to share the day with us. You can either fill out the form to the right, or feel free to give us a call or send and <a href="mailto:cpaccione77@gmail.com?Subject=Save%the%Date" target="_top"><span style="white-space: nowrap;">e-mail.</span></a></p>
 
-              <p>The wedding will take place on <strong>March 30th, 2019</strong> at <a href="#">Aldie Mansion in Doylestown, PA.</a></p>
+              <p>Also, while we adore your children, we have limited space (and intend to party). We respectfully request no children under the age of 16 attend the ceremony and reception. Please make it a date night!</p>
+
+              <p>The wedding will take place on <strong>March 30th, 2019</strong> at <a href="http://jamcater.com/venues/aldie-mansion" target="_blank">Aldie Mansion in Doylestown, PA.</a> Accommodation information will be available on our official RSVP page (TBD)</p>
 
               <p>We'd love to see you there!</p>
 
