@@ -91,7 +91,10 @@
   padding: 4rem 0 7rem 0;
 
   .wrap {
-    padding: 0px 25px 0 25px;
+
+    @include respond-to(min-width, 768px) {
+      padding: 0px 25px 0 25px;
+    }
 
     h2 {
         font-family: 'Playfair Display', serif;

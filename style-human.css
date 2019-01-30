@@ -1074,8 +1074,10 @@ HOME PAGE STYLES - page-home.php
   background-color: #ffffff;
   padding: 4rem 0 7rem 0;
 }
-.wedding-main .wrap {
-  padding: 0px 25px 0 25px;
+@media (min-width: 768px) {
+  .wedding-main .wrap {
+    padding: 0px 25px 0 25px;
+  }
 }
 .wedding-main .wrap h2 {
   font-family: 'Playfair Display', serif;
