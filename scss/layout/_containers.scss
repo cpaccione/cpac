@@ -1,8 +1,17 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+}
+
 // HOME PAGE
 .home-hero {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
 
   h1 {
     font-size: 1.7rem;
@@ -30,6 +39,7 @@
 
   .hero-lead {
     display: none;
+    padding: 0 2rem 0 2rem;
   }
 
   small {
@@ -121,18 +131,14 @@ HOME PAGE STYLES - page-home.php
 
 }
 
-.portfolio-section {
-
-  .col-md-4, .col-sm-4 {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
+figure {
+  margin: 0;
 }
 
+
 .page-portfolio {
-  background-color: $grey;
-  background-color: $white;
+  // background-color: $grey;
+  // background-color: $white;
   padding: 100px 0 100px 0;
 }
 
@@ -238,34 +244,62 @@ HOME PAGE STYLES - page-home.php
 
 /* About Me */
 .about-me {
-  display: flex;
-  align-items: center;
-  background-color: $white;
+  // display: flex;
+  // align-items: center;
+  // background-color: $white;
   color: $dark-blue;
-  padding: 0 0 4em 0;
+  padding: 0 0.9375rem 4em 0.9375rem;
 
-  @include respond-to(max-width, 768px) {
-    height: 100%;
-    padding: 50px 0 50px 0;
+  // @include respond-to(min-width, 768px) {
+    display: grid;
+    grid-template-areas: "sidebar" "main";
+    // height: 100%;
+    // padding: 50px 0 50px 0;
+  // }
+
+  @include respond-to(min-width, 992px) {
+    justify-content: center;
+    grid-template-areas: "main sidebar";
+    grid-column-gap: 2rem;
   }
 
-  &-copy {
-
-    p {
-      padding-top: 25px;
-
-      @include respond-to(min-width, 768px) {
-        padding-top: 0;
-      }
-    }
+  .main {
+    grid-area: main;
   }
+
+  aside {
+    grid-area: sidebar;
+  }
+
+
 }
 
 // Single Portfolio
 
 .single-portfolio-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "info" "image";
+  justify-content: center;
+  margin: 0 auto;
+  grid-gap: 2rem;
 
-    padding: 100px 0 100px 0;
+  @include respond-to(min-width, 768px) {
+    grid-template-areas: "info image";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include respond-to(min-width, 1024px) {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .info {
+    grid-area: info;
+  }
+
+  .image {
+    grid-area: image;
+  }
 
     .portfolio-image {
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -303,7 +337,7 @@ HOME PAGE STYLES - page-home.php
     }
 
   .button-wrap {
-    width: 30%;
+    // width: 30%;
     margin: inherit;
     margin-bottom: 50px;
 
@@ -413,3 +447,148 @@ HOME PAGE STYLES - page-home.php
   }
 
 }
+
+
+/*--------------------------------------------------------------
+Cards:
+--------------------------------------------------------------*/
+
+.portfolio {
+	margin: 1em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.portfolio a {
+	display: block;
+	margin-bottom: 1em;
+	text-decoration: none;
+}
+
+.caption {
+	padding: 1em;
+	//background: hsla(246, 40%, 30%, .6);
+  background: hsla(200, 54%, 16%, .8);
+	color: white;
+	font-size: 1.2em;
+	transition: all .4s;
+}
+
+a:focus .caption,
+a:hover .caption {
+	//background: hsla(246, 40%, 30%, 1);
+  background: hsla(200, 54%, 16%, .6);
+}
+
+.caption-title {
+	margin: 0;
+	font-size: 1.4rem;
+	line-height: 1.1rem;
+}
+
+// .portfolio {
+//   list-style-type: none;
+//   padding: 0;
+
+
+//   @include respond-to(min-width, 768px) {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-gap: 1rem;
+//     grid-template-rows: auto;
+//   }
+
+//   a {
+//     display: block;
+//     text-decoration: none;
+//   }
+
+//   .card {
+
+//     img {
+//       display: block;
+//       border: 0;
+//       width: 100%;
+//       height: auto;
+//     }
+
+//     img,
+//     .caption {
+//       grid-column: 1;
+//       grid-row: 1;
+//     }
+
+//     @include respond-to(min-width, 768px) {
+//       display: grid;
+//     }
+//   }
+
+//   .caption {
+//     padding: 1rem;
+//     background: hsla(246, 40%, 30%, .6);
+//     background: hsla(200, 54%, 16%, .6);
+//     color: white;
+//     font-size: 1.2rem;
+//     transition: all .4s;
+//   }
+
+
+// }
+
+// @supports (grid-area: auto) {
+
+	// @media screen and (min-width: 768px) {
+
+		.portfolio {
+
+      a {
+        margin-bottom: 0;
+      }
+
+      @include respond-to(min-width, 600px) {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 1em;
+      }
+
+      @include respond-to(min-width, 768px) {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+      }
+
+      @include respond-to(min-width, 1200px) {
+        grid-template-columns: repeat(4, auto);
+      }
+
+      .card {
+        display: grid;
+
+        img,
+        .caption {
+          grid-column: 1;
+          grid-row: 1;
+        }
+      }
+
+      .caption {
+        display: flex;
+        align-items: flex-end;
+        opacity: 0;
+      }
+		}
+
+		a:focus .caption,
+		a:hover .caption {
+			background: hsla(246, 40%, 30%, .6);
+      background: hsla(200, 54%, 16%, .6);
+			opacity: 1;
+
+      h2 {
+        color: $white;
+      }
+		}
+
+	// }
+
+// }

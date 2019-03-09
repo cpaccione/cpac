@@ -11,43 +11,36 @@ Template Name: About Me
 
 <?php get_header(); ?>
 
-    <section class="header d-flex align-items-center">
+    <header class="page-title">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-              <?php the_title('<h1>', '</h1>'); ?>
-          </div>
-        </div>
+        <?php the_title('<h1>', '</h1>'); ?>
       </div>
-    </section>
+    </header>
 
-    <section class="about-me">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
+    <div class="container">
+      <div class="about-me">
+          <div class="main">
 
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+              <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-              <?php the_content(); ?>
+                <?php the_content(); ?>
 
-            <?php endwhile; else: ?>
+              <?php endwhile; else: ?>
 
-                <h1>Oh no!</h1>
-                <p>No content is appearing on this page!</p>
+                  <h1>Oh no!</h1>
+                  <p>No content is appearing on this page!</p>
 
-            <?php endif; ?>
+              <?php endif; ?>
 
           </div>
-          <div class="col-md-5">
+          <aside>
             <?php the_post_thumbnail('full', array(
-              'class' => 'circle'
+              'class' => ''
             )); ?>
-          </div>
-        </div>
+          </aside>
       </div>
-    </section>
+    </div>
 
-    <a href="/hire-me/"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>Hire me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
-    <a href="/hire-me/"><button type="button" class="d-none d-sm-block btn btn-primary btn-lg btn-block"><h3>Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+    <a href="/hire-me/"><h2 class="button">Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a>
 
 <?php get_footer(); ?>

@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 
-<section class="single-portfolio-wrap">
-    <div class="container">
+<div class="container">
+  <section class="single-portfolio-wrap">
+    <div class="info">
 
-        <div class="row">
-          <div class="col-sm-6">
               <?php the_title('<h1>', '</h1>'); ?>
               <h2><span>Built on:</span> <?php the_field('built_on'); ?></h2>
 
@@ -59,8 +58,8 @@
                         <?php  next_posts_link('label','max_pages'); ?>
                 </ul>
 
-            </div>
-            <div class="col-sm-6">
+          </div>
+          <div class="image">
 
                 <?php
 
@@ -73,11 +72,9 @@
                 <?php endif; ?>
 
 
-            </div>
-        </div>
-
-    </div>
-</section>
+          </div>
+        </section>
+      </div>
 
 
 <?php get_footer(); ?>

@@ -86,7 +86,8 @@
 /* NAVIGATION */
 
 nav {
-	background-color: $dark-blue;
+	background-color: $cotton_red;
+	height: 50px;
 }
 
 .navbar-toggle {
@@ -115,7 +116,7 @@ nav {
 .navbar-default .navbar-nav > li > {
 
   a:hover {
-    color: $dark-blue;
+    color: $deep_grey;
     background-color: $light-blue;
   }
 
@@ -137,7 +138,7 @@ nav {
 }
 
 .first {
-  color: $light-blue;
+  color: $deep_grey;
   font-weight: 300;
 }
 
@@ -147,6 +148,8 @@ nav {
 }
 
 // Page Headers
-.header {
-	height: 200px;
+.page-title {
+	padding: 1rem 0 1rem 0;
+	background-color: $deep_grey;
+	color: $white;
 }

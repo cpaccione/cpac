@@ -11,10 +11,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+html {
+  font-size: 100%;
+}
+
 body {
+  background-color: #e6dbc9;
+  color: #2e3830;
   font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
-  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #4BC3FF;
+  color: #c53211;
   font-weight: bold;
   text-decoration: none;
   -webkit-transition: ease-out 200ms;
@@ -43,7 +49,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #133140;
+  color: #2e3830;
   -webkit-transition: ease-out 200ms;
   -moz-transition: ease-out 200ms;
   -o-transition: ease-out 200ms;
@@ -165,31 +171,32 @@ hr {
   border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  color: #133140;
-  font-weight: bold;
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
-@media (max-width: 400px) {
-  h1 {
-    font-size: 2rem;
-  }
+
+h1 {
+  color: #2e3830;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 h2 {
   font-weight: bold;
-  color: #133140;
+  color: #2e3830;
 }
 
 h5 {
   font-weight: bold;
-  color: #133140;
+  color: #2e3830;
   font-size: 2em;
   margin-bottom: 10px;
 }
 
 h6 {
   font-weight: bold;
-  color: #133140;
+  color: #2e3830;
   font-size: 2em;
   font-weight: 300;
   margin: 10px 0 10px 0;
@@ -197,13 +204,13 @@ h6 {
 }
 
 p {
-  color: #133140;
+  color: #2e3830;
   font-weight: 300;
   font-size: 1rem;
 }
 
 .section-title {
-  color: #133140;
+  color: #2e3830;
   font-size: 2.75em;
   font-weight: 300;
   padding-bottom: 30px;
@@ -427,6 +434,16 @@ small {
   padding: 50px 0 0 0;
 }
 
+.button {
+  background-color: #c53211;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+}
+.button:hover {
+  background-color: #2e3830;
+}
+
 .fa-code,
 .fa-wordpress,
 .fa-mobile {
@@ -555,7 +572,8 @@ small {
 
 /* NAVIGATION */
 nav {
-  background-color: #133140;
+  background-color: #c53211;
+  height: 50px;
 }
 
 .navbar-toggle {
@@ -582,7 +600,7 @@ nav {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #133140;
+  color: #2e3830;
   background-color: #4BC3FF;
 }
 
@@ -602,7 +620,7 @@ nav {
 }
 
 .first {
-  color: #4BC3FF;
+  color: #2e3830;
   font-weight: 300;
 }
 
@@ -611,14 +629,25 @@ nav {
   font-weight: 700;
 }
 
-.header {
-  height: 200px;
+.page-title {
+  padding: 1rem 0 1rem 0;
+  background-color: #2e3830;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 0 1rem;
 }
 
 .home-hero {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
 }
 .home-hero h1 {
   font-size: 1.7rem;
@@ -645,6 +674,7 @@ nav {
 }
 .home-hero .hero-lead {
   display: none;
+  padding: 0 2rem 0 2rem;
 }
 .home-hero small {
   display: block;
@@ -747,14 +777,11 @@ HOME PAGE STYLES - page-home.php
   }
 }
 
-.portfolio-section .col-md-4, .portfolio-section .col-sm-4 {
-  padding-right: 0;
-  padding-left: 0;
+figure {
+  margin: 0;
 }
 
 .page-portfolio {
-  background-color: #e8e8e8;
-  background-color: #ffffff;
   padding: 100px 0 100px 0;
 }
 
@@ -856,29 +883,49 @@ HOME PAGE STYLES - page-home.php
 
 /* About Me */
 .about-me {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
   color: #133140;
-  padding: 0 0 4em 0;
+  padding: 0 0.9375rem 4em 0.9375rem;
+  display: grid;
+  grid-template-areas: "sidebar" "main";
 }
-@media (max-width: 768px) {
+@media (min-width: 992px) {
   .about-me {
-    height: 100%;
-    padding: 50px 0 50px 0;
+    justify-content: center;
+    grid-template-areas: "main sidebar";
+    grid-column-gap: 2rem;
   }
 }
-.about-me-copy p {
-  padding-top: 25px;
+.about-me .main {
+  grid-area: main;
 }
-@media (min-width: 768px) {
-  .about-me-copy p {
-    padding-top: 0;
-  }
+.about-me aside {
+  grid-area: sidebar;
 }
 
 .single-portfolio-wrap {
-  padding: 100px 0 100px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "info" "image";
+  justify-content: center;
+  margin: 0 auto;
+  grid-gap: 2rem;
+}
+@media (min-width: 768px) {
+  .single-portfolio-wrap {
+    grid-template-areas: "info image";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .single-portfolio-wrap {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+.single-portfolio-wrap .info {
+  grid-area: info;
+}
+.single-portfolio-wrap .image {
+  grid-area: image;
 }
 .single-portfolio-wrap .portfolio-image {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -910,7 +957,6 @@ HOME PAGE STYLES - page-home.php
   font-size: 1.5em;
 }
 .single-portfolio-wrap .button-wrap {
-  width: 30%;
   margin: inherit;
   margin-bottom: 50px;
 }
@@ -998,6 +1044,87 @@ HOME PAGE STYLES - page-home.php
 }
 .hire-me:hover {
   background-color: #4BC3FF;
+}
+
+/*--------------------------------------------------------------
+Cards:
+--------------------------------------------------------------*/
+.portfolio {
+  margin: 1em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.portfolio a {
+  display: block;
+  margin-bottom: 1em;
+  text-decoration: none;
+}
+
+.caption {
+  padding: 1em;
+  background: rgba(19, 48, 63, 0.8);
+  color: white;
+  font-size: 1.2em;
+  transition: all .4s;
+}
+
+a:focus .caption,
+a:hover .caption {
+  background: rgba(19, 48, 63, 0.6);
+}
+
+.caption-title {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.1rem;
+}
+
+.portfolio a {
+  margin-bottom: 0;
+}
+@media (min-width: 600px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+.portfolio .card {
+  display: grid;
+}
+.portfolio .card img,
+.portfolio .card .caption {
+  grid-column: 1;
+  grid-row: 1;
+}
+.portfolio .caption {
+  display: flex;
+  align-items: flex-end;
+  opacity: 0;
+}
+
+a:focus .caption,
+a:hover .caption {
+  background: rgba(52, 46, 107, 0.6);
+  background: rgba(19, 48, 63, 0.6);
+  opacity: 1;
+}
+a:focus .caption h2,
+a:hover .caption h2 {
+  color: #ffffff;
 }
 
 .wedding-nav {

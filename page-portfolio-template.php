@@ -27,9 +27,8 @@ $counter = 0;
       </div>
     </section>
 
-    <section class="portfolio-section">
-        <div class="container-fluid">
 
+    <ul id="portfolio-link" class="portfolio">
         <?php
 
                 $args = array(
@@ -45,11 +44,9 @@ $counter = 0;
 
                 <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
-                    <?php if($counter % 3 === 0) : echo '<div class="row">'; endif; ?>
-
-                        <div class="col-md-4 animation-element bounce-up">
-                            <a href="<?php the_permalink(); ?>">
-                                <div class="subject img-overlay">
+                    <li class="portfolio-item">
+                      <a href="<?php the_permalink(); ?>">
+                                <figure class="card">
 
                                     <?php
 
@@ -58,26 +55,22 @@ $counter = 0;
                                       }
 
                                     ?>
-
-                                    <div class="portfolio-overlay">
-                                        <div class="overlay-copy">
-                                            <div class="center">
+                                    <figcaption class="caption">
+                                        <!-- <div class="overlay-copy">
+                                            <div class="center"> -->
                                                 <span class="underline">
-                                                    <h5><?php the_title(); ?></h5>
+                                                    <h2><?php the_title(); ?></h2>
                                                 </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    <?php $counter++; if($counter % 3 === 0) : echo '</div>'; endif; ?>
+                                            <!-- </div>
+                                        </div> -->
+                                    </figcaption>
+                                </figure>
+                          </a>
+                        </li>
 
                 <?php endwhile; endif; wp_reset_postdata(); ?>
 
-        </div>
-    </section>
+        </ul>
 
     <a href="/hire-me/"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>Hire Me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
     <a href="/hire-me/"><button type="button" class="d-none d-sm-block btn btn-primary btn-lg btn-block"><h3>Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>

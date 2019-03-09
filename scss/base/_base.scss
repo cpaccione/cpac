@@ -1,7 +1,13 @@
+html {
+	font-size: 100%;
+}
+
 body {
+	background-color: $khaki;
+	color: $deep_grey;
 	font-family: 'Open Sans', sans-serif;
-	background-color: $white;
-	font-weight: 400;
+	font-size: 1rem;
+	margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // logged in
 a {
-	color: $light-blue;
+	color: $cotton_red;
 	font-weight: bold;
 	text-decoration: none;
 	-webkit-transition: ease-out 200ms;
@@ -31,7 +37,7 @@ a {
 
 	&:hover {
 		text-decoration: none;
-		color: $dark-blue;
+		color: $deep_grey;
 		-webkit-transition: ease-out 200ms;
 		-moz-transition: ease-out 200ms;
 		-o-transition: ease-out 200ms;
@@ -132,4 +138,9 @@ hr {
     margin-bottom: 1rem;
     border: 0;
     border-top: 2px solid rgba(0,0,0,.1);
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
 }

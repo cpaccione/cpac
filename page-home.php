@@ -13,24 +13,18 @@ $counter = 0;
 
 <?php get_header(); ?>
 
-    <section class="home-hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                  <div class="hero-lead">
-                    <h1>WordPress &amp; <span class="no-wrap">Front-end Developer</span></h1>
-                    <p>I focus on clean code, quality responsive sites, and a great user experience</p>
-                    <small>HTML <i class="fa fa-minus"></i> CSS <i class="fa fa-minus"></i> jQuery <i class="fa fa-minus"></i> WordPress</small>
-                    <a href="#portfolio-link" class="smooth btn-primary">View Portfolio</a>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <header class="home-hero">
+      <div class="hero-lead">
+        <h1>WordPress &amp; <span class="no-wrap">Front-end Developer</span></h1>
+        <p>I focus on clean code, quality responsive sites, and a great user experience</p>
+        <small>HTML <i class="fa fa-minus"></i> CSS <i class="fa fa-minus"></i> jQuery <i class="fa fa-minus"></i> WordPress</small>
+        <a href="#portfolio-link" class="smooth btn-primary">View Portfolio</a>
+      </div>
+    </header>
 
-    <section id="portfolio-link" class="portfolio-section">
-        <div class="container-fluid">
-        <?php
+    <ul id="portfolio-link" class="portfolio">
+
+            <?php
 
                 $args = array(
                     'post_type' => 'portfolio',
@@ -46,41 +40,34 @@ $counter = 0;
 
             <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
-                <?php if($counter % 3 === 0) : echo '<div class="row">'; endif; ?>
+                <li class="portfolio-item">
+                    <a href="<?php the_permalink(); ?>">
+                        <figure class="card">
 
-                    <div class="col-sm-4">
-                        <a href="<?php the_permalink(); ?>">
-                            <div class="subject img-overlay">
+                            <?php
 
-                                <?php
+                            if ( has_post_thumbnail() ) {
+                                the_post_thumbnail('large');
+                            }
 
-                                if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail('large');
-                                }
+                            ?>
 
-                                ?>
+                            <figcaption class="caption">
+                                <span class="underline">
+                                    <h2><?php the_title(); ?></h2>
+                                </span>
+                            </figcaption>
 
-                                <div class="portfolio-overlay">
-                                    <div class="overlay-copy">
-                                        <div class="center">
-                                            <span class="underline">
-                                                <h5><?php the_title(); ?></h5>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                <?php $counter++; if($counter % 3 === 0) : echo '</div>'; endif; ?>
+                        </figure>
+                    </a>
+                </li>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
-        </div>
-    </section>
 
-    <a href="/hire-me/"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>Hire me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
-    <a href="/hire-me/"><button type="button" class="d-none d-sm-block btn btn-primary btn-lg btn-block"><h3>Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+    </ul>
+
+    <!-- <a href="/hire-me/"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>Hire me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a> -->
+    <a href="/hire-me/"><h3>Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></a>
 
   <section class="testimonials">
       <div class="container">
@@ -110,7 +97,7 @@ $counter = 0;
       </div>
   </section>
 
-  <a href="/about-me/"><button type="button" class="btn btn-primary btn-lg btn-block"><h3>About Me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+  <a href="/about-me/"><h2 class="button">About Me <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a>
 
 
 <?php get_footer(); ?>
