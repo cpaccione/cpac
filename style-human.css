@@ -16,7 +16,6 @@ html {
 }
 
 body {
-  background-color: #e6dbc9;
   color: #2e3830;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -179,25 +178,34 @@ hr {
 h1 {
   color: #2e3830;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 h2 {
   font-weight: bold;
   color: #2e3830;
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.125rem;
 }
 
 h5 {
   font-weight: bold;
   color: #2e3830;
-  font-size: 2em;
+  font-size: 0.875rem;
   margin-bottom: 10px;
 }
 
 h6 {
   font-weight: bold;
   color: #2e3830;
-  font-size: 2em;
+  font-size: 0.75rem;
   font-weight: 300;
   margin: 10px 0 10px 0;
   padding: 25px 0 25px 0;
@@ -534,7 +542,7 @@ small {
   left: 0;
   right: 0;
   z-index: 2000;
-  background: rgba(75, 195, 255, 0.9);
+  background: rgba(75, 195, 255, 0.2);
   background-color: #ffffff;
   text-align: center;
 }
@@ -583,7 +591,7 @@ small {
 
 /* NAVIGATION */
 nav {
-  background-color: #e6dbc9;
+  background-color: #133140;
   height: 50px;
 }
 
@@ -630,19 +638,21 @@ nav {
   font-family: 'Dosis', sans-serif;
 }
 .navbar-brand:hover .first {
-  color: #2e3830;
+  color: #4BC3FF;
 }
 .navbar-brand:hover .last {
-  color: #c53211;
+  color: #ffffff;
 }
 
 .first {
   color: #c53211;
+  color: #4BC3FF;
   font-weight: 300;
 }
 
 .last {
   color: #2e3830;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -659,21 +669,18 @@ nav {
 }
 
 .home-hero {
-  background-image: url("images/IMG_2204.JPG");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(75, 195, 255, 0.2);
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   height: 100vh;
   width: 100%;
-  filter: grayscale(100%);
 }
 .home-hero h1 {
   font-size: 1.7rem;
   margin: 0 0 10px 0;
-  color: #ffffff;
+  color: #133140;
 }
 @media (min-width: 400px) {
   .home-hero h1 {
@@ -693,7 +700,7 @@ nav {
 .home-hero p {
   font-size: 1.18rem;
   margin: 0 0 20px 0;
-  color: #ffffff;
+  color: #133140;
 }
 .home-hero .hero-lead {
   display: none;
@@ -1001,6 +1008,7 @@ figure {
 }
 
 .testimonials {
+  background-color: rgba(75, 195, 255, 0.2);
   text-align: center;
   padding: 75px 0 75px 0;
 }
@@ -1067,6 +1075,10 @@ figure {
 /*--------------------------------------------------------------
 Cards:
 --------------------------------------------------------------*/
+.featured-portfolio {
+  text-align: center;
+}
+
 .portfolio {
   margin: 1em;
   padding: 0;
@@ -1079,44 +1091,33 @@ Cards:
   text-decoration: none;
 }
 
-.caption {
-  padding: 1em;
-  background: rgba(19, 48, 63, 0.8);
-  background: rgba(197, 50, 17, 0.6);
-  color: white;
-  font-size: 1.2em;
-  transition: all .4s;
-}
-
-a:focus .caption,
-a:hover .caption {
-  background: rgba(19, 48, 63, 0.6);
-  opacity: 1;
-}
-
 .caption-title {
   margin: 0;
   font-size: 1.4rem;
   line-height: 1.1rem;
 }
 
+.portfolio {
+  margin: 0;
+}
 .portfolio a {
   margin-bottom: 0;
 }
 @media (min-width: 600px) {
   .portfolio {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
   }
 }
 @media (min-width: 768px) {
   .portfolio {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1200px) {
   .portfolio {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .portfolio .card {
@@ -1138,10 +1139,17 @@ a:hover .caption {
   opacity: 1;
 }
 
+.caption {
+  padding: 1em;
+  background-color: rgba(75, 195, 255, 0.6);
+  color: white;
+  font-size: 1.2em;
+  transition: all .4s;
+}
+
 a:focus .caption,
 a:hover .caption {
-  background: rgba(197, 50, 17, 0.6);
-  opacity: 1;
+  opacity: 0;
 }
 a:focus .caption h2,
 a:hover .caption h2 {

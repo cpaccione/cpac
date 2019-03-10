@@ -98,7 +98,7 @@
 /* NAVIGATION */
 
 nav {
-	background-color: $khaki;
+	background-color: $dark-blue;
 	height: 50px;
 }
 
@@ -150,22 +150,24 @@ nav {
 
 	&:hover {
 		.first {
-			color: $deep_grey;
+			color: $light-blue;
 		}
 
 		.last {
-			color: $cotton_red;
+			color: $white;
 		}
 	}
 }
 
 .first {
   color: $cotton_red;
+	color: $light-blue;
   font-weight: 300;
 }
 
 .last {
 	color: $deep_grey;
+	color: $white;
 	font-weight: 700;
 }
 

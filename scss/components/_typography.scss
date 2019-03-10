@@ -3,19 +3,27 @@
 h1 {
 	color: $deep_grey;
   font-weight: bold;
-	font-size: 2rem;
+	font-size: 2.25rem;
 }
 
 h2 {
     font-weight: bold;
     color: $deep_grey;
+		font-size: 1.875rem
 }
 
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.125rem;
+}
 
 h5 {
     font-weight: bold;
 		color: $deep_grey;
-		font-size: 2em;
+		font-size: 0.875rem;
 		margin-bottom: 10px;
 }
 
@@ -23,7 +31,7 @@ h5 {
 h6 {
   font-weight: bold;
 	color: $deep_grey;
-	font-size: 2em;
+	font-size: 0.75rem;
 	font-weight: 300;
 	margin: 10px 0 10px 0;
 	padding: 25px 0 25px 0;

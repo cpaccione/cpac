@@ -13,15 +13,19 @@ $counter = 0;
 
 <?php get_header(); ?>
 
-    <header class="home-hero">
-      <div class="hero-lead">
-        <h1>WordPress &amp; <span class="no-wrap">Front-end Developer</span></h1>
-        <p>I focus on clean code, quality responsive sites, and a great user experience</p>
-        <a href="#portfolio-link" class="smooth btn-primary">View Portfolio</a>
-      </div>
-    </header>
+  <header class="home-hero">
+    <div class="hero-lead">
+      <h1>WordPress &amp; <span class="no-wrap">Front-end Developer</span></h1>
+      <p>I focus on clean code, quality responsive sites, and a great user experience</p>
+      <a href="#portfolio-link" class="smooth btn-primary">View Portfolio</a>
+    </div>
+  </header>
 
-    <ul id="portfolio-link" class="portfolio">
+  <section class="featured-portfolio">
+
+    <h2 id="portfolio-link">Featured Portfolio</h2>
+
+    <ul class="portfolio">
 
             <?php
 
@@ -65,8 +69,14 @@ $counter = 0;
 
     </ul>
 
+    <a href="#portfolio-link" class="smooth btn-primary">View All</a>
+
     <!-- <a href="/hire-me/"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>Hire me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a> -->
-    <a href="/hire-me/"><h3>Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></a>
+    <!-- <a href="/hire-me/"><h3>Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></a> -->
+
+    <!-- <a href="/hire-me/"><h2 class="button">Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a> -->
+
+  </section>
 
   <section class="testimonials">
       <div class="container">
@@ -94,9 +104,11 @@ $counter = 0;
               </div>
           </div>
       </div>
+
+      <a href="#portfolio-link" class="smooth btn-primary">About Me</a>
   </section>
 
-  <a href="/about-me/"><h2 class="button">About Me <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a>
+  <!-- <a href="/about-me/"><h2 class="button">About Me <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a> -->
 
 
 <?php get_footer(); ?>
