@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // logged in
 a {
-	color: $cotton_red;
+	color: $light-blue;
 	font-weight: bold;
 	text-decoration: none;
 	-webkit-transition: ease-out 200ms;
@@ -37,7 +37,7 @@ a {
 
 	&:hover {
 		text-decoration: none;
-		color: $deep_grey;
+		color: $salmon-red;
 		-webkit-transition: ease-out 200ms;
 		-moz-transition: ease-out 200ms;
 		-o-transition: ease-out 200ms;

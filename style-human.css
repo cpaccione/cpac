@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #c53211;
+  color: #4BC3FF;
   font-weight: bold;
   text-decoration: none;
   -webkit-transition: ease-out 200ms;
@@ -48,7 +48,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #2e3830;
+  color: #FF6575;
   -webkit-transition: ease-out 200ms;
   -moz-transition: ease-out 200ms;
   -o-transition: ease-out 200ms;
@@ -360,6 +360,7 @@ small {
   background-color: #4BC3FF;
   background-color: #133140;
   border: 2px solid #4BC3FF;
+  border: 2px solid #FF6575;
   color: #ffffff;
   -webkit-transition: ease-out 200ms;
   -moz-transition: ease-out 200ms;
@@ -386,6 +387,7 @@ small {
 .btn-primary:hover {
   background-color: #4BC3FF;
   background-color: #133140;
+  background-color: #FF6575;
   border: 2px solid #4BC3FF;
   color: #ffffff;
   -webkit-transition: ease-out 200ms;
@@ -1069,7 +1071,7 @@ figure {
   font-weight: 700;
 }
 .hire-me:hover {
-  background-color: #4BC3FF;
+  background-color: #FF6575;
 }
 
 /*--------------------------------------------------------------
@@ -1077,6 +1079,13 @@ Cards:
 --------------------------------------------------------------*/
 .featured-portfolio {
   text-align: center;
+  padding: 4rem 0 4rem 0;
+}
+.featured-portfolio #portfolio-link {
+  margin: 0 0 2.5rem 0;
+}
+.featured-portfolio .btn-primary {
+  margin-top: 3rem;
 }
 
 .portfolio {
@@ -1150,6 +1159,7 @@ Cards:
 a:focus .caption,
 a:hover .caption {
   opacity: 0;
+  cursor: pointer;
 }
 a:focus .caption h2,
 a:hover .caption h2 {
@@ -1302,7 +1312,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field-label {
   padding: 10px;
 }
 .main-footer #footer li a:hover {
-  color: #4BC3FF;
+  color: #FF6575;
 }
 .main-footer small {
   display: block;

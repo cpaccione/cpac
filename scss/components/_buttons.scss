@@ -19,6 +19,7 @@
 		background-color: $light-blue;
 		background-color: $dark-blue;
 		border: 2px solid $light-blue;
+		border: 2px solid $salmon-red;
 		color: $white;
 		-webkit-transition: ease-out 200ms;
 		-moz-transition: ease-out 200ms;
@@ -46,6 +47,7 @@
 	&:hover {
 		background-color: $light-blue;
 		background-color: $dark-blue;
+		background-color: $salmon-red;
 		border: 2px solid $light-blue;
 		color: $white;
 		-webkit-transition: ease-out 200ms;

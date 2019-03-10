@@ -454,7 +454,7 @@ figure {
   }
 
   &:hover {
-    background-color: $light-blue;
+    background-color: $salmon-red;
   }
 
 }
@@ -466,6 +466,15 @@ Cards:
 
 .featured-portfolio {
   text-align: center;
+  padding: 4rem 0 4rem 0;
+
+  #portfolio-link {
+    margin: 0 0 2.5rem 0;
+  }
+
+  .btn-primary {
+    margin-top: 3rem;
+  }
 }
 
 .portfolio {
@@ -603,7 +612,8 @@ Cards:
 
 		a:focus .caption,
 		a:hover .caption {
-			opacity: 0;
+      opacity: 0;
+      cursor: pointer;
 
       h2 {
         color: $white;
