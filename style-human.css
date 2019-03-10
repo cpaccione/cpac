@@ -629,6 +629,12 @@ nav {
 .navbar-brand {
   font-family: 'Dosis', sans-serif;
 }
+.navbar-brand:hover .first {
+  color: #2e3830;
+}
+.navbar-brand:hover .last {
+  color: #c53211;
+}
 
 .first {
   color: #c53211;
@@ -852,15 +858,10 @@ figure {
   display: block;
   position: relative;
 }
-.underline h5 {
+.underline h2 {
   font-size: 1.5rem;
   color: #ffffff;
   font-family: 'Dosis', sans-serif;
-}
-@media (min-width: 500px) {
-  .underline h5 {
-    color: #133140;
-  }
 }
 .underline :after {
   content: "";
@@ -1081,6 +1082,7 @@ Cards:
 .caption {
   padding: 1em;
   background: rgba(19, 48, 63, 0.8);
+  background: rgba(197, 50, 17, 0.6);
   color: white;
   font-size: 1.2em;
   transition: all .4s;
@@ -1089,6 +1091,7 @@ Cards:
 a:focus .caption,
 a:hover .caption {
   background: rgba(19, 48, 63, 0.6);
+  opacity: 1;
 }
 
 .caption-title {
@@ -1104,14 +1107,11 @@ a:hover .caption {
   .portfolio {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-gap: 1em;
   }
 }
 @media (min-width: 768px) {
   .portfolio {
-    display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-gap: 1em;
   }
 }
 @media (min-width: 1200px) {
@@ -1122,21 +1122,25 @@ a:hover .caption {
 .portfolio .card {
   display: grid;
 }
-.portfolio .card img,
 .portfolio .card .caption {
   grid-column: 1;
   grid-row: 1;
+  z-index: 1;
+}
+.portfolio .card img {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 0;
 }
 .portfolio .caption {
   display: flex;
   align-items: flex-end;
-  opacity: 0;
+  opacity: 1;
 }
 
 a:focus .caption,
 a:hover .caption {
-  background: rgba(52, 46, 107, 0.6);
-  background: rgba(19, 48, 63, 0.6);
+  background: rgba(197, 50, 17, 0.6);
   opacity: 1;
 }
 a:focus .caption h2,

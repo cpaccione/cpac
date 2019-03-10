@@ -147,6 +147,16 @@ nav {
 
 .navbar-brand {
 	font-family: 'Dosis', sans-serif;
+
+	&:hover {
+		.first {
+			color: $deep_grey;
+		}
+
+		.last {
+			color: $cotton_red;
+		}
+	}
 }
 
 .first {
