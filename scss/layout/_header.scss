@@ -1,3 +1,14 @@
+.navbar {
+	display: grid;
+	grid-template-columns: 90% 10%;
+	padding: 0 2rem 0 2rem;
+
+	.nav-brand {
+		display: flex;
+		align-items: center;
+	}
+}
+
 // Mobile menu
 .mobile-brand {
 	border: 2px solid $white;
@@ -62,6 +73,7 @@
 		background-color: $dark-blue;
 		background-color: #777777;
 		background-color: $white;
+		background-color: $deep_grey;
 		display: block;
 		height: 3px;
 		margin: 0 0 7px;
@@ -86,7 +98,7 @@
 /* NAVIGATION */
 
 nav {
-	background-color: $cotton_red;
+	background-color: $khaki;
 	height: 50px;
 }
 
@@ -138,12 +150,12 @@ nav {
 }
 
 .first {
-  color: $deep_grey;
+  color: $cotton_red;
   font-weight: 300;
 }
 
 .last {
-	color: $white;
+	color: $deep_grey;
 	font-weight: 700;
 }
 

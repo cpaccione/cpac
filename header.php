@@ -9,11 +9,11 @@
 
   <body <?php body_class(); ?>>
     <nav class="navbar">
-      <div class="container">
+      <!-- <div class="container"> -->
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="nav-brand">
-          <a class="navbar-brand mobile-brand d-sm-none" href="<?php bloginfo('url') ;?>"><span class="first">C</span> <span class="last">P</span></a>
-          <a class="navbar-brand d-none d-sm-block" href="<?php bloginfo('url') ;?>"><span class="first">CHRIS</span> <span class="last">PACCIONE</span></a>
+          <!-- <a class="navbar-brand mobile-brand d-sm-none" href="<?php bloginfo('url') ;?>"><span class="first">C</span> <span class="last">P</span></a> -->
+          <a class="navbar-brand" href="<?php bloginfo('url') ;?>"><span class="first">CHRIS </span><span class="last">PACCIONE</span></a>
         </div>
         <!-- cpac mobile menu -->
         <div class="cpac-mobile-menu">
@@ -21,7 +21,7 @@
           <span class="menu-item"></span>
           <span class="menu-item"></span>
         </div>
-      </div>
+      <!-- </div> -->
     </nav>
     <div class="cpac-menu">
       <?php
