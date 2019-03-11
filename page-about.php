@@ -32,6 +32,7 @@ Template Name: About Me
 
               <?php endif; ?>
 
+            <a href="#portfolio-link" class="smooth btn-primary">Contact Me</a>
           </div>
           <aside>
             <?php the_post_thumbnail('full', array(
@@ -39,10 +40,11 @@ Template Name: About Me
             )); ?>
           </aside>
       </div>
+
     </div>
 
     <!-- <a href="/hire-me/"><h2 class="button">Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a> -->
 
-    <a href="#portfolio-link" class="smooth btn-primary">Contact Me</a>
+    
 
 <?php get_footer(); ?>

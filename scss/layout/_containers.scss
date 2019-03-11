@@ -206,6 +206,7 @@ figure {
       font-size: 1.5rem;
       color: $white;
       font-family: 'Dosis', sans-serif;
+      margin: 0 0 5px 0;
 
       // @include respond-to(min-width, 500px) {
       //   color: $dark-blue;
@@ -258,7 +259,7 @@ figure {
   // align-items: center;
   // background-color: $white;
   color: $dark-blue;
-  padding: 0 0.9375rem 4em 0.9375rem;
+  // padding: 0 0.9375rem 4em 0.9375rem;
 
   // @include respond-to(min-width, 768px) {
     display: grid;
@@ -266,6 +267,10 @@ figure {
     // height: 100%;
     // padding: 50px 0 50px 0;
   // }
+
+  .btn-primary {
+    margin-top: 1rem;
+  }
 
   @include respond-to(min-width, 992px) {
     justify-content: center;
@@ -279,6 +284,11 @@ figure {
 
   aside {
     grid-area: sidebar;
+
+    img {
+      margin-top: 2rem;
+      border: 4px solid $light-blue;
+    }
   }
 
 
@@ -558,7 +568,7 @@ Cards:
       @include respond-to(min-width, 600px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1em;
+        // grid-gap: 1em;
       }
 
       @include respond-to(min-width, 768px) {
@@ -604,7 +614,7 @@ Cards:
     .caption {
     	padding: 1em;
       // background: hsla(11, 84%, 42%, .7);
-      background-color: $light-blue-trans;
+      background-color: $dark-blue-rgba;
     	color: white;
     	font-size: 1.2em;
     	transition: all .4s;

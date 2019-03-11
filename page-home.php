@@ -69,12 +69,19 @@ $counter = 0;
 
     </ul>
 
-    <a href="#portfolio-link" class="smooth btn-primary">View All</a>
+    <?php 
 
-    <!-- <a href="/hire-me/"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>Hire me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a> -->
-    <!-- <a href="/hire-me/"><h3>Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></a> -->
+    $link = get_field('portfolio_button');
 
-    <!-- <a href="/hire-me/"><h2 class="button">Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a> -->
+    if( $link ): 
+      $link_url = $link['url'];
+      $link_title = $link['title'];
+      $link_target = $link['target'] ? $link['target'] : '_self';
+      ?>
+      
+      <a class="btn-primary" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+
+    <?php endif; ?>
 
   </section>
 

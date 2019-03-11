@@ -17,16 +17,11 @@ $counter = 0;
 
 <?php get_header(); ?>
 
-    <section class="header d-flex align-items-center">
+    <header class="page-title">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-              <?php the_title('<h1>', '</h1>'); ?>
-          </div>
-        </div>
+        <?php the_title('<h1>', '</h1>'); ?>
       </div>
-    </section>
-
+    </header>
 
     <ul id="portfolio-link" class="portfolio">
         <?php
@@ -72,7 +67,9 @@ $counter = 0;
 
         </ul>
 
-    <a href="/hire-me/"><button type="button" class="d-sm-none btn btn-primary btn-lg btn-block"><h3>Hire Me <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
-    <a href="/hire-me/"><button type="button" class="d-none d-sm-block btn btn-primary btn-lg btn-block"><h3>Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h3></button></a>
+        <div class="button-wrap text-center">
+          <a href="#portfolio-link" class="smooth btn-primary">Contact Me</a>
+        </div>
+        
 
 <?php get_footer(); ?>
