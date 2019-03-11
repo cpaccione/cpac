@@ -485,6 +485,7 @@ small {
 
 .fa:hover {
   color: #4BC3FF;
+  color: #FF6575;
   -webkit-transition: ease-out 200ms;
   -moz-transition: ease-out 200ms;
   -o-transition: ease-out 200ms;
@@ -660,7 +661,9 @@ nav {
 
 .page-title {
   padding: 1rem 0 1rem 0;
-  background-color: #2e3830;
+  background-color: #4BC3FF;
+}
+.page-title h1 {
   color: #ffffff;
 }
 

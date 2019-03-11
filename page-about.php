@@ -41,6 +41,8 @@ Template Name: About Me
       </div>
     </div>
 
-    <a href="/hire-me/"><h2 class="button">Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a>
+    <!-- <a href="/hire-me/"><h2 class="button">Hire me to work on your project <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a> -->
+
+    <a href="#portfolio-link" class="smooth btn-primary">Contact Me</a>
 
 <?php get_footer(); ?>
