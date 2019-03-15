@@ -28,6 +28,31 @@
 	}
 }
 
+.is-style-outline {
+	color: $dark-blue;
+}
+
+.wp-block-button__link {
+	font-size: 0.9375em;
+	border-radius: 25px;
+	line-height: 15px;
+	padding: 15px 38px 15px 38px;
+	-webkit-transition: ease-out 200ms;
+	-moz-transition: ease-out 200ms;
+	-o-transition: ease-out 200ms;
+	transition: ease-out 200ms;
+
+	&:hover {
+		background-color: $salmon-red;
+		border: 2px solid $light-blue;
+		color: $white;
+		-webkit-transition: ease-out 200ms;
+		-moz-transition: ease-out 200ms;
+		-o-transition: ease-out 200ms;
+		transition: ease-out 200ms;
+	}
+}
+
 .btn-primary {
 	background-color: transparent;
 	font-size: 0.9375em;

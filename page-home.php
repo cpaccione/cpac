@@ -33,7 +33,7 @@ $counter = 0;
                     'post_type' => 'portfolio',
                     'post_status' => 'publish',
                     'portfolio_category' => 'featured',
-                    'posts_per_page' => 6,
+                    'posts_per_page' => -1,
                     'orderby' => 'date',
                     'order' => 'DESC'
                     );
@@ -112,7 +112,20 @@ $counter = 0;
           </div>
       </div>
 
-      <a href="#portfolio-link" class="smooth btn-primary">About Me</a>
+
+    <?php 
+
+    $contact_link = get_field('contact_button');
+
+    if( $contact_link ): 
+      $contact_url = $contact_link['url'];
+      $contact_title = $contact_link['title'];
+      $contact_target = $contact_link['target'] ? $contact_link['target'] : '_self';
+      ?>
+      
+    <a style="margin-top: 2rem;" class="btn-primary" href="<?php echo esc_url($contact_url); ?>" target="<?php echo esc_attr($contact_target); ?>"><?php echo esc_html($contact_title); ?></a>
+
+    <?php endif; ?>
   </section>
 
   <!-- <a href="/about-me/"><h2 class="button">About Me <i class="fa fa-chevron-right" aria-hidden="true"></i></h2></a> -->

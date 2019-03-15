@@ -392,7 +392,14 @@ figure {
 .testimonials {
   background-color: $light-blue-trans-two;
   text-align: center;
-  padding: 75px 0 75px 0;
+  padding: 2rem 0 2rem 0;
+
+  .blockquote-footer {
+    cite {
+      color: $dark-blue;
+      font-weight: bold;
+    }
+  }
 
   .wrap {
     max-width: 800px;

@@ -3,11 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="mHCv2nCc-DKlpEh76hDfnhfJp2KgZsksy_aU72g3TRc" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
   </head>
 
   <body <?php body_class(); ?>>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136355666-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-136355666-1');
+    </script>
+
     <nav class="navbar">
       <!-- <div class="container"> -->
         <!-- Brand and toggle get grouped for better mobile display -->
