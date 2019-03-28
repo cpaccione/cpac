@@ -10,7 +10,7 @@
 
 ?>
 
-<article class="blog">
+<article class="article">
 	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 	<ul class="blog-info">
@@ -18,7 +18,5 @@
 		<li><i class="fa fa-clock-o"></i> <?php the_date(); ?></li>
 	</ul>
 
-	<?php the_content(); ?> 	
+	<?php the_content(); ?>
 </article>
-
-

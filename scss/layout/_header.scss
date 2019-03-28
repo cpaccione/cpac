@@ -1,7 +1,7 @@
 .navbar {
 	display: grid;
 	grid-template-columns: 90% 10%;
-	padding: 0 2rem 0 2rem;
+	padding: .5rem 2rem .5rem 2rem;
 
 	.nav-brand {
 		display: flex;
@@ -30,32 +30,63 @@
 
 }
 
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeout {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.show {
+	display: block !important;
+	animation: fadein;
+	animation-duration: .5s;
+}
+
 .cpac-menu {
 	display: none;
 	height: 100%;
 	width: 100%;
 	position: fixed;
-	top: 70px;
+	top: 50px;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	z-index: 2000;
-	background: $light-blue-trans-two;
-	background-color: $white;
+	// background: $light-blue-trans-two;
+	background-color: $dark-blue;
+	//background-color: $deep_grey;
+	// background-color: $orange;
 	text-align: center;
-
+	
 	ul {
 		margin-top: 50px;
 		padding-left: 0;
 		list-style: none;
 
 		li {
+			margin-bottom: .5rem;
+			
 			a {
 				color: $light-blue;
 				font-size: 2.5em;
 
 				&:hover {
 					color: $dark-blue;
+					color: $orange;
 				}
 			}
 		}
@@ -63,11 +94,12 @@
 }
 
 .cpac-mobile-menu {
-	cursor: pointer;
+	cursor: pointer; 
 	padding-top: .7rem;
 	float: right;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	z-index: 3000;
 
 	&:hover .menu-item {
 		background-color: $salmon-red;
@@ -175,9 +207,12 @@ nav {
 // Page Headers
 .page-title {
 	padding: 1rem 0 1rem 0;
-	background-color: $light-blue-trans-two;
+	text-align: center;
+	// background-color: $light-blue-trans-two;
 	
 	h1 {
-		color: $white;
+		// color: $white;
+		// color: $light-blue;
+		color: $orange;
 	}
 }

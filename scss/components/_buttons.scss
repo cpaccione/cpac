@@ -55,25 +55,29 @@
 
 .btn-primary {
 	background-color: transparent;
+	background-color: $orange;
 	font-size: 0.9375em;
 	text-transform: uppercase;
 	color: $dark-blue;
+	color: $white;
 	border-radius: 25px;
 	line-height: 15px;
 	padding: 15px 38px 15px 38px;
 	display: inline-block;
 	box-shadow: none;
 	border: 2px solid $dark-blue;
+	border: 2px solid $orange;
 	-webkit-transition: ease-out 200ms;
 	-moz-transition: ease-out 200ms;
 	-o-transition: ease-out 200ms;
 	transition: ease-out 200ms;
 
 	&:hover {
-		background-color: $light-blue;
-		background-color: $dark-blue;
-		background-color: $salmon-red;
-		border: 2px solid $light-blue;
+		// background-color: $light-blue;
+		// background-color: $dark-blue;
+		// background-color: $salmon-red;
+		// border: 2px solid $light-blue;
+		border: 2px solid $dark-blue;
 		color: $white;
 		-webkit-transition: ease-out 200ms;
 		-moz-transition: ease-out 200ms;
@@ -84,6 +88,7 @@
 
 .btn-primary.btn-block {
 	background-color: $dark-blue;
+	background-color: $orange;
 	color: $white;
 	border-color: $dark-blue;
 	border-radius: 0;
@@ -148,4 +153,31 @@
 
 .button-wrap {
 	padding: 4rem 0 2rem 0;
+}
+
+.post-navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-previous, .nav-next {
+
+	a {
+		color: $orange;
+
+		&:hover {
+			color: $dark-blue;
+		}
+	}
+
+	h3 {
+
+		a {
+			color: $orange;
+
+			&:hover {
+				color: $dark-blue;
+			}
+		}
+	}
 }

@@ -11,30 +11,36 @@
   </section>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-7">
-          <?php
+    <div class="blog-wrap">
 
-              if ( have_posts() ) :
+      <div class="article-section">
+        <?php
 
-                  /* Start the Loop */
-                  while ( have_posts() ) : the_post();
+            if ( have_posts() ) :
+
+                /* Start the Loop */
+                while ( have_posts() ) : the_post();
 
 
-                  get_template_part( 'template-parts/post/content', get_post_format() );
+                get_template_part( 'template-parts/post/single-content', get_post_format() );
 
-                  endwhile;
+                endwhile;
 
-              endif;
+            endif;
 
-          ?>
+        ?>
 
-          <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-          <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+        <div class="post-navigation">
+          <div class="nav-previous"><?php next_post_link( '<h3>%link</h3>' ); ?></div>
+          <div class="nav-next"><?php previous_post_link( '<h3>%link</h3>' ); ?></div>
+        </div>
+
       </div>
-      <div class="col-md-5">
+
+      <aside>
         <?php dynamic_sidebar('blog'); ?>
-      </div>
+      </aside>
+
     </div>
   </div>
 

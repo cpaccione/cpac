@@ -1,15 +1,15 @@
 // Typography
 
 h1 {
-	color: $deep_grey;
-  font-weight: bold;
-	font-size: 2.25rem;
+    color: $deep_grey;
+    font-weight: bold;
+	font-size: 3rem;
 }
 
 h2 {
     font-weight: bold;
     color: $deep_grey;
-		font-size: 1.875rem
+    font-size: 2rem;
 }
 
 h3 {
@@ -40,7 +40,8 @@ h6 {
 p {
 	color: $deep_grey;
 	font-weight: 300;
-	font-size: 1rem
+	font-size: 1rem;
+  line-height: 1.4;
 }
 
 .section-title {

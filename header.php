@@ -24,7 +24,8 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="nav-brand">
           <!-- <a class="navbar-brand mobile-brand d-sm-none" href="<?php bloginfo('url') ;?>"><span class="first">C</span> <span class="last">P</span></a> -->
-          <a class="navbar-brand" href="<?php bloginfo('url') ;?>"><span class="first">CHRIS </span><span class="last">PACCIONE</span></a>
+          <!-- <a class="navbar-brand" href="<?php bloginfo('url') ;?>"><span class="first">CHRIS </span><span class="last">PACCIONE</span></a> -->
+          <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><img style="max-width: 2.8rem;" src="<?php bloginfo('template_directory');?>/images/cp_logo_white.svg" alt="logo"></a>
         </div>
         <!-- cpac mobile menu -->
         <div class="cpac-mobile-menu">

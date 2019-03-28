@@ -7,22 +7,14 @@ add_theme_support( 'title-tag' );
 //require get_template_directory() . '/inc/function-admin.php';
 
 function theme_styles() {
-	//wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
-	//wp_enqueue_style( 'bootstrap4', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css');
-
-	//wp_enqueue_style( 'google_font', 'https://fonts.googleapis.com/css?family=Abril+Fatface|Droid+Serif|Lato:300,400,700' );
-	wp_enqueue_style( 'google_fonts_ultra', 'https://fonts.googleapis.com/css?family=Playfair+Display');
-	wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300');
-	//wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Dosis|Open+Sans');
-	//wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
-	//wp_enqueue_style( 'theme_css', get_template_directory_uri() . '/css/cpac.css' );
-	wp_enqueue_style( 'cpac', get_stylesheet_uri(), array(), '1.9', 'all' );
+	wp_enqueue_style( 'google_font_roboto_display', 'https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
+	wp_enqueue_style( 'cpac', get_stylesheet_uri(), array(), '2.5', 'all' );
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
 function theme_js() {
-	wp_enqueue_script( 'script_js', get_template_directory_uri() . '/js/script.js', array('jquery'), '', true );
+	wp_enqueue_script( 'script_js', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.1', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_js' );

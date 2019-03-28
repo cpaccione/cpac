@@ -21,9 +21,10 @@ $counter = 0;
     </div>
   </header>
 
-  <section class="featured-portfolio">
+  <section id="portfolio-link" class="featured-portfolio">
 
-    <h2 id="portfolio-link">Featured Portfolio</h2>
+    <h2>Featured <span style="color: #ff6500;">Portfolio</span></h2>
+    <p>My Most recent work</p>
 
     <ul class="portfolio">
 

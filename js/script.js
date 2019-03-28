@@ -5,9 +5,11 @@ jQuery(document).ready(function($) {
   //$('.cpac-menu').hide();
   $('.cpac-mobile-menu').click(function() {
 
-      $(this).toggleClass('open');
+    $('.cpac-menu').toggleClass('show');
+    
+    //$('.cpac-menu').toggle( 'fade' );
       // Mobile menu list fade in
-      $('.cpac-menu').toggle('fade');
+      // $('.cpac-menu').toggle('');
 
     //   if ($('.cpac-mobile-menu').hasClass("open")) {
 
