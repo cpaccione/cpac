@@ -43,7 +43,7 @@ $counter = 0;
             ?>
 
             <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
-
+            
                 <li class="portfolio-item">
                     <a href="<?php the_permalink(); ?>">
                         <figure class="card">
@@ -70,16 +70,16 @@ $counter = 0;
 
     </ul>
 
-    <?php 
+    <?php
 
     $link = get_field('portfolio_button');
 
-    if( $link ): 
+    if( $link ):
       $link_url = $link['url'];
       $link_title = $link['title'];
       $link_target = $link['target'] ? $link['target'] : '_self';
       ?>
-      
+
       <a class="btn-primary" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
 
     <?php endif; ?>
@@ -114,16 +114,16 @@ $counter = 0;
       </div>
 
 
-    <?php 
+    <?php
 
     $contact_link = get_field('contact_button');
 
-    if( $contact_link ): 
+    if( $contact_link ):
       $contact_url = $contact_link['url'];
       $contact_title = $contact_link['title'];
       $contact_target = $contact_link['target'] ? $contact_link['target'] : '_self';
       ?>
-      
+
     <a style="margin-top: 2rem;" class="btn-primary" href="<?php echo esc_url($contact_url); ?>" target="<?php echo esc_attr($contact_target); ?>"><?php echo esc_html($contact_title); ?></a>
 
     <?php endif; ?>

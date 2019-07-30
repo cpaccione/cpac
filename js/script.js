@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
 
     $('img').addClass('img-fluid');
 
-
+ 
     var $animation_elements = $('.animation-element');
     var $window = $(window);
 
