@@ -3,9 +3,9 @@ jQuery(document).ready(function($) {
   $('.hero-lead').fadeIn(2000);
 
   //$('.cpac-menu').hide();
-  $('.cpac-mobile-menu').click(function() {
+  // $('.cpac-mobile-menu').click(function() {
 
-    $('.cpac-menu').toggleClass('show');
+    // $('.cpac-menu').toggleClass('show');
     
     //$('.cpac-menu').toggle( 'fade' );
       // Mobile menu list fade in
@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
     //   });
     // };
 
-  });
+  // });
 
 
 
@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 
 	// Add bootstrap's 'img-responsive' class to all images
 
-    $('img').addClass('img-fluid');
+    // $('img').addClass('img-fluid');
 
  
     var $animation_elements = $('.animation-element');
@@ -84,3 +84,20 @@ $window.trigger('scroll');
 
 
 });
+
+// add responsive class to all images
+const imgR = document.querySelectorAll('img')
+
+imgR.forEach(elem => {
+  elem.classList.add('img-fluid')
+})
+
+const mobileMenu = document.querySelector('.cpac-mobile-menu')
+const menu = document.querySelector('.cpac-menu')
+const body = document.querySelector('body')
+
+
+mobileMenu.addEventListener('click', e => {
+  menu.classList.toggle('is-open')
+  body.classList.toggle('no-scroll')
+})

@@ -22,6 +22,7 @@ body {
   font-size: 1rem;
   line-height: 1.2;
   margin: 0;
+  padding-top: 4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -566,10 +567,23 @@ small {
   color: #4BC3FF;
 }
 
+/* NAVIGATION */
+.nav-wrap {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .navbar {
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 90% 10%;
-  padding: .5rem 2rem .5rem 2rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  box-shadow: 0 0 6px rgba(90, 90, 90, 0.7);
+  z-index: 3000;
 }
 .navbar .nav-brand {
   display: flex;
@@ -621,16 +635,15 @@ small {
   height: 100%;
   width: 100%;
   position: fixed;
-  top: 50px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2000;
   background-color: #133140;
   text-align: center;
 }
 .cpac-menu ul {
-  margin-top: 50px;
+  margin-top: 5rem;
   padding-left: 0;
   list-style: none;
 }
@@ -646,6 +659,19 @@ small {
   color: #ff6500;
 }
 
+.is-open {
+  display: block;
+}
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .cpac-mobile-menu {
   cursor: pointer;
   padding-top: .7rem;
@@ -655,10 +681,10 @@ small {
   z-index: 3000;
 }
 .cpac-mobile-menu:hover .menu-item {
-  background-color: #FF6575;
+  background-color: #4BC3FF;
 }
 .cpac-mobile-menu .menu-item {
-  background-color: #ffffff;
+  background-color: #FF6575;
   display: block;
   height: 3px;
   margin: 0 0 7px;
@@ -675,12 +701,6 @@ small {
 }
 .cpac-mobile-menu.open .menu-item {
   background-color: #4BC3FF;
-}
-
-/* NAVIGATION */
-nav {
-  background-color: #133140;
-  height: 50px;
 }
 
 .navbar-toggle {
@@ -723,13 +743,7 @@ nav {
 }
 
 .navbar-brand {
-  font-family: 'Dosis', sans-serif;
-}
-.navbar-brand:hover .first {
-  color: #FF6575;
-}
-.navbar-brand:hover .last {
-  color: #FF6575;
+  font-size: 1.5rem;
 }
 
 .first {

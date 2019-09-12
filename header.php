@@ -19,28 +19,31 @@
       gtag('config', 'UA-136355666-1');
     </script>
 
-    <nav class="navbar">
-      <!-- <div class="container"> -->
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="nav-brand">
-          <!-- <a class="navbar-brand mobile-brand d-sm-none" href="<?php bloginfo('url') ;?>"><span class="first">C</span> <span class="last">P</span></a> -->
-          <!-- <a class="navbar-brand" href="<?php bloginfo('url') ;?>"><span class="first">CHRIS </span><span class="last">PACCIONE</span></a> -->
-          <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><img style="max-width: 2.8rem;" src="<?php bloginfo('template_directory');?>/images/cp_logo_white.svg" alt="logo"></a>
-        </div>
-        <!-- cpac mobile menu -->
-        <div class="cpac-mobile-menu">
-          <span class="menu-item"></span>
-          <span class="menu-item"></span>
-          <span class="menu-item"></span>
-        </div>
-      <!-- </div> -->
-    </nav>
-    <div class="cpac-menu">
-      <?php
-          wp_nav_menu( array(
-              'menu'              => 'primary',
-              'theme_location'    => 'primary'
-              )
-          );
-      ?>
+    <div class="nav-wrap">
+      <nav class="navbar">
+        <!-- <div class="container"> -->
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="nav-brand">
+            <!-- <a class="navbar-brand mobile-brand d-sm-none" href="<?php bloginfo('url') ;?>"><span class="first">C</span> <span class="last">P</span></a> -->
+            <!-- <a class="navbar-brand" href="<?php bloginfo('url') ;?>"><span class="first">CHRIS </span><span class="last">PACCIONE</span></a> -->
+            <a class="navbar-brand" href="<?php bloginfo('url'); ?>">Chris Paccione</a>
+          </div>
+          <!-- cpac mobile menu -->
+          <div class="cpac-mobile-menu">
+            <span class="menu-item"></span>
+            <span class="menu-item"></span>
+            <span class="menu-item"></span>
+          </div>
+        <!-- </div> -->
+      </nav>
+      <div class="cpac-menu">
+        <?php
+            wp_nav_menu( array(
+                'menu'              => 'primary',
+                'theme_location'    => 'primary'
+                )
+            );
+        ?>
+      </div>
     </div>
+

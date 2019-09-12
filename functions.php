@@ -8,13 +8,13 @@ add_theme_support( 'title-tag' );
 
 function theme_styles() {
 	wp_enqueue_style( 'google_font_roboto_display', 'https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
-	wp_enqueue_style( 'cpac', get_stylesheet_uri(), array(), '2.5', 'all' );
+	wp_enqueue_style( 'cpac', get_stylesheet_uri(), array(), '2.8', 'all' );
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
 function theme_js() {
-	wp_enqueue_script( 'script_js', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.1', true );
+	wp_enqueue_script( 'script_js', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.2', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_js' );
