@@ -22,7 +22,6 @@ body {
   font-size: 1rem;
   line-height: 1.2;
   margin: 0;
-  padding-top: 4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -568,15 +567,6 @@ small {
 }
 
 /* NAVIGATION */
-.nav-wrap {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 .navbar {
   background-color: #ffffff;
   display: grid;
@@ -635,7 +625,7 @@ small {
   height: 100%;
   width: 100%;
   position: fixed;
-  top: 0;
+  top: 73px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -664,7 +654,7 @@ small {
 }
 
 .no-scroll {
-  overflow: hidden;
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   right: 0;
@@ -684,7 +674,7 @@ small {
   background-color: #4BC3FF;
 }
 .cpac-mobile-menu .menu-item {
-  background-color: #FF6575;
+  background-color: #ff6500;
   display: block;
   height: 3px;
   margin: 0 0 7px;
@@ -805,6 +795,7 @@ small {
   background-image: url("images/bg-home-grey.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(75, 195, 255, 0.4);
   display: flex;
   align-items: center;
   text-align: center;
