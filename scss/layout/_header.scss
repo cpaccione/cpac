@@ -29,6 +29,12 @@
 	.nav-brand {
 		display: flex;
 		align-items: center;
+
+		a {
+			&:hover {
+				color: $orange;
+			}
+		}
 	}
 }
 
@@ -80,17 +86,21 @@
 }
 
 .cpac-menu {
-	display: none;
-	height: 100%;
+	//display: none;
+	height: 0%;
 	width: 100%;
 	position: fixed;
 	top: 73px;
 	bottom: 0;
 	left: 0;
 	right: 0;
+	z-index: 1000;
+	opacity: 0;
+	transition: .2s ease;
 	// background: $light-blue-trans-two;
 	background-color: $dark-blue;
-	// background-color: $deep_grey;
+	background-color: $silver;
+	background-color: $grey-two;
 	// background-color: $orange;
 	text-align: center;
 
@@ -116,9 +126,11 @@
 }
 
 // Menu class to open menu
-.is-open {
-	display: block;
-}
+// .is-open {
+// 	opacity: 1;
+// 	z-index: 1000;
+// 	transition: .2s ease;
+// }
 
 // No Scroll class to prevent scrolling when menu is open
 .no-scroll {
@@ -137,6 +149,7 @@
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	z-index: 3000;
+	width: 40px;
 
 	&:hover .menu-item {
 		background-color: $light-blue;
@@ -151,7 +164,7 @@
 		margin: 0 0 7px;
 		-webkit-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
-		width: 40px;
+		// width: 40px;
 	}
 }
 

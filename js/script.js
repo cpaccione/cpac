@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-  $('.hero-lead').fadeIn(2000);
+  // $('.hero-lead').fadeIn(2000);
 
   //$('.cpac-menu').hide();
   // $('.cpac-mobile-menu').click(function() {
@@ -96,8 +96,38 @@ const mobileMenu = document.querySelector('.cpac-mobile-menu')
 const menu = document.querySelector('.cpac-menu')
 const body = document.querySelector('body')
 
+const tl = new TimelineMax()
+tl.to('.is-open', .1, {
+  height: '100%',
+  opacity: '1'
+})
 
 mobileMenu.addEventListener('click', e => {
   menu.classList.toggle('is-open')
   body.classList.toggle('no-scroll')
+
+//tl.reversed() ? tl.play() : tl.reverse()
+
+
+
+
+  // if(menu.classList === 'is-open') {
+
+  //   TweenMax.to('.is-open', 1, {
+  //     opacity: '1',
+  //     zIndex: '1000'
+  //   })
+  // } else {
+  //   TweenMax.to('.is-open', 1, {
+  //     opacity: '0',
+  //     zIndex: '-1000'
+  //   })
+  // }
+
 })
+
+// fade in copy on home page
+TweenMax.to('.hero-lead', 5, {
+  opacity: 1
+})
+

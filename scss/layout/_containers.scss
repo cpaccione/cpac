@@ -37,7 +37,7 @@
 
 // HOME PAGE
 .home-hero {
-  background-image: url('images/bg-home-grey.jpg');
+  background-image: url('../images/bg-home-grey.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $light-blue-trans-two;
@@ -75,12 +75,11 @@
     font-size: 1.18rem;
     margin: 0 0 20px 0;
     color: $dark-blue;
-    // margin-top: 1.875rem;
-    // margin-bottom: 0.625rem;
   }
 
   .hero-lead {
-    display: none;
+    // display: none;
+    opacity: 0;
     padding: 0 3rem 0 3rem;
     max-width: 992px;
   }
