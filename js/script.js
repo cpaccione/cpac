@@ -102,11 +102,11 @@ tl.to(menu, .7, {
   height: '100%',
   // opacity: '1',
   ease: Power2.easeOut
-}).to('#menu-main', 1, {
+}).to('.menu', 1, {
   display: 'block'
 }, '-= .6')
 
-mobileMenu.addEventListener('click', e => {
+mobileMenu.addEventListener('click', _ => {
   // menu.classList.toggle('is-open')
   body.classList.toggle('no-scroll')
   toggleTween(tl)
