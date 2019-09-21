@@ -98,21 +98,18 @@ const body = document.querySelector('body')
 
 const tl = new TimelineMax({ paused: true, reversed: true })
 
-tl.to(menu, 1, {
+tl.to(menu, .7, {
   height: '100%',
   // opacity: '1',
-  ease: Bounce.easeOut
+  ease: Power2.easeOut
 }).to('#menu-main', 1, {
   display: 'block'
-}, '-= .8')
+}, '-= .6')
 
 mobileMenu.addEventListener('click', e => {
-  //menu.classList.toggle('is-open')
-  toggleTween(tl)
+  // menu.classList.toggle('is-open')
   body.classList.toggle('no-scroll')
-
-//tl.reversed() ? tl.play() : tl.reverse()
-
+  toggleTween(tl)
 })
 
 function toggleTween(tween) {
