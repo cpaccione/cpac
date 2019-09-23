@@ -27,10 +27,11 @@ jQuery(document).ready(function($) {
 
 });
 
-const hero = document.querySelector('.home-hero')
+const homeHero = document.querySelector('.home-hero')
+console.log(homeHero)
 
 window.onload = _ => {
-  hero.classList.add('fade-in')
+  homeHero.classList.add('fade-in')
 }
 
 // add responsive class to all images

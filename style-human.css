@@ -13,6 +13,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 html {
   font-size: 100%;
+  padding-top: 72px;
 }
 
 body {
@@ -567,6 +568,15 @@ small {
 }
 
 /* NAVIGATION */
+.nav-wrap {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .navbar {
   background-color: #ffffff;
   display: grid;
