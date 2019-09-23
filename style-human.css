@@ -623,8 +623,15 @@ small {
   animation-duration: .5s;
 }
 
+.show-menu {
+  opacity: 1 !important;
+  pointer-events: initial !important;
+  transition: 1.5s ease !important;
+}
+
 .cpac-menu {
   height: 0%;
+  transition: .5s ease;
   width: 100%;
   position: fixed;
   top: 73px;
@@ -639,7 +646,9 @@ small {
   margin-top: 5rem;
   padding-left: 0;
   list-style: none;
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: .4s ease;
 }
 .cpac-menu ul li {
   margin-bottom: .5rem;
@@ -651,6 +660,11 @@ small {
 .cpac-menu ul li a:hover {
   color: #133140;
   color: #ff6500;
+}
+
+.cpac-menu.is-open {
+  height: 100%;
+  transition: .5s ease;
 }
 
 .no-scroll {

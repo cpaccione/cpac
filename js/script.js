@@ -95,6 +95,8 @@ imgR.forEach(elem => {
 const mobileMenu = document.querySelector('.cpac-mobile-menu')
 const menu = document.querySelector('.cpac-menu')
 const body = document.querySelector('body')
+const menuList = menu.children[0].firstChild
+console.log(menuList)
 
 const tl = new TimelineMax({ paused: true, reversed: true })
 
@@ -106,19 +108,19 @@ tl.to(menu, .7, {
   display: 'block'
 }, '-= .6')
 
-mobileMenu.addEventListener('click', _ => {
-  // menu.classList.toggle('is-open')
-  body.classList.toggle('no-scroll')
-  toggleTween(tl)
-})
-
-function toggleTween(tween) {
-  tween.reversed() ? tween.play() : tween.reverse()
-}
-
 // fade in copy on home page
 TweenMax.to('.home-hero', 3, {
   opacity: 1,
   ease: Power2.easeOut
 })
 
+mobileMenu.addEventListener('click', () => {
+  menu.classList.toggle('is-open')
+  menuList.classList.toggle('show-menu')
+  body.classList.toggle('no-scroll')
+  //toggleTween(tl)
+})
+
+function toggleTween(tween) {
+  tween.reversed() ? tween.play() : tween.reverse()
+}

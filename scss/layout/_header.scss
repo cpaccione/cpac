@@ -79,15 +79,47 @@
 	}
 }
 
+// @keyframes slidedown {
+
+// 	0% {
+// 		background-color: grey;
+// 	}
+
+
+// 	100% {
+// 		background-color: blue;
+// 	}
+// }
+
+// @keyframes slideDown{
+// 	from {
+// 	  transform: translateY(-100%);
+// 	  opacity: 0;
+// 	}
+// 	to {
+// 	  transform: translateY(0);
+// 	  opacity: 1;
+// 	}
+//   }
+
 .show {
 	display: block !important;
 	animation: fadein;
 	animation-duration: .5s;
 }
 
+.show-menu {
+	opacity: 1 !important;
+	pointer-events: initial !important;
+	transition: 1.5s ease !important;
+}
+
 .cpac-menu {
 	//display: none;
+	//max-height: 20%;
 	height: 0%;
+	// transform: translateY(-100%);
+	transition: .5s ease;
 	width: 100%;
 	position: fixed;
 	top: 73px;
@@ -108,7 +140,10 @@
 		margin-top: 5rem;
 		padding-left: 0;
 		list-style: none;
-		display: none;
+		//display: none;
+		opacity: 0;
+		pointer-events: none;
+		transition: .4s ease;
 
 		li {
 			margin-bottom: .5rem;
@@ -127,11 +162,14 @@
 }
 
 // Menu class to open menu
-// .is-open {
-// 	opacity: 1;
-// 	z-index: 1000;
-// 	transition: .2s ease;
-// }
+.cpac-menu.is-open {
+	// opacity: 1;
+	// z-index: 1000;
+	height:100%;
+	transition: .5s ease;
+	// animation-name: slidedown;
+	// animation-duration: 2s;
+}
 
 // No Scroll class to prevent scrolling when menu is open
 .no-scroll {
