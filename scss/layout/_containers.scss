@@ -92,6 +92,11 @@
 
 }
 
+.fade-in {
+  transition: 1s ease-in;
+  opacity: 1;
+}
+
 .blockquote-footer {
   margin-top: 10px;
   color: $light-blue;
