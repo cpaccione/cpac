@@ -44,14 +44,14 @@ imgR.forEach(elem => {
 const mobileMenu = document.querySelector('.cpac-mobile-menu')
 const menu = document.querySelector('.cpac-menu')
 const body = document.querySelector('body')
-const menuList = menu.children[0].firstChild
-const menuWrapper = menuList.closest('.menu-top-menu-container')
-console.log(menuWrapper)
+const menuList = document.querySelector('.menu')
+//const menuWrapper = menuList.parentElement
+//console.log(menuWrapper)
 
-mobileMenu.addEventListener('click', () => {
+mobileMenu.addEventListener('click', _ => {
   menu.classList.toggle('is-open')
-  menuList.classList.toggle('show-menu')
-  menuWrapper.classList.toggle('show')
+  menuList.classList.toggle('show-ul')
+  //menuWrapper.classList.toggle('show')
   body.classList.toggle('no-scroll')
 })
 

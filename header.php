@@ -40,6 +40,7 @@
         <?php
             wp_nav_menu( array(
                 'menu'              => 'primary',
+                'container'         => 'false',
                 'theme_location'    => 'primary'
                 )
             );
