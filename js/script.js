@@ -45,10 +45,13 @@ const mobileMenu = document.querySelector('.cpac-mobile-menu')
 const menu = document.querySelector('.cpac-menu')
 const body = document.querySelector('body')
 const menuList = menu.children[0].firstChild
+const menuWrapper = menuList.closest('.menu-top-menu-container')
+console.log(menuWrapper)
 
 mobileMenu.addEventListener('click', () => {
   menu.classList.toggle('is-open')
   menuList.classList.toggle('show-menu')
+  menuWrapper.classList.toggle('show')
   body.classList.toggle('no-scroll')
 })
 

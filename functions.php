@@ -8,8 +8,8 @@ add_theme_support( 'title-tag' );
 
 function theme_styles() {
 	wp_enqueue_style( 'google_font_roboto_display', 'https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
-	wp_enqueue_style( 'main', get_template_directory_uri() . '/css/cpac.css', '4.3', 'all' );
-	wp_enqueue_script( 'script_js', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.5', true );
+	wp_enqueue_style( 'main', get_template_directory_uri() . '/css/cpac.css', '5.0.0', 'all' );
+	wp_enqueue_script( 'script_js', get_template_directory_uri() . '/js/script.js', array('jquery'), '2.0.0', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
